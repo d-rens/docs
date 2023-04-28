@@ -1,0 +1,368 @@
+\documentclass{article}
+\usepackage[a4paper, right=3cm, left=3cm, bottom=2.5cm, top=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{pstricks}
+\usepackage{color}
+\usepackage{multicol}
+\setlength{\parindent}{0pt}
+
+
+\begin{document}
+\tableofcontents
+
+\section{Combinatorics}
+yeah, somebody should add it here :/.
+
+\section{Probability}
+\subsection{Introduction}
+Probability is a fundamental concept in statistics and machine learning.
+Understanding the basics of probability is crucial for mastering data science,
+as it enables the extraction of important insights from data. Bayesian
+Inference is a key component heavily used in many fields of mathematics to
+succinctly express complicated statements. Through Bayesian Notation,
+relationships between elements, sets, and events can be conveyed. This
+understanding can aid in interpreting the mathematical intuition behind
+sophisticated data analytics methods.
+
+Distributions are the main way to classify sets of data. If a dataset complies
+with certain characteristics, the likelihood of its values can be attributed to
+a specific distribution. Many of these distributions have elegant relationships
+between certain outcomes and their probabilities of occurring, making it
+extremely convenient and useful to know key features of our data.
+
+Overall, understanding the basics of probability and distributions is crucial
+for anyone looking to dive into the world of statistics and machine learning,
+as it enables the extraction of meaningful insights from data.
+
+\subsubsection{What is probability?}
+Probability is the measure of the likelihood of an event occurring, and it can
+range from 0 to 1. The probability formula states that the probability of event
+X occurring equals the number of preferred outcomes over the number of outcomes
+in the sample space. Preferred outcomes are the outcomes we want to occur or
+the outcomes we are interested in, while the sample space refers to all
+possible outcomes that can occur.
+
+\begin{align*}
+  P(X)=\frac{\text{preferred outcomes}}{\text{sample space}}
+\end{align*}
+
+If two events are independent, the probability of them occurring simultaneously
+equals the product of them occurring on their own. This concept is useful in
+many areas, including statistics and machine learning, where probabilities are
+used to make predictions and inferences.
+
+\subsubsection{expected values}
+\textbf{Trail} - Ovserving an event occur and recording the outcome.\\
+\textbf{Experiment} - A collectoin of one or multiple trails.\\
+\textbf{Experimental Probability} - The probability we assign an event, based on a experiment we conduct.\\
+\textbf{Expected Value} - The specific outcome we expect to occur when we run an experiment.\\
+
+\textbf{Example:} Trail\\
+Flipping a coin and recording the outcome.
+
+\textbf{Example:} Experiment\\
+Flipping a coin 20 times and recording the 20 individual outcomes.
+
+In this instance, the \textbf{experimental probability} for getting heads would
+equal the number of heads we record over the course of the 20 outcomes, over 20
+(the total number of trails).
+
+The \textbf{expected value} can be numerical, Boolearn, categorical or other
+depending on the type of the events we are interested in. For instance, the
+expected value of the trail would be the more likely of the two outcomes,
+whereas the expected value of the experiment will be the number of time we
+expect get either heads or tails after 20 trails.
+
+Expected value for \textbf{categorical} variables.
+\[E(X)=n \cdot p\]
+
+Expected value for \textbf{numeric} variables.
+\[E(X)=\displaystyle\sum_{i=1}^{n}x_1\cdot p_i\]
+
+\subsubsection{Probability Frequency Distribution}
+
+\textbf{What is a probability frequency distribution?:}\\
+A collection of the probabilities for each possible outcome of an 
+event. 
+
+\vspace{.5cm}
+\textbf{Why do we need frequency distributions?:}\\
+We need the probability frequency distribution to try and predict 
+future events when the expected value is unattainable. 
+
+\vspace{.5cm}
+\textbf{What is a frequency?:}\\
+Frequency is the number of times a given value or outcome 
+appears in the sample space. 
+
+\vspace{.5cm}
+\textbf{What is a frequency distribution table?:}\\
+The frequency distribution table is a table matching each distinct 
+outcome in the sample space to its associated frequency.
+
+\vspace{.5cm}
+\textbf{How do we obtain the probability frequency distribution from the
+frequency distribution table?:}\\
+By dividing every frequency by the size of the sample space. 
+(Think about the “favoured over all” formula.)
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Sum & Frequency & Probability \\
+\midrule
+\vspace{4pt}
+2   & 1         & $\frac{1}{36}$ \\
+\vspace{4pt}
+3   & 2         & $\frac{1}{18}$ \\
+\vspace{4pt}
+4   & 3         & $\frac{1}{12}$ \\
+\vspace{4pt}
+5   & 4         & $\frac{1}{9}$ \\
+\vspace{4pt}
+6   & 5         & $\frac{5}{36}$ \\
+\vspace{4pt}
+7   & 6         & $\frac{1}{6}$ \\
+\vspace{4pt}
+8   & 5         & $\frac{5}{36}$ \\
+\vspace{4pt}
+9   & 4         & $\frac{1}{9}$ \\
+\vspace{4pt}
+10  & 3         & $\frac{1}{12}$ \\
+\vspace{4pt}
+11  & 2         & $\frac{1}{18}$ \\
+\vspace{4pt}
+12  & 1         & $\frac{1}{36}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection{Complements}
+The complement of an ecent is \textbf{everything} an event is \textbf{not}. We
+denote the complement of an event with an apostrophe.
+\[A\prime = \text{not} A\]
+Where $A\prime$ is an complement, not the opposite and $A$ The original event.
+
+\textbf{characteristics of complements:}
+\begin{itemize}
+  \item Can never occur simultaneously.
+  \item Add up to the sample space. ($A + A\prime =$ sample space)
+  \item Their probabilities add up to 1. $(P(A)+P(A\prime)=1)$
+  \item The complement of a complement is the original event. ($(A\prime)\prime = A$)
+\end{itemize}
+
+\textbf{Example:}
+\begin{itemize}
+  \item Assume event A represents drawing a spade, so P(A) = 0.25.
+  \item Then, $A\prime$ represents \textbf{not} drawing a spade, so drawing a
+    club, a diamond or a heart. $P(A\prime)=1-P(A),\text{ so} P(A\prime)=0.75$.
+\end{itemize}
+
+
+
+\subsection{Bayesian thingies}
+A \textbf{set} is a collection of elements, which hold vertain values.
+Additionally, every event has a set of outcomes that satisfy it.
+The \textbf{null-set} (or empty set), denoted $\emptyset$ , is an set which
+contain no values.
+
+An element is denoted in lower-case, e.g. $x$.\\
+A set is written with upper-case, e.g. $A$.\\
+To make sense out of it, it can be used the following ways:\\
+
+\begin{table}[htb]
+    \centering
+    \begin{tabular}{c|c|c}
+        \toprule
+        \textbf{Notation} & \textbf{Interpretation} & \textbf{Example} \\
+        \midrule
+        $x \in A$ & Element $x$ is part of set $A$ & $2 \in$ All even numbers \\
+        $A \ni x$ & Set $A$ contains element $x$ & All even numbers $\ni 2$ \\
+        $x \notin A$ & Element $x$ is not part of set $A$ & $1 \notin$ All even numbers \\
+        $\forall x:$ & For all $x$ such that... & $\forall x: x \in$ All even numbers \\
+        $A \subseteq B$ & Set $A$ is a subset of set $B$ & Even numbers $\subseteq$ Integers \\
+        \bottomrule
+    \end{tabular}
+    \caption{Notations and interpretations for set theory}
+\end{table}
+
+Remember every set has at least two subsets:\\
+\begin{itemize}
+  \item $A \subseteq A$
+  \item $\emptyset \subseteq A$
+\end{itemize}
+
+There are three different types of multible events for now, one can imagine them as circles which are:
+\begin{enumerate}
+  \item Not touching at all.
+  \item Intersect (partially overlap).
+  \item One completely overlaps another.
+\end{enumerate}
+
+\paragraph{Intersection}
+We denote the intersection of two sets with the "intersect" sign, which
+resembles an upside down capital letter U: $A \cap B$.
+
+\begin{center}
+\input{/home/daniel/Documents/latex-notes/LaTeX/misc/datascience/ud-course/figures/int.tex}
+\end{center}
+
+\paragraph{Union}
+The union is two or more events expresses the set of outcome that satify at
+least one of the events. Graphically, is the area that includes both sets.
+Noted: $A \cup B$, $A \cup B = A+B-A\cap B$.
+
+\paragraph{Mutually exclusive Sets}
+Sets with no overlapping elements are called mutually exclusive. Graphically,
+their circles never touch.
+
+\textbf{If $A \cap B = \emptyset$, then the two sets are mutually exclusive.}
+Remember: All complements are mutually exclusive, but not all mutually
+exclusive sets are complements.
+
+Example: Dogs and cats are mutually exclusive sets, since no species is
+simultaneously a feline and a canine, but the two are not complements, since
+there exist other types of animals as well.
+
+
+\subsubsection{Independent and Dependent Events}
+If the likelihood of event A occurring (P(A)) is affected event B occurring,
+then we say that A and B are \textbf{dependent} events.
+Alternatively, if it isn't – the two events are \textbf{independent}.
+
+We express the probability of event A occurring, given event B has occurred the
+following way \textbf{P(A|B)}. We call this the conditional probability.
+
+\textbf{Independent:}
+\begin{itemize}
+  \item All the probabilities we have examined so far.
+  \item The outcome of A does not depend on the outcome of B.
+  \item $P(A|B)=P(A)$
+  \item \textbf{Example:}
+  \item A -> Hearts
+  \item B -> Jacks
+\end{itemize}
+
+\textbf{Dependent:}
+\begin{itemize}
+  \item New concept
+  \item The outcome of A depends on the outcome of B.
+  \item $P(A|B)\neq P(A)$
+  \item \textbf{Example:}
+  \item A -> Hearts
+  \item B -> Red
+\end{itemize}
+
+\subsubsection{Conditional Probability}
+For any two events A and B, such that the likelihood of B occuring is greater
+than 0 (P(B)>0), the conditional probability formula states the following.
+Also writable as: $$\forall A, B \quad P(B)>0:\quad P(A|B)=\frac{P(A\cap B)}{P(B)}.$$
+
+\textbf{Intuition behind the formula:}
+\begin{itemize}
+  \item Only interest in the outcome where B is satisfied.
+  \item Oly the elements in the intersectino would satisfly A as well.
+  \item Paralll to the "favored over all" formula.
+    \subitem Intersectino = "preferred outcomes"
+    \subitem B = "sample space"
+\end{itemize}
+
+\textbf{Remember:}
+\begin{itemize}
+  \item Unlike the union or the intersection, changing the order of A and B in
+    the conditional probability alters its meaning.
+  \item P(A|B) is not the same as P(B|A), even if P(A|B)=P(B|A) numerically.
+  \item the two conditional probabilities posess \textbf{different meanings}
+    even if they have equal values.
+\end{itemize}
+
+\subsubsection{Law of total probability}
+The \textbf{law of total probability} dictates that for any set A, which is a
+union of many mutually exclusive sets $B_1, B_2, ..., B_n$ its probability
+equals the following sum.
+\[P(A)=P(A|B_1)\cdot P(B_1)+P(A|B_2)\cdot P(B_2) + \dots + P(A|B_n) \cdot P(B_n)\]
+Meaning of the opperators:\\
+$P(A|B_1)$= Conditional probability of A, given $B_1$ has occurred.\\
+$P(B_1)\quad$= Probability of $B_1$ occurring.\\
+$P(A|B_2)$= Conditional of A, given $B_2$ has occurred.\\
+$P(B_2)\quad$= Probability of $B_2$ occuring.
+
+\textbf{Intution behind the formula:}
+\begin{itemize}
+  \item Since P(A) is the union of mutually exclusive sets, so it equals to the
+    sum of the individual sets.
+
+  \item The \textbf{intersection} of a union and one of its subsets is the entire subset.
+
+  \item We can rewrite the conditional probability formula 
+    \subitem $P(A|B)=\frac{P(A \cap B)}{P(B)} \quad \text{to get} \quad P(A\cap B) \cdot P(B)$.
+
+  \item Another way to express the law of probability is:
+    \[P(A)=P(A \cap B_1)+P(A \cap B_2)+ \dots + P(A\cap B_n)\]
+\end{itemize}
+
+\subsubsection{Additive Law}
+The additive law calculates the probability of the union based on the
+probability of the individual sets it accounts for.
+\[P(A\cup B) = P(A) + P(B) - P(A \cap B)\]
+Meaning of the operators:\\
+$P(A \cup B)$= Probability of the union.\\
+$P(A \cap B)$= Probability of the intersection.
+
+\textbf{Intution behind the formula:}
+\begin{itemize}
+  \item Recall the formula for finding the size of the uunion using the size of the intersction:
+    \subitem $A\cup B = A+B - A \cap B$
+  \item The probability of each oen is simply its size over the size of the sample space.
+  \item this holds true for any events A and B.
+\end{itemize}
+
+
+\subsubsection{The Multiplication Rule}
+The multiplication rule calculates the probability of the intersection based on the conditional probability.
+\[ P(A\cap B) = P(A|B)\cdot P(B) \]
+
+meaning of the operators:\\
+$P(A\cap B)$= Probability of the intersection\\
+$P(A|B)$= Conditional Probability\\
+$P(B)$= Probability of event B
+
+Intuition behind the formula:
+\begin{itemize}
+  \item We can multiply both sides of the conditional probability formula
+    $P(A|B)=\frac{P(A\cap B)}{P(B)}$ by $P(B)$ to get $P(A\cap B)=P(A|B)\cdot
+    P(B).$ \item If event B occurs in 40\% of the time ($P(B)=0.4$) and event A
+    occurs
+    in 50\% of the time of the time mB occurs ($P(A|B)=0.5$), then they would
+    simantaneously occur 20\% of the time ($P(A|B)\cdot P(B)=0,5\cdot 0,4 =
+    0,2$).
+\end{itemize}
+
+\subsubsection{Bayes' Law}
+Bayes' Law helps us understand the relationship between two events by computing
+the different conditional probabilities. We also call it Bayes' Rue or Bayes'
+Theorem.
+\[ P(A|B)\frac{P(B|A)\cdot P(A)}{P(B)} \]
+Intuition behind the formula
+\begin{itemize}
+  \item According to the multiplication rule $P(A\cap B)= P(A|B) \cdot P(B)
+    \text{, so } P(B \cap A) = P(B|A)\cdot P(A)$.
+  \item Since $P(A \cap B) = P(B\cap A)$, we plug in $P(B|A) \cdot P(A)$ for
+    $P(A\cap B)$ in the conditional probability formula $P(A|B)=\frac{P(A\cap
+    B)}{P(B)}$
+  \item Bayes' Law is often used in medical or business analysis to determine
+    which of two symption affects the other one more.
+\end{itemize}
+
+
+
+
+
+
+
+
+\end{document}

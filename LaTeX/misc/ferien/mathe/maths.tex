@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage[margin=3cm,a4paper]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+\setlength{\parindent}{0pt}
+
+\title{Ferien Mathe}
+\author{d.}
+\date{5. bis 16. april}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+\section{5., Mittwoch}
+
+Bin zu weit um jetzt die grundlagen zu wiederholen, aber hier mal paar sachen
+f\"ur Ableitungen und beispiel rechnungen die m\"oglichst schwer sind um auch
+m\"oglichst viel zu lernen.
+
+Potentzregel:
+\begin{equation*}
+    \frac{d}{dx}\left[ax^b\right]=b\cdot ax^{b-1}
+\end{equation*}
+Beispielrechnung: $f(x) = x^{\sin(x)} + \sin(x)^x$.
+\begin{align*}
+f(x) &= x^{\sin(x)} + \sin(x)^x \\
+f'(x) &= \frac{d}{dx} \left(x^{\sin(x)}\right) + \frac{d}{dx} \left(\sin(x)^x\right) \\
+&= \frac{d}{dx} \left(e^{\sin(x) \ln(x)}\right) + \frac{d}{dx} \left(e^{x \ln(\sin(x))}\right) \\
+&= e^{\sin(x) \ln(x)} \cdot \left(\cos(x) \ln(x) + \frac{\sin(x)}{x}\right) +
+e^{x \ln(\sin(x))} \cdot \left(\ln(\sin(x)) + \frac{x \cos(x)}{\sin(x)}\right)\\
+\end{align*}
+Die war eventuell ein bisschen schwerer, da sie Kettenregel, Produktregel und
+die Ableitung der Logarithmusfunktion beinhaltet, deswegen hier noch eine
+erkl\"arung der Regeln.
+
+Zunächst muss man die Potenzregel für Ableitungen kennen. Die Potenzregel besagt, dass wenn man eine Funktion der Form $f(x) = x^n$ ableitet, erhält man $f'(x) = nx^{n-1}$. Dabei ist $n$ eine Konstante und $x$ eine Variable.
+
+Für diese spezifische Aufgabe müssen wir nun die Funktion $f(x) = (x^3 - 2x^2 + 1)^{10}$ ableiten.
+
+Um dies zu tun, verwenden wir die Kettenregel, die besagt, dass wenn wir eine Funktion der Form $g(h(x))$ ableiten müssen, dann ist die Ableitung gegeben durch $g'(h(x)) \cdot h'(x)$.
+
+In diesem Fall ist $g(x) = x^{10}$ und $h(x) = x^3 - 2x^2 + 1$. Wir müssen also die Ableitungen von $g$ und $h$ berechnen, sowie $h'$ in die Kettenregel einsetzen.
+
+Die Ableitung von $g(x) = x^{10}$ ist $g'(x) = 10x^9$.
+
+Die Ableitung von $h(x) = x^3 - 2x^2 + 1$ ist $h'(x) = 3x^2 - 4x$.
+
+Nun können wir die Kettenregel anwenden:
+
+\begin{align*}
+f'(x) &= g'(h(x)) \cdot h'(x) \\
+&= 10(x^3 - 2x^2 + 1)^9 \cdot (3x^2 - 4x) \\
+&= 10x(3x^2 - 4x)(x^3 - 2x^2 + 1)^9 \\
+&= 30x^3(x^3 - 2x^2 + 1)^9 - 40x^2(x^3 - 2x^2 + 1)^9 \\
+&= 30x^3(x^3 - 2x^2 + 1)^9 - 40x^5(x^3 - 2x^2 + 1)^8
+\end{align*}
+
+Das ist die Ableitung von $f(x) = (x^3 - 2x^2 + 1)^{10}$.
+
+
+
+
+
+\clearpage
+\section{Unrelated:}
+\subsection{partial stuff}
+\subsubsection{1}
+Problem: Find the partial derivatives of the function $f(x,y,z) = xy^2e^{xz}$ at the point $(1,1,0)$.
+
+Solution: 
+We begin by finding the first-order partial derivatives of $f$ with respect to each variable:
+\begin{align*}
+\frac{\partial f}{\partial x} &= y^2 e^{xz} + xz y^2 e^{xz} \\
+\frac{\partial f}{\partial y} &= 2xy e^{xz} \\
+\frac{\partial f}{\partial z} &= xy^2 x e^{xz} \\
+\end{align*}
+Next, we evaluate each of these partial derivatives at the point $(1,1,0)$:
+\begin{align*}
+\left.\frac{\partial f}{\partial x}\right|_{(1,1,0)} &= 1 \\
+\left.\frac{\partial f}{\partial y}\right|_{(1,1,0)} &= 2e^0 = 2 \\
+\left.\frac{\partial f}{\partial z}\right|_{(1,1,0)} &= 0 \\
+\end{align*}
+Finally, we can write the gradient of $f$ at $(1,1,0)$ as follows, using the nabla operator:
+\[\nabla f(1,1,0) = \left(\left.\frac{\partial f}{\partial x}\right|_{(1,1,0)}, \left.\frac{\partial f}{\partial y}\right|_{(1,1,0)}, \left.\frac{\partial f}{\partial z}\right|_{(1,1,0)}\right) = (1,2,0)\]
+
+\end{document}

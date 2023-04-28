@@ -1,0 +1,180 @@
+\documentclass{book}
+
+% for layout
+\usepackage[a5paper]{geometry}
+
+% for code environments
+\usepackage{listings}
+
+% wraps figures
+\usepackage{wrapfig} 
+
+% to use pictures
+\usepackage{graphicx}
+
+% to have nice tables
+\usepackage{booktabs}
+
+% to make nice boxes
+\usepackage{tcolorbox}
+
+% to use colors (some packages require it)
+\usepackage{xcolor}
+
+% this is not required here, it is there to make e.g. ToC, Bibliography and all
+% other LaTeX things to another language, to have it german use "ngerman" instead 
+% if english
+\usepackage[ngerman]{babel}
+
+%%%% Maths %%%%
+\usepackage{amsmath}% Symbols and environments like align
+
+\setlength{\parindent}{0pt}
+
+% To make plots
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% to remove indents after "enters"
+\setlength{\parindent}{0pt}
+
+
+\title{\LaTeX Tutorial}
+\author{D.R.}
+\date{2023-04-16 $\to$ \today}
+
+
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\frontmatter
+
+\mainmatter
+
+\chapter{Titel des Kapitels}
+test, nach dem mainmatter
+
+
+
+
+\chapter{Ideen was rein muss}
+\begin{enumerate}
+  \item Warum \LaTeX?
+  \item Wie man es nutzt
+    \subitem Windows, Macos, Linux.
+    \subitem Ganzes Programm, Texteditor mit Plugins...
+  \item Grobe Dokumentstruktur
+  \item Document classes
+  \item Buch klasse, mit matters
+  \item Packages (generelle struktur, mathe, physik, chemie, tabellen, bilder,
+    wrapfigs, diagramme, plots, Sprache (z.B. \"a, \"e...)
+    \subitem wie die einzelnen funktionieren
+  \item Programme die in TeX exportieren koennen
+    \subitem Aus Geogebra, Inkscape.. Noch andere finden
+  \item Wie man andere Dokumente einbindet
+\end{enumerate}
+
+\chapter{Code environment}
+\begin{verbatim}
+def hello_world():
+   print("Hello, world!")
+   
+hello_world()
+\end{verbatim}
+
+\hrulefill
+
+\begin{verbatim}
+  \chapter{Ideen was rein muss}
+  \begin{enumerate}
+    \item Warum \LaTeX?
+
+    \item Wie man es nutzt
+      \subitem Windows, Macos, Linux.
+      \subitem Ganzes Programm, Texteditor mit Plugins...
+
+    \item Grobe Dokumentstruktur
+
+    \item Document classes
+
+    \item Packages (generelle struktur, mathe, physik, chemie, 
+          tabellen, bilder, wrapfigs, diagramme, plots, 
+          Sprache (z.B. \"a, \"e...)
+      \subitem wie die einzelnen funktionieren
+
+    \item Programme die in TeX exportieren koennen
+      \subitem Aus Geogebra, Inkscape.. Noch andere finden
+
+    \item Wie man andere Dokumente einbindet
+  \end{enumerate}
+\end{verbatim}
+
+
+\chapter{F\"ulltext}
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+culpa et culpa duis.
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+culpa et culpa duis.
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+culpa et culpa duis.
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+culpa et culpa duis.
+
+Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud
+officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt
+velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+culpa et culpa duis.
+
+
+\backmatter
+
+\chapter{Hier ist das Backmatter}
+
+
+
+\end{document}

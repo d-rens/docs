@@ -1,0 +1,46 @@
+
+\documentclass{book}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\begin{document}
+
+\frontmatter
+\title{My Book Title}
+\author{My Name}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+This is the introduction.
+\lipsum
+
+\mainmatter
+
+\lipsum
+\chapter{Chapter One}
+This is chapter one.
+
+\lipsum
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\textwidth]{/home/daniel/Documents/latex-notes/wallpaper/general/IMG_0325.JPG}
+\caption{My image caption.}
+\label{fig:myimage}
+\end{figure}
+
+\lipsum
+\chapter{Chapter Two}
+This is chapter two.
+
+\lipsum
+\backmatter
+
+\lipsum
+\chapter{Conclusion}
+This is the conclusion.
+
+\lipsum
+\end{document}

@@ -1,0 +1,111 @@
+\documentclass[a4paper, 12p]{report} 
+%\usepackage[export]{adjustbox}
+%\usepackage{biblatex}
+%\usepackage{relsize}
+%\usepackage[a4paper,left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+%\usepackage{wrapfig}
+%\usepackage{graphicx}
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=1.18}
+\input{/Users/daniel/docs/LaTeX/template-related/sir-mars-template/preamble}
+\input{/Users/daniel/docs/LaTeX/template-related/sir-mars-template/letterfonts}
+
+
+
+\begin{document}
+\title{Calculus}
+\author{Daniel Renschler}
+\date{As of \today}
+\maketitle
+
+
+\section{Limits}
+\subsection{general ?}
+Limit as a approaches x.
+The limit always gives the slope, so with the limit above we get the slope [m] as variable a approaches x.
+\[\lim_{a \to x}\]
+\subsection{How to solve}
+A limit is solvable by pluggin in.
+\subsection{limits in form of derivative}
+\[ \lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h} \]
+This is how one can solve a limit, here in case of a derivative:
+Just plug in as said above, and if that's not possible just do polynomial division instead or add the "reverse" the denominator (the bottom thing of a fraction) I'll show it in a sec.
+\subsection{what one can do with limits:}
+\begin{eqnarray*}
+    \lim_{x \to a}\left[f(x)±g(x)\right] &=& \lim_{x \to a}f(x)±\lim_{x \to a}g(x)\\
+    \lim_{x \to a}\left[f(x)*g(x)\right]&=&\lim_{x \to a}f(x)*\lim_{x \to a}g(x) \\
+    \lim_{x \to a}\left[\frac{f(x)}{g(x)}\right] &=& \frac{\lim_{x \to a}f(x)}{\lim_{x \to a}g(x)}, \lim_{x \to a}g(x) \neq 0 \\
+    \lim_{x \to a}\left[f(x)\right]^n &=& \left[\lim_{x \to a}f(x)\right]^n \to  \lim_{x \to a} \sqrt[n]{f(x)} \to \sqrt[n]{\lim_{x \to a}f(x)}    \\
+\end{eqnarray*}
+
+
+
+\section{Derivatives}
+\subsection{in general}
+\[\frac{d}{dx}[x^n] = nx^{n-1}\]
+
+\subsection{product rule}
+\[\frac{d}{dx}\left[f(x)*g(x)\right]=f'(x)*g(x)+f(x)*g'(x)\]
+
+\subsection{quotient rule}
+\[\frac{d}{dx} \left[\frac{f(x)}{g(x)}\right]=
+\frac{g(x)*f'(x)-f(x)*g'(x)}{[g(x)]^2}\]
+
+\subsection{derivatives with roots and how to solve them}
+Ex: $\frac{d}{dx}(\sqrt{3x})$\\
+Rewrite $\sqrt{3x}$ as $(3x)^\frac{1}{2}$ using the fact that
+$\sqrt{y}=y^\frac{1}{2}$. Then rewrite $(3x)^\frac{1}{2}$ as
+$3^\frac{1}{2}x^\frac{1}{2}$ using the rule $(cx)^n = c^n x^n$. Compare
+$3^\frac{1}{2} x^\frac{1}{2}$ with the general form $ax^b$ to see that the
+coefficient is $a = 3^\frac{1}{2}$ and the exponent is $b = \frac{1}{2}$. Plug 
+$a = 3^\frac{1}{2}$ and $b=\frac{1}{2}$ into the formula
+$\frac{d}{dx}(ax^b)=bax^{b-1}$ (the bottom thing of a fraction).
+\[\frac{d}{dx}(\sqrt{3x})=\frac{d}{dx}(3^\frac{1}{2}x^\frac{1}{2})=(\frac{1}{2})(3^{\frac{1}{2}})x^{\frac{1}{2}-1}=\frac{3^{\frac{1}{2}}}{2}x^{-\frac{1}{2}}\]
+
+\subsection{derivatives of trigonometric functions}
+\[\lim_{h \rightarrow 0}\frac{\sin(h)}{h}=1, \lim_{h \rightarrow 0}\frac{1-\cos(h)}{h}=0\]
+Find $f'(x)$ for $f(x)=\sin(x)$,\\
+$f(x+h)=\sin(x+h)$\\
+$f(x)=\sin(x)$
+
+
+\begin{eqnarray*}
+     f'(x) &= \lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h}	\\ 
+    \lim_{h \rightarrow 0}&\frac{\sin(x+h)-\sin(x)}{h}	\\
+    \lim_{h \rightarrow 0}&\frac{\sin(x)\cos(h)+\cos(xj)\sin(h)}{h}	\\
+    \lim_{h \rightarrow0}&\frac{\sin(x)\cos(h)-\sin(x)}{h}\frac{\cos(x)\sin(h)}{h}		\\
+    \lim_{h \rightarrow0}&\frac{\sin(x)(\cos(h)-1)}{h}+\cos(x)\frac{\sin(h)}{h}		\\
+    \lim_{h \rightarrow0}&-\sin(x)*\frac{1-\cos(h)}{h}+\cos(x)*\frac{\sin(h)}{h}=0+\cos(x)*1=\cos(x) \\
+    =&\larger{\frac{d}{dx}\sin(x)=\cos(x)}
+\end{eqnarray*}
+
+\subsubsection{trig derivatives to remember}
+\begin{eqnarray*}
+    \frac{d}{dx}[\sin x]&=&\cos (x)\\
+    \frac{d}{dx}[\cos x]&=&-\sin(x)\\
+    \frac{d}{dx}[\tan x]&=&\sec^2 (x)\\
+    \frac{d}{dx}[\sec x]&=&\sec(x)\tan(x)\\
+    \frac{d}{dx}[-\csc x]&=&\csc(x)\cot(x)\\
+    \frac{d}{dx}[\cot x]&=&\csc^2(x)\\
+\end{eqnarray*}
+\begin{align*}
+    \frac{d}{dx}\left[\sin^{-1}\right]&= \frac{1}{\sqrt{1-x^2}} \text{where} |x|<1\\
+    \frac{d}{dx}\left[\cos^{-1}\right]&= \frac{-1}{\sqrt{1-x^2}} \text{where} |x|<1 \\
+    \frac{d}{dx}\left[\tan^{-1}\right]&=\frac{1}{1+x^2}  \\
+    \frac{d}{dx}\left[\cot^{-1}\right]&= \frac{-1}{1+x^2} \\
+    \frac{d}{dx}\left[\sec^{-1}\right]&=\frac{1}{|x|\sqrt{x_2-1}} \text{where} |x|>1\\
+    \frac{d}{dx}\left[\csc^{-1}\right]&= \frac{-1}{|x|\sqrt{x^2-1}} \text{where} |x|>1 \\
+    \frac{d}{dx}\left[e^{ax}\right]&= ae^{ax} \\
+    \frac{d}{dx}\left[\ln(ax)\right]&= \frac{1}{x} \\
+    \frac{d}{dx}\left[\log_bx\right]&= \frac{1}{x \ln b} \\
+    \frac{d}{dx}\left[b^x\right]&= b^x \ln b \\
+    \frac{d}{dx}\left[\sin h\right]&= \cos h \\
+    \frac{d}{dx}\left[\cos h\right]&= \sin h \\
+    \frac{d}{dx}\left[\tan h\right]&= \sec h^2= \frac{1}{\cos h^{2}}
+\end{align*}
+
+\nt{Things may be missing}
+
+
+
+\end{document}

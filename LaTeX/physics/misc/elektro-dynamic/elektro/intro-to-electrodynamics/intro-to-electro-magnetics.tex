@@ -1,0 +1,677 @@
+\documentclass{article}
+\usepackage[a4paper, left=2cm, right=2cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{amsmath}
+
+\title{Short introduction to electrodynamics}
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\section{Introduction} % (fold)
+\label{sec:Introduction}
+Welcome to the exciting world of Electrodynamics - a branch of physics that
+deals with the interaction between electrically charged particles and
+electromagnetic fields. This comprehensive book delves into the fundamental
+principles and advanced concepts of Electrodynamics, exploring a wide range of
+topics that are essential to understanding the behavior of electrical and
+magnetic fields.
+
+The contents of this book will cover a diverse array of subjects including
+Coulomb's Law, electric potential, Gauss' Law, Faraday's Law of Induction,
+Maxwell's equations, the electromagnetic spectrum, electromagnetic waves in
+matter, and electromagnetic interactions in particle physics. The book will
+also delve into the properties of conductors, insulators, and semiconductors,
+as well as the dielectric constant, permittivity, magnetic susceptibility, and
+permeability.
+
+Whether you are a student, researcher, or a professional in the field of
+physics, this book provides a comprehensive overview of Electrodynamics that is
+both accessible and engaging. By the end of this book, you will have a deeper
+understanding of the fundamental principles of Electrodynamics and how they
+apply to a wide range of physical phenomena. So get ready to explore the world
+of Electrodynamics and expand your knowledge of the fascinating interaction
+between electricity and magnetism.
+
+% section section name (end)
+
+\section{Electric fields} % (fold)
+\label{sec:Electric fields}
+\subsection{Coulomb's law and electric forces} % (fold)
+\label{ssub:Coulomb's law and electric forces}
+Coulomb's law is a fundamental law in electromagnetism that describes the
+interaction between electrically charged particles. It states that the force
+between two point charges is proportional to the product of the charges and
+inversely proportional to the square of the distance between them.
+Mathematically, Coulomb's law can be expressed as:
+
+\[F=\frac{k\cdot q_1\cdot q_2}{r^2}\]
+
+where F is the force between the two charges, q1 and q2 are the magnitudes of
+the charges, r is the distance between the charges, and k is the Coulomb
+constant. The direction of the force is along the line connecting the two
+charges and can be either attractive (if the charges have opposite sign) or
+repulsive (if the charges have the same sign).
+
+Electric forces play a crucial role in many physical and biological phenomena,
+ranging from the behavior of charged particles in electric and magnetic fields
+to the interactions between charged proteins and other molecules in living
+systems. Understanding the behavior of electric forces is therefore essential
+for a wide range of scientific and engineering disciplines, including physics,
+chemistry, biology, and electrical engineering.
+% subsection subsection name (end)
+\subsection{Electric potential and potential energy} % (fold)
+\label{ssub:Electric potential and potential energy}
+Electric potential, also known as voltage, is a measure of the electric
+potential energy per unit charge at a given point in space. It is defined as
+the amount of work required to move a unit charge from a reference point to a
+given point, and is usually denoted by the symbol V. The electric potential
+difference between two points is equal to the work done by the electric field
+on a unit charge as it moves from one point to the other.
+
+Potential energy is a scalar quantity that describes the amount of energy
+stored in a system due to its configuration or arrangement. In the context of
+electromagnetism, electric potential energy is the energy stored in an electric
+field due to the presence of charged particles. The electric potential energy
+of a system of charges is proportional to the magnitude of the charges and the
+electric potential difference between them.
+
+In electric circuits, electric potential energy is often stored in capacitors,
+which are electrical components that store energy in an electric field. When a
+charged capacitor is connected to a circuit, the electric potential energy
+stored in its electric field can be converted into other forms of energy, such
+as kinetic energy or thermal energy. Understanding the relationship between
+electric potential, potential energy, and the behavior of charged particles in
+electric fields is important for a wide range of applications, including the
+design of electrical devices and the analysis of electrical circuits.
+% subsection subsection name (end)
+\subsection{Electric field in various configurations} % (fold)
+\label{ssub:Electric field in various configurations}
+The electric field is a vector field that describes the force experienced by a
+charged particle in a given location. It is defined as the force per unit
+charge, and its direction is that of the force on a positive test charge. The
+electric field produced by a single point charge is proportional to the charge
+and inversely proportional to the square of the distance from the charge. The
+electric field due to a point charge can be represented by radial vectors
+pointing away from the charge for positive charges and towards the charge for
+negative charges.
+
+For electric dipoles, the electric field is proportional to the separation of
+the charges and the strength of the dipole moment. Electric dipoles have a net
+charge of zero, but have a separation of positive and negative charges. The
+electric field due to an electric dipole points from the positive charge to the
+negative charge and its magnitude decreases as the inverse square of the
+distance from the dipole.
+
+For continuous charge distributions, such as a uniformly charged sphere or a
+charged ring, the electric field can be calculated using Gauss's law. Gauss's
+law states that the total electric flux through a closed surface is
+proportional to the charge enclosed by the surface. This allows for the
+calculation of the electric field produced by extended charge distributions,
+such as those found in many electrical and electronic devices.
+
+In all of these configurations, the electric field produced by the charged
+particles has important implications for a wide range of physical and
+biological systems. Understanding the behavior of electric fields is therefore
+essential for many scientific and engineering disciplines, including physics,
+chemistry, biology, and electrical engineering.
+% subsection electric field in various configurations(end)
+\subsection{Gauss's law and its applications} % (fold)
+\label{ssub:Gauss's law and its applications}
+Gauss's law is a fundamental law in electromagnetism that relates the
+distribution of electric charge to the electric field it produces. It states
+that the total electric flux through any closed surface is proportional to the
+total charge enclosed within that surface. Mathematically, Gauss's law can be
+expressed as:
+
+\[\int \vec{E} \cdot d\vec{A} = \frac{Q}{\epsilon_0}\]
+
+where $E$ is the electric field, $d\vec{A}$ is an infinitesimal element of the closed
+surface, $Q$ is the total charge enclosed within the surface, and $\epsilon_0$ is the
+vacuum permittivity.
+
+One of the key applications of Gauss's law is to calculate the electric field
+produced by a continuous charge distribution. By dividing the charge
+distribution into small elements and applying Gauss's law to each element, it
+is possible to determine the electric field produced by the entire
+distribution. This can be especially useful for solving problems involving
+extended charge distributions, such as those found in many electrical and
+electronic devices.
+
+Another important application of Gauss's law is in the design of electrical
+shielding and containment systems. By carefully controlling the distribution of
+electric charge on the surface of a conductive material, it is possible to
+create an electric field that cancels out external electric fields, effectively
+shielding the interior from external electric fields. This can be used, for
+example, to protect delicate electronic components from external
+electromagnetic interference.
+
+Gauss's law also has important implications for our understanding of the
+behavior of electric fields in a variety of physical and biological systems.
+For example, it can be used to calculate the electric field inside a charged
+conductor, or to determine the distribution of charge on the surface of a
+dielectric material in the presence of an external electric field.
+
+In conclusion, Gauss's law is a powerful tool for understanding and analyzing
+the behavior of electric fields in a wide range of physical and biological
+systems, and is an essential part of the study of electromagnetism.
+% subsection subsection name (end)
+% section electric fields(end)
+
+\section{Magnetic fields} % (fold)
+\label{sec:Magnetic fields}
+\subsection{Biot-Savart law and Ampere's law} % (fold)
+\label{ssub:Biot-Savart law and Ampere's law}
+Biot-Savart law and Ampere's law are two important laws in electromagnetism
+that describe the relationship between magnetic fields and electric currents.
+
+Biot-Savart law is a fundamental law that describes the magnetic field produced
+by an electric current. It states that the magnetic field at any point in space
+is proportional to the product of the current and the vector cross product of
+the distance from the point to the current and the direction of the current.
+Mathematically, the Biot-Savart law can be expressed as:
+
+\[d\vec{B} = \frac{\mu_0}{4\pi} \frac{Id\vec{l} \times \vec{r}}{r^3}\]
+
+where $d\vec{B}$ is an infinitesimal element of magnetic field, I is the current,
+$d\vec{l}$ is an infinitesimal element of current, $\vec{r}$ is the vector from the
+current to the point of interest, r is the distance from the current to the
+point of interest, and $μ_0$ is the vacuum permeability.
+
+Ampere's law, on the other hand, relates the magnetic field to the electric
+current that produces it. It states that the line integral of the magnetic
+field around a closed loop is proportional to the current enclosed within the
+loop. Mathematically, Ampere's law can be expressed as:
+
+\[\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{enc}\]
+
+where $\vec{B}$ is the magnetic field, $d\vec{l}$ is an infinitesimal element of
+the closed loop, and $I_{enc}$ is the current enclosed within the loop.
+
+Both Biot-Savart law and Ampere's law are essential tools for understanding the
+behavior of magnetic fields and electric currents, and have important
+applications in a wide range of scientific and engineering disciplines,
+including physics, electrical engineering, and materials science.
+% subsection subsection name (end)
+\subsection{Magnetic field due to current-carrying wires} % (fold)
+\label{ssub:Magnetic field due to current-carrying wires}
+The magnetic field due to a current-carrying wire is a fundamental concept in
+electromagnetism that describes the magnetic field produced by an electric
+current flowing through a wire.
+
+According to the Biot-Savart law, the magnetic field at a point in space due to
+a current-carrying wire is proportional to the current in the wire, the
+distance from the wire to the point, and the tangent to the wire at that point.
+The direction of the magnetic field is perpendicular to both the direction of
+the current and the direction from the wire to the point.
+
+For a long, straight wire, the magnetic field at a point perpendicular to the
+wire is proportional to the current in the wire and inversely proportional to
+the distance from the wire. The magnetic field is directed perpendicular to
+both the wire and the line connecting the point to the wire, and is strongest
+near the wire.
+
+For a current-carrying loop, the magnetic field is proportional to the current
+in the loop and the number of turns in the loop. The magnetic field is
+strongest at the center of the loop and is directed perpendicular to the plane
+of the loop.
+
+The magnetic field due to a current-carrying wire has important applications in
+many areas of science and technology, including electric motors, generators,
+transformers, and magnetic storage devices. Understanding the behavior of the
+magnetic field due to a current-carrying wire is essential for the design and
+operation of these and many other electrical and electronic devices.
+% subsection subsection name (end)
+\subsection{Faraday’s law of induction} % (fold)
+\label{ssub:Faraday’s law of induction}
+Faraday's law of induction is a fundamental law of electromagnetism that
+describes the relationship between magnetic fields and electric currents. The
+law states that a changing magnetic field generates an electric field (also
+known as an electromotive force or "EMF"). This electric field, in turn,
+induces an electric current in a conductor.
+
+Mathematically, Faraday's law can be expressed as:
+
+\[\frac{d\Phi_B}{dt} = -\frac{d \mathcal{E}}{dt}\]
+
+where $\frac{d\Phi_B}{dt}$ is the rate of change of the magnetic flux through a loop (ΦB), and
+$-\frac{d \mathcal{E}}{dt}$ is the induced electromotive force (EMF) in the loop.
+
+Faraday's law is an important principle in the operation of many electrical and
+electronic devices, including generators, transformers, and inductors. It
+provides a fundamental explanation of how energy can be transformed from one
+form to another, and is a cornerstone of our understanding of electromagnetic
+phenomena.
+
+Faraday's law of induction is also closely related to Lenz's law, which states
+that the direction of the induced current is such that it opposes the change in
+magnetic flux that caused it. This relationship between magnetic fields and
+electric currents forms the basis of electromagnetic induction and has numerous
+applications in a wide range of scientific and engineering disciplines.
+% subsection subsection name (end)
+\subsection{Inductance and magnetic energy} % (fold)
+\label{ssub:Inductance and magnetic energy}
+Inductance is a measure of the ability of a coil of wire to store energy in a
+magnetic field. It is defined as the ratio of the magnetic flux through the
+coil to the current flowing in the coil. The unit of inductance is the henry
+(H), which is the amount of inductance that will induce an electromotive force
+(EMF) of one volt in a coil when the current in the coil changes at a rate of
+one ampere per second.
+
+The magnetic energy stored in a coil with inductance L and current I can be
+calculated using the formula:
+
+\[U = \frac{1}{2} LI^2\]
+
+where U is the magnetic energy, L is the inductance, and I is the current.
+
+This equation shows that the magnetic energy stored in a coil is proportional
+to the square of the current and the inductance. This relationship is important
+in the operation of devices such as transformers and inductors, where energy is
+stored in magnetic fields and then transferred from one circuit to another.
+
+Inductance is a key concept in the study of electromagnetism and is closely
+related to Faraday's law of induction and Lenz's law. The ability of a coil to
+store energy in a magnetic field is an important principle in many electrical
+and electronic devices and has numerous applications in a wide range of
+scientific and engineering disciplines.
+% subsection subsection name (end)
+% section section name (end)
+\section{Electromagnetic waves} % (fold)
+\label{sec:Electromagnetic waves}
+\subsection{Maxwell's equations and the wave equation} % (fold)
+\label{ssub:Maxwell's equations and the wave equation}
+Maxwell's equations are a set of four partial differential equations that describe the behavior of the electric and magnetic fields in a given region of space. The equations are:
+
+\begin{enumerate}
+\item Gauss's law:
+\[\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0}\]
+where $\vec{E}$ is the electric field, $\rho$ is the charge density, and $\epsilon_0$ is the vacuum permittivity.
+
+\item Gauss's law for magnetism:
+\[\nabla \cdot \vec{B} = 0\]
+where $\vec{B}$ is the magnetic field.
+
+\item Faraday's law of induction:
+\[\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}\]
+where $\vec{E}$ is the electric field and $\vec{B}$ is the magnetic field.
+
+\item Ampere's law:
+\[\nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 \frac{\partial \vec{E}}{\partial t}\]
+where $\vec{B}$ is the magnetic field, $\vec{J}$ is the current density,
+$\mu_0$ is the vacuum permeability, and $\epsilon_0$ is the vacuum
+permittivity.
+\end{enumerate}
+
+These equations describe how electric and magnetic fields interact with charges
+and currents in a given region of space. They are fundamental to the
+understanding of the behavior of electromagnetic fields and are widely used in
+a range of scientific and engineering disciplines.
+
+In addition to Maxwell's equations, the wave equation is also a key concept in
+electromagnetism. The wave equation describes how an electric field will
+propagate through space over time:
+
+\[\frac{\partial^2 \vec{E}}{\partial t^2} = c^2 \nabla^2 \vec{E}\]
+
+where $\vec{E}$ is the electric field, $t$ is time, $c$ is the speed of light,
+and $\nabla^2$ is the Laplacian operator. The wave equation is used to study
+the behavior of electromagnetic waves, including light, radio waves, and
+microwaves, among others.
+% subsection subsection name (end)
+\subsection{Electromagnetic wave properties} % (fold)
+\label{ssub:Electromagnetic wave properties}
+Electromagnetic waves are transverse waves that consist of oscillating electric
+and magnetic fields. The properties of an electromagnetic wave are related to
+its velocity, frequency, and wavelength. Here are some key concepts:
+
+\begin{enumerate}
+\item Velocity: The velocity of an electromagnetic wave is equal to the speed
+  of light, which is approximately 299,792,458 meters per second in a vacuum.
+  In a medium with a refractive index other than 1, the velocity of the wave
+  will be reduced.
+\item Frequency: The frequency of an electromagnetic wave is the number of
+  cycles of the wave that occur per second. It is measured in Hertz (Hz) and is
+  related to the wavelength and velocity of the wave.
+\item Wavelength: The wavelength of an electromagnetic wave is the distance
+  between two consecutive peaks of the wave. It is related to the velocity and
+  frequency of the wave and is typically measured in meters.
+\end{enumerate}
+
+The relationship between the velocity, frequency, and wavelength of an
+electromagnetic wave can be described by the following equation:
+
+\[v = \lambda f\]
+
+where $v$ is the velocity, $\lambda$ is the wavelength, and $f$ is the frequency of the wave.
+
+The properties of an electromagnetic wave are important for a range of
+applications, including communication, medical imaging, and remote sensing,
+among others. Understanding these properties is essential for the design and
+development of new technologies that utilize electromagnetic waves.
+% subsection subsection name (end)
+\subsection{Polarization and reflection/refraction of electromagnetic waves}
+Polarization and reflection/refraction are two important properties of
+electromagnetic waves.
+
+Polarization refers to the direction of the electric field in an
+electromagnetic wave. The electric field in an electromagnetic wave can be
+polarized in any direction, but it is most often polarized in a single
+direction, either vertically or horizontally. When the electric field is
+polarized in a single direction, it is said to be linearly polarized. When the
+electric field is polarized in multiple directions, it is said to be circularly
+polarized. The polarization of an electromagnetic wave affects how it interacts
+with matter and how it is affected by certain devices, such as polarizing
+filters.
+
+Reflection and refraction are two related phenomena that occur when an
+electromagnetic wave encounters an interface between two different materials,
+such as air and glass. Reflection occurs when an electromagnetic wave is
+reflected back into the same material it came from, while refraction occurs
+when an electromagnetic wave changes direction as it passes from one material
+to another. The amount of reflection and refraction that occurs depends on the
+properties of the two materials and the angle of incidence of the wave.
+
+Both polarization and reflection/refraction play important roles in many areas
+of science and technology, including optics, telecommunications, and remote
+sensing. Understanding these properties is critical for designing and improving
+a wide range of technologies and for making accurate predictions about how
+electromagnetic waves will behave in different situations.
+% subsection subsection name (end)
+% section section name (end)
+
+\section{Electromagnetic radiation} % (fold)
+\label{sec:Electromagnetic radiation}
+\subsection{Electromagnetic spectrum} % (fold)
+\label{ssub:Electromagnetic spectrum}  
+The electromagnetic spectrum refers to the full range of electromagnetic
+radiation, from low-frequency radio waves to high-frequency gamma rays. The
+different types of electromagnetic radiation in the spectrum are characterized
+by their wavelength, frequency, and energy. Here is an overview of some of the
+main types of electromagnetic radiation in the spectrum:
+
+\begin{enumerate}
+\item Radio Waves: Radio waves have the longest wavelength and lowest frequency
+  in the electromagnetic spectrum. They are used for a range of communication
+  technologies, including broadcast radio, television, and wireless
+  communication.
+\item Microwaves: Microwaves have a slightly shorter wavelength and higher
+  frequency than radio waves. They are used for a range of applications,
+  including microwave ovens, GPS, and radar.
+
+\item Infrared: Infrared radiation has a shorter wavelength and higher
+  frequency than microwaves. It is emitted by warm objects and is used for
+  sensing temperature changes and remote control.
+
+\item Visible Light: Visible light is the part of the electromagnetic spectrum
+  that can be seen by the human eye. It has a relatively short wavelength and
+  high frequency and is responsible for our sense of sight.
+
+\item Ultraviolet: Ultraviolet radiation has a shorter wavelength and higher
+  frequency than visible light. It is responsible for sunburn and is used for
+  sterilization and black light effects.
+
+\item X-rays: X-rays have a shorter wavelength and higher frequency than
+  ultraviolet radiation. They are used for medical imaging and for penetrating
+  materials to reveal their internal structure.
+
+\item Gamma Rays: Gamma rays have the shortest wavelength and highest frequency
+  in the electromagnetic spectrum. They are emitted by radioactive materials
+  and are used in cancer treatment.
+\end{enumerate}
+
+The different types of electromagnetic radiation in the spectrum have different
+properties and uses, and understanding the electromagnetic spectrum is
+important for a wide range of scientific and technological applications.
+% subsection subsection name (end)
+\subsection{Properties of electromagnetic radiation} % (fold)
+\label{ssub:Properties of electromagnetic radiation}
+The properties of electromagnetic radiation, such as absorption, emission, and
+scattering, play important roles in a wide range of natural and technological
+processes.
+
+Absorption is the process by which electromagnetic radiation is absorbed by a
+material, reducing the intensity of the radiation. Absorption occurs when the
+energy of the electromagnetic radiation is transferred to the atoms and
+molecules in a material, causing them to become excited and eventually return
+to their ground state, releasing the absorbed energy as heat or other forms of
+radiation. Absorption can be selective, meaning that certain frequencies of
+electromagnetic radiation are absorbed more or less than others, depending on
+the properties of the material. This is the basis for many spectroscopic
+techniques, such as infrared spectroscopy and ultraviolet-visible spectroscopy.
+
+Emission is the process by which electromagnetic radiation is released by a
+material. Emission can occur when excited atoms and molecules return to their
+ground state, releasing energy in the form of electromagnetic radiation. This
+is the basis for many light-emitting technologies, such as light-emitting
+diodes (LEDs) and fluorescent lights.
+
+Scattering is the process by which electromagnetic radiation is redirected or
+dispersed as it passes through a material. Scattering occurs when the
+electromagnetic radiation interacts with the atoms and molecules in a material,
+causing it to change direction. Scattering can cause the radiation to become
+diffuse, reducing the intensity and clarity of the image, or it can cause the
+radiation to be reflected in specific directions, producing a pattern known as
+Rayleigh scattering.
+
+These properties are important for a wide range of scientific and technological
+applications, including remote sensing, medical imaging, and lighting
+technology. Understanding the properties of electromagnetic radiation is
+critical for developing and improving these technologies and for making
+accurate predictions about how electromagnetic radiation will behave in
+different situations.
+% subsection subsection name (end)
+% section section name (end)
+
+\section{Electromagnetic properties of materials} % (fold)
+\label{sec:Electromagnetic properties of materials}
+\subsection{Conductors, insulators, and semiconductors} % (fold)
+\label{ssub:Conductors, insulators, and semiconductors}
+Conductors, insulators, and semiconductors are different types of materials
+that have different electromagnetic properties.
+
+Conductors are materials that allow electric charge to flow freely through
+them. Metals, such as copper and aluminum, are good conductors. This makes them
+useful in many electrical and electronic applications, such as in electrical
+wires, conductors in electrical circuits, and in electrical components.
+
+Insulators are materials that do not allow electric charge to flow through them
+easily. Glass, air, rubber, and some plastics are good insulators. This makes
+them useful in many electrical and electronic applications, such as in
+electrical insulation, protective coatings, and in electrical insulators.
+
+Semiconductors are materials that have electrical conductivity between that of
+conductors and insulators. Silicon and germanium are two examples of
+semiconductors. Semiconductors are useful in many electronic devices, such as
+transistors and diodes, because of their unique electronic properties that
+allow them to be used to control and manipulate the flow of electric charge.
+
+The conductivity, or ability to conduct electric charge, of a material is
+dependent on the type and number of electrons available in its atomic
+structure. By controlling the number of electrons in a material, it is possible
+to change its conductivity and make it into a conductor, insulator, or
+semiconductor. This makes it possible to create many different types of
+electronic devices and to customize their properties for specific applications.
+% subsection subsection name (end)
+\subsection{Dielectric constant and permittivity} % (fold)
+\label{ssub:Dielectric constant and permittivity}
+The dielectric constant and permittivity are related concepts in
+electromagnetism that describe the ability of a material to store electrical
+energy in an electric field.
+
+The dielectric constant, also known as the relative permittivity, is a
+dimensionless constant that describes the ratio of the electrical energy stored
+in a material to the energy stored in a vacuum. The dielectric constant of a
+material is a measure of its electrical polarization, or the ability of its
+electrons to be re-arranged in response to an electric field.
+
+The permittivity, also known as the electric constant, is a measure of the
+ability of a material to store electrical energy in an electric field. It is a
+measure of the electric field strength required to produce a unit charge
+density in a material. The permittivity is related to the dielectric constant
+by the formula:
+
+$$\epsilon = \epsilon_0 \kappa$$
+
+where $\epsilon_0$ is the permittivity of free space, which has a value of
+approximately 8.85 x 10$^{-12}$ farads per meter, and $\kappa$ is the
+dielectric constant of the material.
+
+The dielectric constant and permittivity are important parameters in many
+electrical and electronic applications, including capacitors, electric power
+transmission, and in the design of electrical insulation materials. They are
+also used to describe the behavior of materials in electric fields, including
+the amount of energy that is stored in a material in response to an electric
+field, and the efficiency with which a material can store and release
+electrical energy.
+% subsection subsection name (end)
+\subsection{Magnetic susceptibility and permeability} % (fold)
+\label{ssub:Magnetic susceptibility and permeability}
+The magnetic susceptibility of a material refers to how susceptible it is to
+being magnetized in the presence of a magnetic field. It is a dimensionless
+scalar quantity that is defined as the ratio of the magnetic induction produced
+in a material to the magnetic field strength applied to it. The magnetic
+permeability of a material is a measure of its ability to support the formation
+of a magnetic field within it. It is a scalar value that is usually represented
+as a relative permeability, which is the ratio of the magnetic induction
+produced in a material to the magnetic field strength applied to it.
+
+Together, the magnetic susceptibility and magnetic permeability of a material
+determine how the material will respond to magnetic fields. For example,
+magnetic materials such as iron have high magnetic susceptibility and
+permeability, and they are therefore able to support strong magnetic fields. On
+the other hand, materials with low magnetic susceptibility and permeability,
+such as copper and aluminum, are not very susceptible to being magnetized and
+cannot support strong magnetic fields.
+% subsection subsection name (end)
+% section section name (end)
+
+\section{Electrodynamic phenomena} % (fold)
+\label{sec:Electrodynamic phenomena}
+\subsection{Electric circuits} % (fold)
+\label{ssub:Electric circuits}
+Electric circuits refer to networks of electrical components that are connected
+together to perform a specific task, such as the transmission or transformation
+of electrical energy. In the context of electromagnetism, electric circuits can
+be used to study and understand a variety of electromagnetic phenomena.
+
+Resistors are electrical components that are designed to resist the flow of
+electric current, and they are often used to control the amount of current in a
+circuit. Capacitors are components that store electrical energy in an electric
+field, and they are used in circuits to smooth out fluctuations in current.
+Inductors are components that store energy in a magnetic field, and they play a
+key role in circuits that involve alternating current (AC).
+
+AC circuits are circuits that involve the use of AC current, which is a type of
+current that alternates in direction. AC circuits are used in a variety of
+applications, such as power transmission and the operation of electrical
+motors. On the other hand, DC circuits are circuits that involve the use of
+direct current, which is a type of current that flows in one direction. DC
+circuits are commonly used in batteries and in applications that require a
+constant voltage.
+
+In electric circuits, the interplay between resistors, capacitors, and
+inductors can result in a variety of interesting and useful phenomena, such as
+oscillations, filtering, and the creation of AC waveforms. The study of
+electric circuits and their behavior is an important part of electromagnetism
+and electrical engineering.
+% subsection subsection name (end)
+\subsection{Electromagnetic waves in matter} % (fold)
+\label{ssub:Electromagnetic waves in mattersubsection name}
+In the context of electromagnetics, electromagnetic waves in matter refers to
+the behavior of electromagnetic waves when they propagate through different
+types of media, such as plasmas, waveguides, and resonators.
+
+Plasmas are a type of matter composed of ions and free electrons, and they
+exhibit unique behavior when subjected to electromagnetic fields. For example,
+plasmas can support certain types of electromagnetic waves that cannot exist in
+other types of media.
+
+Waveguides are structures that are designed to confine and guide
+electromagnetic waves, often over long distances. They have a variety of
+applications, such as in microwave communication systems, where they are used
+to transmit signals between antennas.
+
+Resonators are structures that are designed to store electromagnetic energy and
+provide it in a controlled manner. They are used in many different
+applications, such as in microwave and millimeter-wave filters, where they are
+used to pass desired signals and reject unwanted ones.
+
+In each of these examples, the behavior of electromagnetic waves is influenced
+by the properties of the medium in which they are propagating, and this can
+affect the wave's velocity, frequency, wavelength, and other properties.
+% subsection subsection name (end)
+\subsection{Electromagnetic fields in moving media} % (fold)
+\label{ssub:Electromagnetic fields in moving media}
+In the context of electromagnetic properties of materials, Electromagnetic
+fields in moving media refer to the behavior of electromagnetic fields in media
+that are in motion relative to an observer. This involves studying the
+transformation of electromagnetic fields under Lorentz transformations, which
+describe the change in space and time coordinates between two observers in
+relative motion.
+
+The study of electromagnetic fields in moving media is also known as
+relativistic electrodynamics, which is a branch of electrodynamics that takes
+into account the effects of special relativity on electromagnetic fields. In
+this context, the theory of special relativity is applied to the equations of
+electromagnetism, resulting in a more accurate and complete description of the
+behavior of electromagnetic fields in moving media.
+% subsection subsection name (end)
+\subsection{Electromagnetic interactions in particle physics} % (fold)
+\label{ssub:Electromagnetic interactions in particle physics}
+In particle physics, electromagnetic interactions refer to the way charged
+particles interact with electromagnetic fields. This is one of the four
+fundamental forces in the universe, along with the strong force, weak force,
+and gravitational force. Electromagnetic interactions play a crucial role in
+many processes, including the behavior of electrons in atoms and the
+interactions between charged particles in nuclear systems. Some examples of
+electromagnetic interactions in particle physics include:
+
+\begin{enumerate}
+  \item The electromagnetic force between two charged particles, which can be described by Coulomb's law.
+  \item The energy levels and spectral lines of atoms, which are due to the interaction between electrons and the electromagnetic field produced by the nucleus.
+  \item The scattering of charged particles by electromagnetic fields, which is important in many particle physics experiments.
+  \item The production and decay of particles through electromagnetic processes, such as the electromagnetic decay of a meson into a photon and two electrons.
+\end{enumerate}
+
+In general, the study of electromagnetic interactions in particle physics helps
+us to understand the behavior of charged particles on a small scale and to gain
+insight into the fundamental forces of nature.
+% subsection subsection name (end)
+% section section name (end)
+
+\section{Formulary} % (fold)
+\label{sec:Formulary}
+
+\begin{enumerate}
+  \item Coulomb's Law: $$\vec{F} = \frac{1}{4\pi\epsilon_0} \frac{q_1q_2}{r^2} \hat{r}$$
+  \item Electric Field Intensity:$$ \vec{E} = \frac{1}{4\pi\epsilon_0} \frac{Q}{r^2} \hat{r}$$
+  \item Gauss's Law:$$ \frac{1}{\epsilon_0} \oint \vec{E} \cdot d\vec{A} = Q_{\text{enc}}$$
+  \item Electric Potential:$$ V = -\frac{1}{4\pi\epsilon_0} \int \frac{Q}{r} dr$$
+  \item Biot-Savart Law:$$ \vec{B} = \frac{\mu_0}{4\pi} \int \frac{I \vec{dl} \times \vec{r}}{r^2}$$
+  \item Ampere's Law:$$ \oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}}$$
+  \item Faraday's Law of Induction:$$ \frac{d\phi}{dt} = -\frac{d\vec{A}}{dt} = -\frac{\partial \vec{B}}{\partial t}$$
+  \item Inductance:$$ L = \frac{\phi}{I}$$
+  \item Magnetic Energy:$$ W = \frac{1}{2} LI^2$$
+  \item Maxwell's Equations:
+    \begin{align*}
+    \nabla \cdot \vec{E} &= \frac{\rho}{\epsilon_0} \
+    \nabla \cdot \vec{B} &= 0 \
+    \nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t} \
+    \nabla \times \vec{B} &= \mu_0 \left(\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}\right)
+    \end{align*}
+  \item Electromagnetic Wave Equation:$$ \frac{1}{c^2} \frac{\partial^2 \vec{E}}{\partial t^2} = \nabla^2 \vec{E}$$
+  \item Electromagnetic Waves Velocity:$$ v = \frac{\lambda}{T} = c$$
+  \item Electromagnetic Waves Frequency:$$ f = \frac{1}{T}$$
+  \item Electromagnetic Waves Wavelength: $$\lambda = \frac{c}{f}$$
+  \item Dielectric Constant:$$ \epsilon_r = \frac{\epsilon}{\epsilon_0}$$
+  \item Permittivity:$$ \epsilon = \epsilon_0 \epsilon_r$$
+  \item Magnetic Susceptibility:$$ \chi = \frac{\mu}{\mu_0}$$
+  \item Permeability: $$\mu = \mu_0 \chi$$
+  \item Ohm's Law: $$V = IR$$
+  \item Power: $$P = IV = \frac{V^2}{R} = I^2R$$
+\end{enumerate}
+% section section name (end)
+\end{document}

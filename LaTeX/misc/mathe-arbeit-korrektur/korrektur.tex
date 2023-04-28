@@ -1,0 +1,175 @@
+\documentclass{article}
+\usepackage[a4paper,margin=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{multicol}
+
+\setlength{\parindent}{0pt}
+
+
+\author{Aaron, Daniel \& Vincent}
+\title{Mathe Arbeit J1-2 1 Verbesserung}
+
+
+\begin{document}
+\maketitle
+
+\textbf{Besprechung der Klausur (Gruppenarbeit)}
+
+\begin{enumerate}
+  \item Besprechen Sie alle Aufgaben. Klären und korrigieren Sie dabei die
+    Fehler jeder Schülerin bzw. jeden Schülers der Gruppe.
+  \item Einigen Sie sich auf eine Musterlösung der Klausur. Achten Sie dabei
+    auf Vollständigkeit, eine saubere Darstellung und korrekte Anwendung der
+    Fachsprache. Die Musterlösung muss abgeben werden.
+  \item Jeder Schüler soll in den kommenden Wochen an einer seiner
+    Schwierigkeiten arbeiten. Besprechen Sie in der Gruppe, an welcher
+    Schwierigkeit jede Schülerinbzw. jeder Schüler arbeiten wird.
+\end{enumerate}
+
+Reflexion der Klausur (Einzelarbeit)Beantworten Sie ehrlich folgende Fragen.
+
+\begin{itemize}
+  \item Ich bin mit dem Ergebnis der Klausur zufrieden. 
+    \subitem \textit{Nein, Joa, Ja}
+
+  \item Was haben Sie in der in der Klausur leicht lösen können? Was hat Ihnen
+    Schwierigkeiten bereitet?
+    \subitem \textit{Ableitungen waren eine Schwierigkeit, auch extremwerte und punkte}
+
+  \item Wie haben Sie sich zu Hause auf die Klausur vorbereitet?
+    \subitem Die Aufschriebe im Heft noch einmal durchgelesen. \textit{Ja, Joa, Nein}
+    \subitem Grundbegriffe wiederholt. \textit{Nein, nicht so, Ja}
+    \subitem Übungsaufgaben gelöst. \textit{Ja, ne, Nein}
+    \subitem Andersweitig ge\"ubt Wie? \textit{Ja, Ne, Ja}
+
+  \item Wie lange haben Sie für die Klausur gelernt? \textit{10h, 0.5h, 1h}
+
+  \item Haben Sie aktiv im Unterricht mitgearbeitet? (ständig / häufig / wenig / nie) \textit{Nein, Ja, Nein}
+    \subitem Im Unterrichtsgespräch? \textit{N\"o, wenig, ne}
+    \subitem In den Arbeitsphasen? \textit{Joa, Ja schon, ein wenig}
+
+  \item Was hätten Sie im Vorfeld der Klausur anders machen können, um Ihre Note zu verbessern?
+    \subitem \textit{Weis ich nicht, mehr \"ubungsaufgaben, sich \"uberzeugen das es die Zeit wert ist}
+
+  \item An welcher Schwierigkeit werden Sie in den kommenden Wochen arbeiten?
+    \subitem \textit{Alles anders, Hausaufgaben machen, weniger Linux mehr rechnen}
+\end{itemize}
+
+
+\begin{multicols}{2}
+
+\section{}
+\subsection{}
+\begin{align*}
+  f(x)&=2x^3-\sqrt{5}\cdot x^2+9\\
+  f'(x)&=6x^2-\sqrt{5}\cdot 2x-1\\
+\end{align*}
+
+\subsection{}
+\begin{align*}
+  u(t)&=-3\sqrt{t}+\frac{1}{t}\\
+  u'(t)&=-\frac{3}{2}t^{-\frac{1}{2}}-t^{-2}\\
+\end{align*}
+
+\subsection{}
+\begin{align*}
+  g(x)&=4x^2\cdot e^{3x-2}\\
+  g'(x)&=8xe^{3x-2}+12x^2\cdot e^{3x-2}\\
+\end{align*}
+
+\subsection{}
+
+\begin{align*}
+  h(x)&=cos(-x+6)\cdot sin(x)\\
+  h'(x)&=\sin(-x+6)\cdot \sin(x) + \cos(-x +6) \cdot \cos(x)\\
+\end{align*}
+
+\section{}
+\subsection{}
+Wendepunkte: 1(0,5;0,5), 2(-0,5;0,5)
+
+\section{}
+\subsection{}
+Falsch, grafisch kann man pruefen, dass die Ableitung $g'$ bei $x_0=1$ ungefaer
+1 ist, in dem intervall $[3;6]$ die mittlere aenderungsrate aber nur $~
+\frac{1}{2}$, also um die haelfte weniger.
+
+\subsection{}
+Wahr, da es in deiesem Bereich keine positive Steigung gibt.
+\end{multicols}
+
+\section*{Teil 2, Aufgabe 1}
+\begin{align*}
+  f'(x)&=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\\
+       &=\lim_{h\to 0}\frac{(-(x+h)^2+4(x+h)+3)-(-x^2+4x+3)}{h}\\
+       &=\lim_{h\to 0}\frac{-x^2-2xh-h^2+4x+4h+3+x^2-4x-3}{h}\\
+       &=\lim_{h\to 0}\frac{-2xh-h^2+4h}{h}\\
+       &=\lim_{h\to 0}(-2x-h+4)\\
+       &=-2x+4\\
+\end{align*}
+Daher ist die Ableitungsfunktion von $f(x)$ gleich $f'(x)=-2x+4$.
+
+\section*{Aufgabe 2}
+
+Gegeben ist die Funktion $h(x) = 5x^2 \cdot e^{\frac{2}{3} x^3}$ für $-2 \leq x
+\leq 2$. Wir sollen zeigen, dass $h'(x) = 10x \cdot (1+x^3) \cdot
+e^{\frac{2}{3} x^3}$ eine Gleichung der ersten Ableitung von $h$ ist.
+
+Zunächst berechnen wir die Ableitung $h'(x)$ von $h(x)$ nach der Produktregel
+und der Kettenregel:
+
+\begin{align*}
+h'(x) &= \frac{d}{dx}(5x^2) \cdot e^{\frac{2}{3} x^3} + 5x^2 \cdot \frac{d}{dx}(e^{\frac{2}{3} x^3})\\
+      &= 10x \cdot e^{\frac{2}{3} x^3} + 5x^2 \cdot \frac{2}{3} x^2 \cdot e^{\frac{2}{3} x^3}\\
+      &= 10x \cdot e^{\frac{2}{3} x^3} + 10x^3 \cdot e^{\frac{2}{3} x^3}
+\end{align*}
+
+Dann faktorisieren wir den Term $h'(x)$ mit $10x$:
+\begin{align*}
+  h'(x) &= 10x \cdot e^{\frac{2}{3} x^3} + 10x^3 \cdot e^{\frac{2}{3} x^3}\\
+        &= 10x \cdot (1 + x^3) \cdot e^{\frac{2}{3} x^3}
+\end{align*}
+Daher ist $h'(x) = 10x \cdot (1+x^3) \cdot e^{\frac{2}{3} x^3}$ eine Gleichung
+der ersten Ableitung von $h(x)$, wie gefordert.
+
+\subsection*{2.2\&3}
+Da die Funktion $h(x) = 5x^2 \cdot e^{\frac{2}{3} x^3}$ auf dem Intervall $-2
+\leq x \leq 2$ stetig ist, existieren nach dem Satz von Weierstraß globale
+Extremwerte auf diesem Intervall.
+
+Um die globalen Extremwerte zu ermitteln, suchen wir zuerst die kritischen
+Punkte von $h(x)$, d.h. die Punkte, an denen die Ableitung von $h(x)$ gleich
+Null ist oder nicht existiert. Wir berechnen zuerst die erste Ableitung von
+$h(x)$:
+
+$h'(x) = 10x \cdot (1+x^3) \cdot e^{\frac{2}{3} x^3}$
+
+$h'(x)$ ist genau dann gleich Null, wenn $x=0$ oder $x=-1$ oder $x=1$. Um zu
+zeigen, dass $h'(x)$ für alle $x \in [-2,0)$ negativ und für alle $x \in (0,2]$
+positiv ist, nutzen wir die Vorzeichenregel für Ableitungen:
+
+Für $x \in [-2,0)$ gilt: $h'(x) < 0$, da $10x < 0$ und $1+x^3 > 0$ für alle $x
+\in [-2,0)$. Außerdem ist $e^{\frac{2}{3} x^3} > 0$ für alle $x$, daher ist
+$h'(x) < 0$ für alle $x \in [-2,0)$.
+
+Für $x \in (0,2]$ gilt: $h'(x) > 0$, da $10x > 0$ und $1+x^3 > 0$ für alle $x
+\in (0,2]$. Außerdem ist $e^{\frac{2}{3} x^3} > 0$ für alle $x$, daher ist
+$h'(x) > 0$ für alle $x \in (0,2]$.
+
+Somit hat $h(x)$ bei $x=0$ ein lokales Maximum und bei $x=-1$ und $x=1$ jeweils
+ein lokales Minimum auf dem Intervall $[-2,2]$. Da $h(x)$ für $x \rightarrow
+-\infty$ und $x \rightarrow \infty$ gegen $0$ strebt, sind das globale Maximum
+von $h(x)$ bei $x=0$ und das globale Minimum von $h(x)$ bei $x=-1$ und $x=1$.
+
+Daher sind die globalen Extremwerte von $h(x)$ auf dem Intervall $[-2,2]$:
+\begin{itemize}
+  \item globales Maximum: $h(0) = 0$
+  \item globales Minimum: $h(-1) = \frac{5}{e^{\frac{2}{3}}} \approx 0.7648$ und $h(1) = \frac{5}{e^{\frac{2}{3}}} \approx 0.7648$
+\end{itemize}
+
+
+\section*{Aufgabe 3}
+\textit{Aufgabe 3 ist nicht siginifikant und wurde daher ausgelassen.}
+
+
+\end{document}

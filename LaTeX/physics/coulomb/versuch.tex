@@ -1,0 +1,126 @@
+\documentclass[a4paper]{article}
+
+\input{preamble}
+\usepackage[ngerman]{babel}
+\setlength{\parindent}{0pt}
+
+\title{Untersuchung der Kraftwirkung zwischen zwei elektrisch geladenen Kugeln}
+\author{Daniel Renschler}
+
+\begin{document}
+\maketitle
+\section{Versuchsprotokoll}
+
+\subsubsection*{Ziel des Versuchs} % (fold)
+\label{ssub:Ziel des Versuchs}
+Beantworten Der Forschungsfrage:
+
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Forschungsfrage]
+  Gilt für die Konstante~$\epsilon_0$ in der Gleichung 
+  \begin{align}
+  F_{el} = \dfrac{1}{4\pi\epsilon_0} \cdot \dfrac{q_1 \cdot q_2}{r^2} \label{coloumb}
+  \end{align}
+  der Zusammenhang
+  \begin{align}
+  c^2 = \dfrac{1}{\epsilon_0 \cdot \mu_0} \text{?}\label{halt-c}
+  \end{align}
+\end{tcolorbox}
+
+\subsubsection*{Thematischer Kontext und ggf. die zu überprüfenden Behauptungen} % (fold)
+\label{ssub:Thematischer Kontext und ggf. die zu überprüfenden Behauptungen}
+Im Rahmen dieses Versuchs soll die Forschungsfrage überprüft werden, ob der
+Zusammenhang $c^2 = \frac{1}{\epsilon_0 \cdot \mu_0}$ gilt, wobei $\epsilon_0$
+die elektrische Feldkonstante und $\mu_0$ die magnetische Feldkonstante
+darstellen. Dies wird mithilfe der Coulombschen Kraft, die in Gleichung
+(\ref{coloumb}) beschrieben wird, untersucht. Der Versuch zielt darauf ab, die
+Beziehung zwischen den Konstanten $\epsilon_0$ und $\mu_0$ zu untersuchen und
+somit grundlegende Kenntnisse der Elektromagnetismus-Theorie zu vertiefen.
+% subsubsection subsubsection name (end)
+
+
+
+\subsubsection{Ort und Zeit der Durchführung, Namen der Experimentatoren} % (fold)
+\label{ssub:Ort und Zeit der Durchführung, Namen der Experimentatoren}
+Der Versuch wurde in Raum 349 der Rolf Benz Schule in Nagold am Freitag, dem
+10. Februar durchgeführt. Experimentator war Daniel Renschler.
+% subsubsection *subsubsection *name (end)
+
+
+
+\subsubsection*{Beschreibung und ggf. Abbildung des Versuchsaufbau} % (fold)
+\label{ssub:Beschreibung und ggf. Abbildung des Versuchsaufbau}
+Der Versuch wurde in einer Simulation durchgeführt die uns bereitgestellt
+wurde \footnote{https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law-en.html}.
+Bei dem Versuch sind zwei Geladene Teilchen, die einen Abstand voneinander
+haben. In der Simulation kann man den Abstand einstellen ud welche Ladung sie haben sollen.
+Für den Veruch wurde folgendes Verwendet: Ladung 1 = 7 µC, Ladung 2 = 5 µC und einen Abstand von 3cm.
+Daraus Resultierte eine Kraft von 349,516N mit der Sich die Teilchen beeinflussen.
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{simu-1.png}
+  \end{center}
+  \caption{Simulation-coloumb}
+  \label{fig:simulation}
+\end{figure}
+
+
+\subsubsection*{Beschreibung der Versuchsdurchführung} % (fold)
+\label{ssub:Beschreibung der Versuchsdurchführung}
+Die Versuchsdurchführung wurde schon großteils erläutert, Werte wurden in der
+Simulation eingestellt und eine Kraft ist daraus resultiert, mit dieser kann
+man dann weiterrechnen.
+% subsubsection *subsubsection *name (end)
+
+
+\subsubsection*{Antwort auf die Forschungsfrage} % (fold)
+\label{ssub:Messergebnisse und ggf. grafische Veranschaulichung}
+Man kann sich $\epsilon_0$ herleiten durch Werte bekommen in Versuch 1 und
+Umstellung von Gleichung \ref{coloumb}, das
+waren $q_1=7\mu C$, $q_2=\mu C$, $F_{el}=349,516N$\footnote{$F_{el}$ ist aus Simulation} und $r=3cm$.
+
+\begin{align}
+\epsilon_0 &= \frac{1}{4\pi} \cdot \frac{q_1 \cdot q_2}{F_{el} \cdot r^2} \\
+&= \frac{1}{4\pi} \cdot \frac{(7\cdot 10^{-6}\text{ C}) \cdot (5\cdot
+10^{-6}\text{ C})}{(349,516\text{ N}) \cdot (0,03\text{ m})^2} \\
+&= 8,854185356\cdot 10^{-12}\text{F/m} \label{eq:eps-rech-2}
+\end{align}
+
+\ref{eq:eps-rech-2} ist sehr wahrscheinlich automatisch vom Taschenrechner gerundet,
+wenn man es vergleicht mit der definierten Feldstärke $(8,85418782\cdot
+10^{-12}\text{AsV}^{-1}\text{m}^{-1})$, es gibt zwischen meinem
+Ausgerechneten zum Gegebenen eine Varianz von 0,000000278\%\footnote{Nicht
+signifikant, weitergerechnet wurde mit  „eigenem“ $\epsilon_0$.}.
+
+Das Kann man dann einsetzen in Gleichung \ref{halt-c}, mit gegebenen Werten:
+$\epsilon_0 = 8,8,854185356 \cdot 10^{-12}$, $\mu_0=1,2566\cdot 10^{-6}$.
+
+\begin{align}
+  c^2 &= \frac{1}{(8,854185356 \cdot 10^{-12})\cdot (1,2566\cdot 10^{-6})}\\
+  c^2 &= 8,98781936\cdot 10^{16}\\
+  c   &= 299796920,6 \left[\frac{m}{s}\right]
+\end{align}
+Die definierte Lichtgeschwindigkeit im Vakuum ist 299792458
+$\left[\frac{m}{s}\right]$, damit hat das definierte zu meinem c nur einen
+Abstand von 0,000014885\%.
+
+\paragraph{Antwort:}
+Damit kann man sagen die Konstante $\epsilon_0$ hat in der Gleichung
+\ref{coloumb} einen zusammenhang zu Gleichung \ref{halt-c}.
+% subsubsection *subsubsection *name (end)
+
+
+\subsubsection*{Fehlerbetrachtung} % (fold)
+\label{ssub:Fehlerbetrachtung}
+Fehler kann ich nicht gut beurteilen, wenn man davon ausgeht das die Simulation
+keine fehler hat, dann der Rest auch keine Fehler, außer evtl. Rundung vom
+Taschenrechner, der auf neun Nachkommastellen rundet.
+% subsubsection *subsubsection *name (end)
+
+
+\subsubsection*{Interpretation und Schlussfolgerung} % (fold)
+\label{ssub:Interpretation und Schlussfolgerung}
+In diesem Versuch konnte man $\epsilon_0$ und $c$ bestimmen ohne einen signifikanten Fehler.
+% subsubsection *subsubsection *name (end)
+
+\end{document}

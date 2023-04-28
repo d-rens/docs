@@ -1,0 +1,134 @@
+\documentclass[12p]{article} 
+\usepackage[export]{adjustbox}
+\usepackage{amsmath}
+\usepackage{relsize}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+
+
+\begin{document}
+\title{Ein paar Tests}
+\author{Daniel}
+\maketitle
+\pagenumbering{gobble}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Neue Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{tests}
+Inline math $E=mc^2$ is here.
+Not inline math is \[E=mc^2\] is here.
+
+Subscript: \[ a_1\] superscript: \[ a^2\] both: \[ a_1^2 \]
+The scripts above were written in one line all together, but because the math is
+not in \$s it does not work, here is the same thing with them.
+
+Subscript: $a_1$ superscript: $a^2$ both: $a_1^2$
+
+Some symbols: $\int, \cup, \cap, \oint, \coprod$.
+
+Nested sub-\&superscript:
+\[(a^n)^{r+s}=a^{nr+ns}\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Neue Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{more complicated maths}
+\[\lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h}\] 
+
+\[\sum_{i=1}^{\infty} \frac{1}{n^s}
+=\prod_p \frac{1}{1-p^{-s}}
+\]
+
+\[
+\sin(a+b)=\sin(a)\cos(b)+\cos(a)\sin(b)
+\]
+
+\[
+\lim_{h \rightarrow 0} \frac{f(x+h)-f(x)}{h}
+\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Neue Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{now some stuff with amsmath}
+
+\[
+\binom{n}{k}=\frac{n!}{k!(n-k)!}
+\]
+
+Fractions can be used alongside the text, for example $frac{1}{2}$, and in a
+mathematical display style like the one below: \[\frac{1}{2}\]
+
+Fractions can also be nested inside of each other:
+\[
+a_0\cfrac{1}{a_1+\cfrac{1}{a_2+\cfrac{1}{a_3+\cdots}}}
+\]
+
+\LaTeX has some brackets:
+
+(x+y)
+[x+y]
+\{x+y\}
+$\langle x+y \rangle$
+|x+y|
+$\|x+y\|$
+
+
+\[
+F=G \left(\frac{m_1 m_2}{r^2} \right )
+\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Neue Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{matrices, but still no idea what they even do}
+$
+\begin{matrix}
+1 & 2 & 3\\
+a & b & c
+\end{matrix},
+\begin{pmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{pmatrix},
+\begin{bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{bmatrix},
+\begin{Bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{Bmatrix}
+$\\
+The matrices above are from left to right:\\ matrix, pmatrix, bmatrix and Bmatrix.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Neue Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{practice}
+Goal is to do the practice without the internet,\\
+just with the notes above and common sense.\\
+
+1:
+\[Loss=Bias^2+Variance^2+noise\]
+
+2:
+\[Chi
+=\frac{(y-y^2)}{\sqrt{x}}
+=\frac{\delta}{\sqrt{y}}\]
+
+Had to look up how to square-root something, i assumed root, not sqrt.
+\\
+3:
+\[f(x)\leftarrow \frac{\Sigma f(x)}{k}\]
+\[DE(x_i ,x_j)=\sqrt{(x_i -x_j)^2+(y_{xi}-y_{xj})^2}\]
+
+4:
+\[\frac{1}{1+e^{-(wx+b)}}\]
+
+5:
+\[R^2=\frac{n \Sigma xy - \Sigma x.\Sigma y}{\sqrt{(n \Sigma x^2 -(\Sigma x)^2).
+(n \Sigma y^2-(\Sigma y)^2)}}\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Neue Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{other tests}
+\[\sqrt{x}=x^{\frac{1}{2}}\]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
