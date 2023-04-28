@@ -1,6 +1,3 @@
----
-geometry: a4paper, top=2cm, left=1cm, right=1cm, bottom=2.5cm
----
 # Cartoon analysis
 Heading to be removed in the final text.
 
@@ -42,7 +39,6 @@ alike.
 - Alles war zu durcheinander.
 
 # Another cartoon analysis
-![AI-Cartoon](/Users/daniel/docs/markdown/müll/Englisch/ai-cart.png)
 On the cartoon you see a robot and a man standing in front of each other. Both
 are dressed in suits. The man is standing straight with his arms crossed behind
 his back and looking at the robot with a neutral expression. The robot has two
@@ -149,13 +145,11 @@ To use this tool with care, and be aligned.
 
 A sonnet is a 14-line poem with a specific rhyme scheme and structure that
 traditionally explores themes of love, beauty, and mortality.
-\clearpage
 
 
 
 
 # some cartoon analysis
-![cartoon](/Users/daniel/docs/markdown/müll/Englisch/cartoon2.png) 
 
 The cartoon plays in the nature, in the far background on the right a mountain
 range and on the left a forrest. In the foreground there are a man and a woman
@@ -235,8 +229,3 @@ of communication, the less we communicate. Overall, the message is a warning
 about the potential consequences of relying too heavily on technology and the
 importance of maintaining authentic connections with others and the world
 around us.
-
-
-
-# Ethical consumption
-

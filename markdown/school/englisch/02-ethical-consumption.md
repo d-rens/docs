@@ -1,8 +1,3 @@
----
-title: ethical consumption
-geometry: margin=3cm,a4paper
----
-
 # text highlights 
 
 - why do you do it if you are aware?, unsubstainable..

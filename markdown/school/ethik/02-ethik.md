@@ -1,6 +1,3 @@
----
-geometry: a4paper,margin=3cm
----
 # 2023-04-27: K.I.Z., Hobbes, Rousseau
 
 ## K.I.Z.

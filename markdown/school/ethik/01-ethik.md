@@ -1,7 +1,3 @@
----
-geometry: a4paper,margin=3cm
----
-
 # Begriffe für Ethik 23. März
 ### Liberalismus
 Der Liberalismus ist eine politische und moralische Philosophie, die sich für

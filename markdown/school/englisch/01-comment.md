@@ -1,7 +1,3 @@
----
-geometry: margin=3cm,a4paper
----
-
 **Arguments comment:**
 
 - pretty egoistic to not be concious about oppressed people
