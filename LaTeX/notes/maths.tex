@@ -1258,6 +1258,7 @@ Daher sind die globalen Extremwerte von $h(x)$ auf dem Intervall $[-2,2]$:
 \section{Abi Aufgaben}
 \textit{auf papier gemacht}
 
+\begin{multicols*}{2}
 \section{Integralrechnung, Rekonstruktion}
 Die Gesamt\"anderung der gr\"ose kann man auis ihrem momnetaner \"Anderungsrate
 rekonstruieren -- man sagt auch integrieren (integrare $\rightarrow$ wiederherstellen) --, 
@@ -1291,28 +1292,53 @@ For example, let's calculate $A_5$:
 A_5 = \frac{4}{5}\left(f(-2) + f(-1.2) + f(-0.4) + f(0.4) + f(1.2)\right) \approx 8.64
 \]
 
+\begin{center}
 \begin{tikzpicture}
-\begin{axis}[
-    xlabel=$x$,
-    ylabel=$y$,
-    domain=-2:2,
-    samples=100,
-    axis lines=middle,
-    xtick={-2,-1,0,1,2},
-    ytick={0,1,2,3,4},
-    xmin=-2.2,
-    xmax=2.2,
-    ymin=-0.2,
-    ymax=4.2,
-]
-\pgfplotsinvokeforeach{-1.6,-1.2,...,1.6}{
-    \draw[fill=gray!50] (#1,0) rectangle (#1+0.4,{-(#1+0.2)^2+4});
-}
-\addplot[blue, thick] {-x^2+4};
-\end{axis}
+  \begin{axis}[
+      xlabel=$x$,
+      ylabel=$y$,
+      domain=-2:2,
+      samples=100,
+      axis lines=middle,
+      xtick={-2,-1,0,1,2},
+      ytick={0,1,2,3,4},
+      xmin=-2.2,
+      xmax=2.2,
+      ymin=-0.2,
+      ymax=4.2,
+  ]
+  \pgfplotsinvokeforeach{-1.6,-1.2,...,1.6}{
+      \draw[fill=gray!50] (#1,0) rectangle (#1+0.4,{-(#1+0.2)^2+4});
+  }
+  \addplot[blue, thick] {-x^2+4};
+  \end{axis}
 \end{tikzpicture}
+\end{center}
+
+\columnbreak
+
+\section{Indefinite Integrals (Calc Book Part 9)}
+
+% Part A
+\[\int 35 x^6 dx =\quad \frac{35^7}{7}+c = 5^7+c\]
+\[\int \frac{63}{t^8}dt = \int 63\cdot t^{-8} dx = \frac{63t^{-8+1}}{-8+1}+c= \frac{63t^{-7}}{-7}+c = -\frac{9}{t^7}+c\]
+\[\int 15x^{2/3}dx=\quad \frac{15x^{5/3}}{5/3}+c = 9x^{5/3}+c\]
+\[\int 48u^{-5}du= \frac{48u^{-4}}{-4}+c =\quad -12^{-4u}+c\]
+
+% Part B
+\[\int t dt =\quad \frac{t^2}{2}+c\]
+\[\int \frac{dx}{\sqrt{x}}=\quad \int x^{-1/2}dx =\quad \frac{x^{1/2}}{1/2}+c=\quad 2\sqrt{x}+c\]
+\[\int 4 du =\quad 4u+c\]
+\[\int \frac{8dx}{x^{1/3}} =\quad \int 8x^{-1/3}dx =\quad \frac{8x^{-1/3+1}}{-\frac{1}{3}+1}+c = \frac{8x^{2/3}}{2/3}+c = 12x^{2/3}+c \]
+
+% Part C
+\[\int (x^2-3x+4)dx =\quad \frac{x^3}{3}-1,5x^2+4x+c\]
+\[\int \left(\frac{1}{u^2}-\frac{4}{u}\right)dx = \dots = -\frac{1}{u}-4\ln\footnote{Recall that a power of $b=-1$ is a special case : $\int \frac{du}{u}=\int u^{-1}du=\ln u+c$} u+c \]
+\[\int (10x^{3/2}+6x^{1/2})\ dx =\quad \frac{10x^{5/2}}{5/2}+\frac{6x^{3/2}}{3/2}+c = 4x^{5/2}+4x^{3/2}+c\]
+\[\int \left(\sqrt{t}+\frac{1}{\sqrt{t}}\right)\ dt =\quad \frac{t^{3/2}}{3/2}+\frac{t^{-3/2}}{1/2}+c= \frac{2t^{3/2}}{3}+2t^{1/2}+c \]
 
 
+\end{multicols*}
 
 
 \end{document}
