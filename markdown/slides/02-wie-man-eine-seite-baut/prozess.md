@@ -127,6 +127,35 @@ Dann definiert man sie:
 </body>
 ```
 
+# Erweiterte Verlinkung:
+Gegben:
+
+```
+HTML(Beliebiger Ordner)
+|
+|_css (ordner)
+| |_style.css
+|
+|_html (ordner)
+| |_sub-1.html
+|
+|-index.html
+```
+
+## Stylesheet in die sub-html:
+Den Stylesheet kann man nun nichtmehr normal mit '`<link href="css/style.css" rel="stylesheet">`'
+verlinken.
+
+### Zum Vorstellen
+`<link>` ueberhalb greift erst runter in den css Ordner, dann die css.
+
+Aber die sub-1.html kann nach unten keine css greifen, sondern muss erst einen Ordner hoch greifen.
+Das macht man mit `..` zu beginn des `href`:
+'`<link href="../css/style.css" rel="stylesheet">`'
+
+
+
+
 # extra
 ### Wo kann man sie benutzen?
 **Klassen** und **IDs** kann man jedem Tag geben.
