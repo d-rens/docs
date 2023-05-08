@@ -1,51 +1,9 @@
-\documentclass[a4paper]{report}
-
-\input{/home/daniel/documents/docs/LaTeX/template-related/templates/preamble.tex}
-%\input{/Users/daniel/docs/LaTeX/template-related/templates/letterfonts}
-\setlength{\parindent}{0pt}
-
-%\newcommand{\boxedalign}[1]{
-    %\begin{center}
-        %\fbox{\parbox{\linewidth-2\fboxsep-2\fboxrule}{
-            %\begin{align*}
-                %#1
-            %\end{align*}
-        %}}
-    %\end{center}
-%}
-
-
-\newcommand{\regel}[2][0.8\linewidth]{
-    \begin{center}
-        \begin{tcolorbox}[title=Regel, colback=white, colframe=gray, width=#1]
-            \begin{align*}
-                #2
-            \end{align*}
-        \end{tcolorbox}
-    \end{center}
-}
-
-
-
-%\newcommand{\boxedalign}[2][0.8\linewidth]{
-    %\begin{center}
-        %\fbox{\parbox{#1}{\begin{align*}#2\end{align*}}}
-    %\end{center}
-%}
-
-
-\usepackage[ngerman]{babel}
-\usepackage{tcolorbox}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-\usepackage{tikz}
-\usepackage{pstricks}
-\usepackage{pst-node}
-\usepackage{pst-plot}
+\documentclass{report}
+\input{../template-related/templates/math-amble.tex}
 
 \title{\Huge{Mathe:}\\Analysis}
 \author{\huge{Daniel Renschler}}
-%\date{Mitte Dezember\\ $\downarrow$ bis $\downarrow$ \\ \today}
+\date{Mitte Dezember\\ $\downarrow$ bis $\downarrow$ \\ \today}
 
 
 
@@ -73,8 +31,6 @@ Beispiel: $f(x)=x^{3}; x_{0}=-2$
 			& = -2^{2}-2\cdot -2+4\\
 			& = 4
 \end{align*}
-
-\nt{Nebenrechnung:\\\polylongdiv[style=C]{x^{3}+8}{x+2}}
 
 \subsection{Hausaufgaben}
 \subsubsection{Aufgabe 1, berechnen sie $f'(x_0)$}
@@ -260,7 +216,7 @@ f'(x_0) &= \lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0} \\
         &=3x_0^2\\
 \end{align*}
 
-\nt{Nebennebenrechnung (soll eine Polynomdivision darstellen):\\
+\nt{Nebennebenrechnung (soll eine Polynomdivision darstellen):}
 \begin{align*}
   (x^3-x_0^3):(x-x_0)&=x^2+x_0\cdot x\cdot x_0^2\\
   -f(x^3-x_0\cdot x^2) \\
@@ -272,7 +228,7 @@ f'(x_0) &= \lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0} \\
   -(x_0^2\cdot x-x_0^3)\\
   ---\\
   0
-\end{align*} }
+\end{align*}
 
 \begin{table}[h]
   \label{tab:tablee-abl}
@@ -1257,38 +1213,9 @@ Dann faktorisieren wir den Term $h'(x)$ mit $10x$:
 Daher ist $h'(x) = 10x \cdot (1+x^3) \cdot e^{\frac{2}{3} x^3}$ eine Gleichung
 der ersten Ableitung von $h(x)$, wie gefordert.
 
-\subsection*{2.2\&3}
-Da die Funktion $h(x) = 5x^2 \cdot e^{\frac{2}{3} x^3}$ auf dem Intervall $-2
-\leq x \leq 2$ stetig ist, existieren nach dem Satz von Weierstraß globale
-Extremwerte auf diesem Intervall.
-
-Um die globalen Extremwerte zu ermitteln, suchen wir zuerst die kritischen
-Punkte von $h(x)$, d.h. die Punkte, an denen die Ableitung von $h(x)$ gleich
-Null ist oder nicht existiert. Wir berechnen zuerst die erste Ableitung von
-$h(x)$:
-
-$h'(x) = 10x \cdot (1+x^3) \cdot e^{\frac{2}{3} x^3}$
-
-$h'(x)$ ist genau dann gleich Null, wenn $x=0$ oder $x=-1$ oder $x=1$. Um zu
-zeigen, dass $h'(x)$ für alle $x \in [-2,0)$ negativ und für alle $x \in (0,2]$
-positiv ist, nutzen wir die Vorzeichenregel für Ableitungen:
-
-Somit hat $h(x)$ bei $x=0$ ein lokales Maximum und bei $x=-1$ und $x=1$ jeweils
-ein lokales Minimum auf dem Intervall $[-2,2]$. Da $h(x)$ für $x \rightarrow
--\infty$ und $x \rightarrow \infty$ gegen $0$ strebt, sind das globale Maximum
-von $h(x)$ bei $x=0$ und das globale Minimum von $h(x)$ bei $x=-1$ und $x=1$.
-
-Daher sind die globalen Extremwerte von $h(x)$ auf dem Intervall $[-2,2]$:
-\begin{itemize}
-  \item globales Maximum: $h(0) = 0$
-  \item globales Minimum: $h(-1) = \frac{5}{e^{\frac{2}{3}}} \approx 0.7648$ und $h(1) = \frac{5}{e^{\frac{2}{3}}} \approx 0.7648$
-\end{itemize}
 
 
-\section{Abi Aufgaben}
-\textit{auf papier gemacht}
-
-\begin{multicols*}{2}
+\begin{multicols}{2}
 \section{Integralrechnung, Rekonstruktion}
 Die Gesamt\"anderung der gr\"ose kann man auis ihrem momnetaner \"Anderungsrate
 rekonstruieren -- man sagt auch integrieren (integrare $\rightarrow$ wiederherstellen) --, 
@@ -1345,7 +1272,8 @@ A_5 = \frac{4}{5}\left(f(-2) + f(-1.2) + f(-0.4) + f(0.4) + f(1.2)\right) \appro
 \end{tikzpicture}
 \end{center}
 
-\columnbreak
+\end{multicols}
+
 
 \section{Indefinite Integrals (Calc Book Part 9)}
 
@@ -1367,23 +1295,50 @@ A_5 = \frac{4}{5}\left(f(-2) + f(-1.2) + f(-0.4) + f(0.4) + f(1.2)\right) \appro
 \[\int (10x^{3/2}+6x^{1/2})\ dx =\quad \frac{10x^{5/2}}{5/2}+\frac{6x^{3/2}}{3/2}+c = 4x^{5/2}+4x^{3/2}+c\]
 \[\int \left(\sqrt{t}+\frac{1}{\sqrt{t}}\right)\ dt =\quad \frac{t^{3/2}}{3/2}+\frac{t^{-3/2}}{1/2}+c= \frac{2t^{3/2}}{3}+2t^{1/2}+c \]
 
-\regel{
-  x&=2\\
-  \frac{x}{2}&=1\\
+\clearpage
+
+\section{Und hier eine ``ganze'' Integralerklaerung}
+\begin{multicols*}{2}
+  \subsection{Erst die einfachen Regeln}
+  \[\int ax^b\ dx= \frac{ax^{b+1}}{b+1}+c, (\text{wenn b $\ne$ -1})\]
+  \[\int x^{-1}\ dx = \int \frac{dx}{x} = \ln x + c\]
+  \[\int \sin \theta\ d\theta = -\cos \theta + c\]
+  \[\int \cos \theta\ d\theta = \sin \theta + c\]
+  \[\int e^{ax}\ dx= \frac{e^{ax}}{a}+c\]
+  \[\int b^x\ dx = \frac{b^x}{\ln b} + c\]
+
+\ex{ \[\int 12x^3\ dx \]
+      Hier f\"angt man an es mit der ersten regel zu integrieren:
+      \[ = \frac{12x^{3+1}}{3+1} = \frac{12x^{4}}{4} \]
+      Das k\"urzt man dann auf $3x^4 (+c)$. }
+
+\ex{
+  \[ \int\left(\frac{1}{u^2}-\frac{4}{u}\right)\ du \]
+  \[ =-\frac{1}{u} -4 \to -\ln u-4+c\]
 }
+
+\ex{
+  \[ \int\left(\sqrt{t}+\frac{1}{\sqrt{t}\ dt}\right) \]
+  \[ = \frac{t^{3/2}}{3/2}+\frac{\sqrt{t}}{2}+c \]
+}
+
+Definierte Integrale: diese sind auf der x-Achse definiert, um ihre Fl\"ache zu finden
+
+
+
+
+
+
+
 
 \end{multicols*}
 
 
 
 
-\regel{
-\lim_{a \to -\infty} \int_a^{\frac{\pi}{6}} x^2,dx &= \lim_{a \to -\infty} \int_{a^3}^{\left(\frac{\pi}{6}\right)^3} \frac{1}{3} u^{2/3},du \\
-&= \lim_{a \to -\infty} \left[\frac{1}{3} \cdot \frac{u^{5/3}}{5/3}\right]{a^3}^{\left(\frac{\pi}{6}\right)^3} \\
-&= \lim_{a \to -\infty} \left[\frac{1}{5} u^{5/3}\right]{a^3}^{\left(\frac{\pi}{6}\right)^3} \\
-&= \lim_{a \to -\infty} \left(\frac{1}{5} \cdot \left(\frac{\pi^5}{6^5} - a^{5/3}\right)\right) \\
-&= \infty
-}
+
+
+
 
 
 
