@@ -1,15 +1,5 @@
-%9# preamble {{{
-\documentclass[a4paper]{report}
-\input{/home/daniel/documents/docs/LaTeX/template-related/templates/preamble}
-%\input{/Users/daniel/docs/LaTeX/template-related/templates/letterfonts}
-\usepackage[ngerman]{babel}
-\setlength{\parindent}{0pt}
-
-\usepackage{tikz}
-\usepackage{pstricks}
-\usepackage{pst-node}
-\usepackage{pst-plot}
-\usepackage{textcomp}
+\documentclass{report}
+\input{../template-related/templates/math-amble.tex}
 
 
 \title{\Huge{Physik,}J1}
@@ -22,7 +12,6 @@
 \clearpage
 \tableofcontents
 \clearpage
-% }}}
 
 % Spulen {{{
 \section{P-lab, Spulen \date{17. Januar}}
@@ -56,7 +45,7 @@ Werte von $n, e$ und $I$. (nächste abbildung) Die Funktionsweise der Hall-Sonde
 können wir erst später verstehen.\\
 
 \noindent{\textbf{Messung A:} $n=30; l=0,35m$}
-\begin{table}[h]
+\begin{table}[htpb]
 \begin{tabular}{|l|l|l|l}
 \hline
 I in A & B in mT & $\frac{B}{I}$ in $\frac{mT}{A}$ \\ \hline
@@ -69,7 +58,7 @@ $\implies \frac{B}{I}$= Konstant
 = $B~I$ (B proportional)
 
 \noindent{\textbf{Messung B:} $n=30; I=6A$}
-\begin{table}[h!]
+\begin{table}[htpb]
 \begin{tabular}{|l|l|l|l|l}
 \hline
 l in m &B in mT &In Feldstärke H    \\ \hline
@@ -82,7 +71,7 @@ l in m &B in mT &In Feldstärke H    \\ \hline
 
 \noindent{Feldstärke $H = I \frac{n}{l}$}
 
-\begin{table}[h!]
+\begin{table}[htpb]
 \begin{tabular}{|l|l|l|l|l}
 \hline
 l in m &B in mT &Faktor zum nächsten \\ \hline
@@ -428,7 +417,7 @@ magnetischen Quellen.
 \section{Untersuchung der Kraftwirkung zwischen zwei elektrisch geladenen Kugeln, \date{10.2.2023}}
 \subsection{Versuch 1}
 %Table von Herr Schlienger
-\begin{table}[h!]
+\begin{table}[htpb]
 	\setlength{\tabcolsep}{15pt}
 	\renewcommand{\arraystretch}{2.2}
 	\centering
@@ -453,7 +442,7 @@ wie in der Aufgabe gegeben, diese eingestellt auf $1-7\mu C (q_1)$ und $5\mu C
 mit einem "Maßstab" von 2?.
 \subsection{Versuch 2}
 
-\begin{table}[h!]
+\begin{table}[htpb]
 	\setlength{\tabcolsep}{15pt}
 	\renewcommand{\arraystretch}{2.2}
 	\centering
@@ -481,7 +470,7 @@ mit einem "Maßstab" von 2?.
 
 
 \subsection{Versuch 3}
-\begin{table}[h!]
+\begin{table}[htpb]
 	\setlength{\tabcolsep}{15pt}
 	\renewcommand{\arraystretch}{2.2}
 	\centering
@@ -821,7 +810,8 @@ Elektrotechnik zu beschreiben.
 \subsubsection{Ziel des Versuchs} % (fold)
 \label{ssub:Ziel des Versuchs}
 Beantworten Der Forschungsfrage:
-\qs{Forschungsfrage}{
+\tbox{Forschungsfrage}{
+
 Gilt für die Konstante~$\epsilon_0$ in der Gleichung 
 \begin{align}
 F_{el} = \dfrac{1}{4\pi\epsilon_0} \cdot \dfrac{q_1 \cdot q_2}{r^2} \label{coloumb}
@@ -1273,6 +1263,42 @@ Diagramms mit folgenden Messwerten:
 \end{table}
 
 
+\section{Winkel und Kreisbewegungen?}
+\subsection{Vertiefung}
+skalare sind
+\begin{enumerate}
+  \item die umlaufdauer $T$ und 
+  \item Die drehfrequenz
+\end{enumerate}
+
+Vektorielle groesen sind
+\begin{enumerate}
+  \item Der Radiusvektor $\vec{r}$ von der Drehachse zum Koerper.\\
+    \textit{Man denke sich hier ein Kreis, welcher punkte au\ss~en hat, ivon
+    dem Mittelpunkt aus zeigt der Vektor auf die Punkte, am Kreis verteilt. Der
+    Radiusvektor zeeigt zu drei verschiedenen zieten auf die verschiedenen
+    Punkte, der Kreis bewegt sich im Uhrzeigersinn und ist nicht Konstant, Betrag
+    (Laenge des Vektors) ist Konstant aber die Richtung ist entscheident.}
+  \item die Bahngeschwindigkeit $\vec{v}$ des Koerpers $K$ ist am voherigen
+    Kreis, Tangential des Kreises entlang, in Richtung der Bewegung.
+    Die Bahngeschwindigkeit ist ueberall am Kreis gleich lang, da der Kreis
+    nicht anders schnell sein kann am gleichen Kreis, die Tangenten haben auch
+    immer rechte Winkel zum Kreis-inneren.
+    (Richtung aendert sich staendig, betrag bleibt meist gleich)
+
+    wegen $|\vec{v}|=v=2\pi\cdot r\cdot f= \text{konstant}$  handelt es sich um
+    eine gleichfoermige kreisbewegung.
+  \item \textit{Hier aus dem iPad einfuegen}, \textbf{Die Winkelgeschwindigkeit $\vec{\omega}$} 
+
+
+\end{enumerate}
+
+\section{box tests}
+\tbox{test}
+\regel{test}
+\nt{test}
+\ex{test}
+\q{test}
 
 
 \end{document}
