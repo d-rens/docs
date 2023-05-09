@@ -20,14 +20,21 @@
 
 \newcommand{\tbox}[2][0.8\linewidth]{
     \begin{center}
-        \begin{tcolorbox}[title=Regel, colback=white, colframe=gray, width=#1]
+        \begin{tcolorbox}[colback=white, colframe=gray, width=#1]
+                #2
+        \end{tcolorbox}
+    \end{center}}
+
+\newcommand{\regel}[2][0.8\linewidth]{
+    \begin{center}
+        \begin{tcolorbox}[title=regel, colback=white, colframe=blue, width=#1]
                 #2
         \end{tcolorbox}
     \end{center}}
 
 \newcommand{\nt}[2][0.9\linewidth]{
     \begin{center}
-        \begin{tcolorbox}[title=note:, colback=white, colframe=gray, width=#1]
+        \begin{tcolorbox}[title=Notitz:, colback=white, colframe=gray, width=#1]
                 #2
         \end{tcolorbox}
     \end{center}}
@@ -35,7 +42,15 @@
 
 \newcommand{\ex}[2][\linewidth]{
     \begin{center}
-        \begin{tcolorbox}[title=beispiel:, colback=white, colframe=brown, width=#1]
+        \begin{tcolorbox}[title=Beispiel:, colback=white, colframe=brown, width=#1]
+                  #2
+        \end{tcolorbox}
+    \end{center}}
+
+
+\newcommand{\q}[2][\linewidth]{
+    \begin{center}
+        \begin{tcolorbox}[title=Frage:, colback=white, colframe=purple, width=#1]
                   #2
         \end{tcolorbox}
     \end{center}}
