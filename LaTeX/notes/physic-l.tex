@@ -1296,8 +1296,118 @@ konstant) aus, so wirkt auf ihn in jedem Bahnpunkt eine zum Kreismittelpunkt
 gerichtete \textbf{Zentripeltalkraft $\vec{F_Z}$}, diese zwingt den Koerper auf
 die Kreisbahn. 
 
+\clearpage
+
+\subsection{Deduktion einer Formel fuer den Betrag von $\vec{F_Z}$}
+Wegen $F_Z = m \cdot a_Z$ leiten wir zunachst eine gleichung fuer $a_Z$ her.
+
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{./physic-figures/kreisbewegung.jpg}
+  \end{center}
+  \caption{Abbildung aus dem Buch}
+\end{figure}
 
 
+Ziel ist es eine gleichung zu finden, die $a_Z$ enthealt. 
+
+Von $1$ bis $2$ gleichmaesig Bewegung tangential zur Kreisbahn.
+
+Von $2$ bis $3$ gleichmaesig beschleunigte Bewegung in Richtung Kreismittelpunkt.
+
+Da das ($\Delta M$ \textcircled{1}\textcircled{2}) rechtwinklig ist, folgt aus dem Satz des Pythagoras.
+
+\begin{multicols}{2}
+\begin{align*}
+  r^2 + (v\cdot \Delta t)^2 &= (r+\frac{1}{2}a_2\Delta t^2)^2\\
+  \Leftrightarrow r^2+v^2 \cdot \Delta t^2 &=r^2+2\cdot r \cdot \frac{1}{2} \cdot a_2 \Delta t^2+\frac{1}{a}a_2 \cdot \Delta t^4\\
+  \Leftrightarrow v\cdot \Delta t^2&= r\cdot a_2 \cdot \Delta t^2 + \frac{1}{4} a_Z^2 \cdot \Delta t^4\\
+  \Leftrightarrow v^2 &=r\cdot a_Z + \frac{1}{4}a_Z^2 \cdot \Delta t^2\\
+  \text{mit $\Delta t \to 0$ folgt}&\\
+  v^2&=r\cdot a_Z\\
+  \Leftrightarrow a_Z &=\frac{v^2}{r}\\
+  \implies F_Z &=m\cdot a_Z = m\cdot \frac{v^2}{r}\\
+\end{align*}
+
+\begin{align*}
+  a(t)&=a=\text{konstant}\\
+  a(t)&=v'(t)\\
+  v(t)&=a\cdot t+v_0\\
+  v(t)&=s'(t)\\
+  s'(t)&=\frac{1}{2}a\cdot t^2+v_0\cdot t + s_0
+\end{align*}
+
+\begin{align*}
+  \vec{F_Z}&=m\cdot \vec{a_Z}\\
+  F_Z&=m\cdot a_Z\\
+  f''(x)&=2 | a\\
+  f'(x)&=2x | a\cdot x \\
+  f(x)&=x^2\\
+\end{align*}
+\end{multicols}
+
+\clearpage
+
+\paragraph{Strategie:}
+\begin{itemize}
+  \item Damit ein Koerper eine Kreisbewegung ausfuert, ist eine zum
+    Kreismittelpunkt gerichtete Zentripetalkraft, $\vec{F_Z}$ erforderlich. 
+  \item Diese ist die \textbf{Resultierende} aller Koerper angreifenden Kraefte.
+  \item Man ueberlegt sich also immer zuerst welche aeuseren Kraefte am Koerper angreifen.
+\end{itemize}
+
+
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[width=0.3\textwidth]{./physic-figures/steil.png}
+  \end{center}
+  \caption{Steile Wand}
+\end{figure}
+\paragraph{Beispiel:}
+Pitt’s Todeswand hat einen Durchmesser von 12,0 m. Die
+Reibungszahl zwischen dem Holzboden und den Rädern des Motorrads
+unterschreitet den Wert 0, 30 nicht.
+Berechnen Sie, mit welcher Geschwindigkeit die Steilwandfahrerin min-
+destens fahren muss, damit sie in der senkrechten Wand ihre Runden
+drehen kann.
+
+\paragraph{Aufgabe:}
+Die in der Abbildung skizzierte Steil-
+wandarena hat die Form einer Halbkugel mit
+dem Mittelpunkt O und dem Radius R “ 10 m
+mit aufgesetztem Zylinder. Der Steilwandfahrer
+und das Motorrad haben zusammen die Masse
+$m = 200 kg$.
+
+Der Steilwandfahrer bewegt sich im unteren Teil
+der Arena mit seinem Motorrad auf einer horizon-
+talen Kreisbahn. Motorrad und Fahrer befinden
+sich dabei in jedem Augenblick senkrecht zur Wand.
+Der Schwerpunkt von Motorrad und Fahrer hat
+von O näherungsweise die Entfernung 10 m. Die
+Winkelweite α beträgt 60˝.
+
+\textbf{a)} Fertigen Sie eine maßstäbliche Skizze mit den
+im Schwerpunkt angreifenden Kräften an.
+Erläutern Sie anhand Ihrer Skizze, wie in die-
+sem Fall die erforderliche Zentripetalkraft zu-
+stande kommt.
+
+\textbf{b)} Berechnen Sie den Betrag der Zentripetalkraft,
+die für eine stabile Kreisbewegung des Steil-
+wandfahrers notwendig ist.
+
+\textbf{c)} Berechnen Sie schließlich die Bahngeschwin-
+digkeit des Steilwandfahrers.
+
+
+
+
+
+
+
+
+\clearpage
 \section{box tests}
 \tbox{test}
 \regel{test}
