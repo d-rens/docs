@@ -1,18 +1,19 @@
 \documentclass{article}
 
 \usepackage[a4paper,margin=3cm]{geometry}
-%\usepackage[ngerman]{babel}
+\usepackage[ngerman]{babel}
+\usepackage{color}
+\usepackage{import}
+\usepackage{graphicx}
 \usepackage{amsmath, amssymb}
+\graphicspath{./math-figures/test/}
 
-\title{Here is some title}
-\date{\today}
-\author{Daniel}
 
-\setlength{\parskip}{0pt}
 
 \begin{document}
-\maketitle
+\def\svgwidth{0.4\textwidth}
 
-    Here is then the text.
+\import{./math-figures/test/}{test.eps_tex}
+
 
 \end{document}
