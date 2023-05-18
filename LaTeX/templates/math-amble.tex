@@ -16,6 +16,15 @@
 \usepackage{pstricks}
 \usepackage{pst-plot}
 \usepackage{textcomp}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{0.9\textwidth}
+    \import{./math-figures/test/{#2.eps_tex}}
+
+\pdfsuppresswarningpagegroup=1
 
 \setlength{\parindent}{0pt}
 

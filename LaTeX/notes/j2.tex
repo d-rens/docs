@@ -1,19 +1,16 @@
 \documentclass{article}
 
-\usepackage[a4paper,margin=3cm]{geometry}
-\usepackage[ngerman]{babel}
-\usepackage{color}
-\usepackage{import}
-\usepackage{graphicx}
-\usepackage{amsmath, amssymb}
-\graphicspath{./math-figures/test/}
-
-
+\input{../templates/math-amble.tex}
 
 \begin{document}
-\def\svgwidth{0.4\textwidth}
 
-\import{./math-figures/test/}{test.eps_tex}
+
+\begin{figure}[htpb]
+    \centering
+        \incfig{graph}
+    \caption{test}
+    \label{fig:test}
+\end{figure}
 
 
 \end{document}
