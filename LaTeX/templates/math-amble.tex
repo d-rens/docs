@@ -1,6 +1,7 @@
 \usepackage[a4paper,margin=3.5cm]{geometry}
-\usepackage{amsmath,amsfonts,amssymb}
 \usepackage{cancel}
+\usepackage{tikz}
+\usepackage{amsmath,amsfonts,amssymb}
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{polynom}
@@ -18,13 +19,12 @@
 \usepackage{textcomp}
 \usepackage{import}
 \usepackage{pdfpages}
-\usepackage{transparent}
+%\usepackage{transparent}
 
 \newcommand{\incfig}[2][1]{%
     \def\svgwidth{0.9\textwidth}
-    \import{./math-figures/test/{#2.eps_tex}}
-
-\pdfsuppresswarningpagegroup=1
+\import{./math-figures/test/}{#2.eps_tex}
+}
 
 \setlength{\parindent}{0pt}
 
