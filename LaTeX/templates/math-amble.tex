@@ -21,9 +21,10 @@
 \usepackage{pdfpages}
 %\usepackage{transparent}
 
+
 \newcommand{\incfig}[2][1]{%
-    \def\svgwidth{0.7\textwidth}
-\import{./figures/}{#2.eps_tex}
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
 }
 
 \setlength{\parindent}{0pt}
