@@ -172,7 +172,7 @@ Find the area bound by $x=y^2$ and $y=x-2$.
 
 \begin{figure}[ht]
     \centering
-    \incfig[0.4]{area-between-curves-7}
+    \incfig[0.5]{area-between-curves-7}
     \caption{figures/area-between-curves-7}
     \label{fig:area-between-curves-7}
 \end{figure}
@@ -187,6 +187,58 @@ Find the area bound by $x=y^2$ and $y=x-2$.
     y-2=0 \quad & \quad y+1=0 \\
     y=2 \quad & \quad y=-1 \\
 \end{align*}
+
+Now we have to decide with what respect to integrate, we can use both, but need
+to be sure on which on to use.
+
+So we take $x=y^2$, make out of it $\pm \sqrt{x} = \sqrt{y^2} $, out of this we then get $\pm \sqrt{x}=y$.
+
+\nt{I got really confused at this point in the lecture, please notice that
+$y=\pm \sqrt{x}$ and  $x=y^2$ are basically the same thing, can recommend to
+check it out on desmos.}
+
+%In terms of 'x' there would be three integrals to take, so we do it in terms of 'y'.
+
+%First we need to get the coordinates for the intercepts, just on the different axis.
+%$\leadsto x=4$, $\leadsto x=1$.
+
+Now we simplify the graph, to make it easier to understand.
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.6]{area-between-curves-8}
+    \caption{figures/area-between-curves-8}
+    \label{fig:area-between-curves-8}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.5]{area-between-curves-9}
+    \caption{figures/area-between-curves-9}
+    \label{fig:area-between-curves-9}
+\end{figure}
+
+\begin{align*}
+    A&= \int_{0}^{1} \sqrt{x}-(-\sqrt{x}) \ \text{dx} + \int_{1}^{4} \sqrt{x}-(x-2)\ \text{dx}   \\
+     &= \int_{0}^{1} 2\sqrt{x} \ \text{dx} + \int_{1}^{4} \sqrt{x} - x + 2 \ \text{dx}    \\
+     &= 2 \int_{0}^{1} x^{\frac{1}{2}}\ \text{dx}+ \int_{1}^{4} x^{\frac{1}{2}}-x+2 \ \text{dx}   \\
+     &= \left[2\frac{x^{\frac{3}{2}}}{\frac{3}{2}}\right]_0^1+ \left[\frac{x^{\frac{3}{2}}}{\frac{3}{2}}-\frac{x^2}{2}+2x\right]_1^4 \\
+     &= \left[\frac{4x^{\frac{3}{2}}}{\frac{3}{2}}\right]_0^1 + \left[ \frac{2x^{\frac{3}{1}}}{3}-\frac{x^2}{2}+2x \right]_1^4 \\
+     &     \downarrow  \quad\text{evaluating}\quad \downarrow \\
+     &= \left( \frac{4\cdot 1\cdot \frac{3}{1}}{3}-0 \right)+ \left[\left(
+     \frac{2(4)^{\frac{3}{1}}}{3}- \frac{4^2}{2}+2\cdot 4  \right)-\left( \frac{2}{3}-\frac{1}{2}+2 \right)  \right]   \\
+     &= \frac{4}{3}+\left[ \left(\frac{16}{3}-8+8\right) -\frac{13}{6}\right]  \\
+     &= \frac{4}{3} + \frac{16}{3}-\frac{13}{6}= \frac{27}{6} \\
+     &=\frac{9}{2}\\
+\end{align*}
+
+\nt{am too tired, video stopped at 1:27:12, in the following it is also made in
+respect to y, now it was x, which you can see, at a headturn, 90 degrees to the
+right, consists of some less ints.}
+
+
+
 
 
 

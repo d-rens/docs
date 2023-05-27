@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'area-between-curves-7.pdf' (pdf, eps, ps)
+%% Accompanies image file 'area-between-curves-8.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,14 +53,13 @@
   \begin{picture}(1,0.5)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{area-between-curves-7.pdf}}%
-    \put(0.07540995,0.44219265){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
-    \put(0.78282344,0.23860989){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.64818509,0.07674713){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x=y^2$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{area-between-curves-7.pdf}}%
-    \put(0.45339578,0.4510685){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y=x-2$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{area-between-curves-7.pdf}}%
-    \put(0.1522368,0.34836419){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sqrt{x}$\end{tabular}}}}%
-    \put(0.24056873,0.05405006){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\sqrt{x}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{area-between-curves-8.pdf}}%
+    \put(0.35536791,0.3527324){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sqrt{x}$\end{tabular}}}}%
+    \put(0.17905342,0.211221){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.55395025,0.30253607){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x-2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{area-between-curves-8.pdf}}%
+    \put(0.33523604,0.24999479){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\\\end{tabular}}}}%
+    \put(0.2179797,0.12587891){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\sqrt{x}$\end{tabular}}}}%
+    \put(0.71238143,0.2550436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\\\end{tabular}}}}%
   \end{picture}%
 \endgroup%

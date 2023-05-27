@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2294027"
-     inkscape:cx="228.56627"
-     inkscape:cy="216.36522"
+     inkscape:zoom="2.2552118"
+     inkscape:cx="331.01103"
+     inkscape:cy="356.50753"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -128,5 +128,35 @@
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
          x="108.81499"
          y="188.74356">$y=x-2$</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 60.005102,275.29447 c 3.045127,-3.49302 3.448296,-4.81318 3.448296,0.46532"
+       id="path310" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.430441,219.57237 c 3.157185,2.22487 -5.730521,-3.90825 2.270686,1.6867 6.606645,4.61978 1.696286,-0.73253 2.040167,-4.91205"
+       id="path312" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;font-family:nerd;-inkscape-font-specification:nerd;fill:#000000;stroke-width:0.499999"
+       x="36.536831"
+       y="213.39259"
+       id="text368"><tspan
+         sodipodi:role="line"
+         id="tspan366"
+         style="stroke-width:0.5"
+         x="36.536831"
+         y="213.39259">$\sqrt{x}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;font-family:nerd;-inkscape-font-specification:nerd;fill:#000000;stroke-width:0.499999"
+       x="57.736496"
+       y="284.02798"
+       id="text372"><tspan
+         sodipodi:role="line"
+         id="tspan370"
+         style="stroke-width:0.5"
+         x="57.736496"
+         y="284.02798">$-\sqrt{x}$</tspan></text>
   </g>
 </svg>
