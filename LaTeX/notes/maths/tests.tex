@@ -3,12 +3,14 @@
 \input{../../templates/math-amble.tex}
 
 
+\title{some tests}
+\author{}
+\date{}
 
 \begin{document}
 
-%\maketitle
+\maketitle
 \tableofcontents
-\clearpage
 
 %\paragraph{notice}
 %this is a test of my config with a calculus lecture, in which i try to use it
@@ -40,11 +42,10 @@ Area between $f(x)\quad \& \quad g(x)$.
     \[ \left( f(x) \text{ is above } g(x)\right) .\] 
 }
 
-\clearpage
 
 \begin{figure}[htbp]
     \centering
-    \incfig{are-between-curves-w}
+    \incfig[0.5]{are-between-curves-w}
     \caption{are-between-curves-2}
     \label{fig:are-between-curves-2}
 \end{figure}
@@ -73,6 +74,97 @@ A&= 10 \\
     \caption{area-between-curves-3}
     \label{fig:area-between-curves-3}
 \end{figure}    
+
+\nt{
+\textbf{Steps:}
+\begin{enumerate}
+    \item Find x-cords of the Intersection of the curves. ( Set $f(x)=g(x)$ ) 
+    \item Which function is on the top? \\
+        (Pick one point for each interval)
+    \item set-up and solve
+\end{enumerate}
+}   
+
+\begin{align*}
+    x+6&= x^2 \\
+    x^2-x-6&= 0 \\
+    \left( x-3 \right)&  \left( x+2 \right) \\ 
+    x-3 = 0 \quad &\quad  x+2 = 0\\
+    x=3 \quad&\quad x=-2
+\end{align*}
+
+Those are the only places $f(x)$ and  $g(x)$ are intercepting, so those are the bounds of integration.
+\[
+A=\int_{-2}^{3}  
+.\] 
+
+
+\begin{figure}[htbp]
+    \centering
+    \incfig[0.4]{area-between-curves-4}
+    \caption{figures/area-between-curves-4}
+    \label{fig:area-between-curves-4}
+\end{figure}
+
+\begin{align*}
+    A&= \int_{-2}^{3} \left( x+6 \right) -(x^2) \text{dx} \implies \int_{-2}^{3} x+6-x^2 \text{dx}   \\
+    &= \left[ \frac{x^2}{2}+6x -\frac{x^3}{3}\right]_{-2}^3 = \left[
+    \frac{3^2}{2}+6\cdot 3-\frac{3^3}{3} \right] - \left[
+\frac{(-2)^2}{2}+6(-2)-\frac{-2^3}{3} \right]  \\
+&= \left[  \frac{9}{2}+18-9  \right]-\left[ 2-12+\frac{8}{3} \right]=\left[ \frac{9}{2}+9 \right] -\left[ -10+\frac{8}{3} \right]  \\
+&= \frac{27}{2}-\frac{-22}{3}\to \frac{27}{2}+\frac{22}{3}= \frac{125}{6} \\
+\end{align*}
+
+
+\ex{
+Find area bound by $y=x^3$ and  $y=x$.
+}
+
+\begin{align*}
+    x^3&= x \\
+    x^3-x&= 0 \\
+    x(x^2-1)&= 0 \\
+    x(x+1)(x-1)&=0 \\
+    x=0 ,\quad & x=1, \quad  x=-1
+\end{align*}
+
+\regel{Here we test again which function is where above the other, to know, in which
+direction to integrate. (always the one on the top minus the one on the bottom,
+as shown at the start of this chapter.) }
+
+\begin{figure}[htbp]
+    \centering
+    \incfig[0.4]{area-between-curves-5}
+    \caption{figures/area-between-curves-5}
+    \label{fig:area-between-curves-5}
+\end{figure}
+
+Here we add those integrals together, because we want both ares together.
+
+\begin{align*}
+    A&= \int_{-1}^{0} x^3-x \ \text{dx} + \int_{0}^{1} x-x^3 \ \text{dx}   \\
+    &= \left[  \frac{x^4}{4}-\frac{x^2}{2} \right]^0_{-1} + \left[ \frac{x^2}{2}-\frac{x^4}{4} \right]^1_0  \\
+    &= \left[ \left( \frac{0}{4}- \frac{0}{2} \right) - \left( \frac{(-1)^4}{4}- \frac{(-1)^2}{2} \right)  \right]+ 
+    \left[ \left( \frac{1^2}{2}- \frac{1^4}{4} \right)- \left( \frac{0}{2}- \frac{0}{4} \right)   \right]  \\
+    &= \left[ 0-\left( \frac{1}{4} - \frac{1}{2} \right)  \right] + \left[ \left( \frac{1}{2}-\frac{1}{4} \right) -0 \right]  \\
+    &= \frac{1}{4}+\frac{1}{4}= \frac{1}{2} \\
+\end{align*}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.5]{area-between-curves-6}
+    \caption{figures/area-between-curves-6}
+    \label{fig:area-between-curves-6}
+\end{figure}
+
+In this case, the area represents the distance car 'me' is ahead of car 'you'.
+
+This can then be solved by:
+
+\[
+A=\int_{0}^{b} V_1(t) - V_2(t) \ \text{dt}
+.\] 
 
 
 
