@@ -1,0 +1,81 @@
+\documentclass{book}
+
+\input{../../templates/math-amble.tex}
+
+
+
+\begin{document}
+
+%\maketitle
+\tableofcontents
+\clearpage
+
+%\paragraph{notice}
+%this is a test of my config with a calculus lecture, in which i try to use it
+%in realtime to test for speed, and missing features.
+
+\chapter{Calc 5.1 -- Area between two curves}
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.7]{area-between-curves-1}
+    \caption{area-between-curves-1}
+    \label{fig:area-between-curves-1}
+\end{figure}
+
+Area between $f(x)\quad \& \quad g(x)$.
+
+\[ A= \text{Area under $f(x)$ - Area under $g(x)$} .\] 
+
+\[ A= \int^b_a f(x) dx - \int^b_a g(x) dx .\] 
+
+\[
+    A=\int^b_a \left[f(x)-g(x)\right] dx
+.\] 
+
+\nt{
+    \[ f(x) \geq g(x)\] 
+    \[ \forall x \in [a,b] .\] 
+    \[ \left( f(x) \text{ is above } g(x)\right) .\] 
+}
+
+\clearpage
+
+\begin{figure}[htbp]
+    \centering
+    \incfig{are-between-curves-w}
+    \caption{are-between-curves-2}
+    \label{fig:are-between-curves-2}
+\end{figure}
+
+\[ \int_{a}^{c} \left[ f(x)-0 \right] dx + \int_{c}^{b}  \left[ 0-f(x) \right] dx \] 
+\[ \int_{a}^{c}  f(x) dx - \int_{c}^{b} f(x) dx \] 
+
+
+\ex{Find the area bounded above by $y=2x+5$, and bounded below by $y=x^3$ on $\left[ 0,2 \right]$ }
+
+
+
+\begin{align*}
+A &=\int_{0}^{2}  (2x+5) - x^3 \text{dx}\\
+&= \int_{0}^{2}2x+5=x^3 dx   \\
+&= x^2+5x - \frac{x^4}{4}]^2_0  \\
+A &= \left[ 2^2+5\cdot 2 \frac{2^4}{4} \right] - \left[ 0 \right]   \\
+A&= 10 \\
+\end{align*}
+
+\ex{Find area between $y=x^2$ and  $y=x+6$.}
+
+\begin{figure}[htbp]
+    \centering
+    \incfig[0.5]{area-between-curves-3}
+    \caption{area-between-curves-3}
+    \label{fig:area-between-curves-3}
+\end{figure}    
+
+
+
+
+
+\end{document}
