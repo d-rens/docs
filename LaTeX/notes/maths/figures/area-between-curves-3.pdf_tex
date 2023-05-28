@@ -54,10 +54,9 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{area-between-curves-3.pdf}}%
-    \put(0.50648556,0.39068928){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$6$\end{tabular}}}}%
+    \put(0.51947985,0.36712386){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$6$\end{tabular}}}}%
+    \put(0.56137638,0.45805689){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y=x+6$\end{tabular}}}}%
+    \put(0.66170406,0.13547923){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y=x^2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{area-between-curves-3.pdf}}%
-    \put(0.25885978,0.39032001){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y=x+6$\end{tabular}}}}%
-    \put(0.63984521,0.13116239){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y=x^2$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{area-between-curves-3.pdf}}%
   \end{picture}%
 \endgroup%

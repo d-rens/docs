@@ -17,7 +17,59 @@
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
-     id="defs2" />
+     id="defs2">
+    <marker
+       id="marker-arrow-1.5923999999999998"
+       orient="auto-start-reverse"
+       refY="0"
+       refX="0"
+       markerHeight="1.6900001"
+       markerWidth="0.91100001">
+      <g
+         transform="scale(1.0733986)"
+         id="g316">
+        <path
+           d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+           style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           id="path314" />
+      </g>
+    </marker>
+    <marker
+       id="marker-arrow-1.5923999999999998-3"
+       orient="auto-start-reverse"
+       refY="0"
+       refX="0"
+       markerHeight="1.690"
+       markerWidth="0.911">
+      <g
+         transform="scale(1.0733986435568954)"
+         id="g347">
+        <path
+           d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+           style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           id="path345" />
+      </g>
+    </marker>
+    <marker
+       id="marker-arrow-1.5923999999999998-6"
+       orient="auto-start-reverse"
+       refY="0"
+       refX="0"
+       markerHeight="1.690"
+       markerWidth="0.911">
+      <g
+         transform="scale(1.0733986435568954)"
+         id="g378">
+        <path
+           d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+           style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           id="path376" />
+      </g>
+    </marker>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,9 +77,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.99437388"
-     inkscape:cx="290.13232"
-     inkscape:cy="195.60047"
+     inkscape:zoom="0.91562631"
+     inkscape:cx="440.68196"
+     inkscape:cy="225.52869"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,10 +87,10 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="776"
-     inkscape:window-height="1543"
-     inkscape:window-x="797"
-     inkscape:window-y="42"
+     inkscape:window-width="1262"
+     inkscape:window-height="767"
+     inkscape:window-x="1283"
+     inkscape:window-y="818"
      inkscape:window-maximized="1"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
@@ -69,11 +121,11 @@
      id="layer1"
      transform="translate(0,-177)">
     <path
-       style="fill:none;stroke-width:1;stroke:#000000;stroke-opacity:1"
+       style="fill:none;stroke-width:0.4213225;stroke:black;stroke-opacity:1;fill-opacity:1;marker-end:url(#marker-arrow-1.5923999999999998);marker-start:url(#marker-arrow-1.5923999999999998);stroke-dasharray:none"
        d="m 16.562299,191.01389 v 98.46787"
        id="path185" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       style="fill:none;stroke:black;stroke-width:0.4213225;stroke-opacity:1;fill-opacity:1;marker-end:url(#marker-arrow-1.5923999999999998);marker-start:url(#marker-arrow-1.5923999999999998);stroke-dasharray:none"
        d="M 3.5221052,278.18941 H 212.28952"
        id="path741" />
     <text
@@ -99,7 +151,7 @@
          x="214.10051"
          y="286.41333">$t$</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:black;stroke-width:0.4213225;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;marker-end:url(#marker-arrow-1.5923999999999998);marker-start:url(#marker-arrow-1.5923999999999998);stroke-dasharray:none"
        d="m 191.96819,182.83358 c -36.74804,46.29714 -75.21539,23.7711 -120.118282,32.3152 -33.436774,6.36233 -49.25205,38.91032 -55.466642,63.59544 25.987267,-3.20992 51.034644,-11.27429 76.826539,-16.00721 35.981585,-6.60276 70.139485,-7.476 97.775915,-33.32136"
        id="path1074" />
     <text
@@ -135,7 +187,7 @@
          y="244.81898"
          id="tspan1119">$V_2(y)$</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       style="fill:none;stroke:black;stroke-width:0.4213225;stroke-opacity:1;fill-opacity:1;marker-end:none;marker-start:none;stroke-dasharray:none"
        d="m 174.89406,278.46875 v -91.3018"
        id="path1121" />
     <text

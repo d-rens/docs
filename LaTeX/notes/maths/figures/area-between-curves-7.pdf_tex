@@ -56,7 +56,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{area-between-curves-7.pdf}}%
     \put(0.07540995,0.44219265){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
     \put(0.78282344,0.23860989){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.64818509,0.07674713){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x=y^2$\end{tabular}}}}%
+    \put(0.65070515,0.08697472){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x=y^2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{area-between-curves-7.pdf}}%
     \put(0.45339578,0.4510685){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y=x-2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{area-between-curves-7.pdf}}%

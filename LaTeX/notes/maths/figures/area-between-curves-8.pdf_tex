@@ -59,7 +59,8 @@
     \put(0.55395025,0.30253607){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x-2$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{area-between-curves-8.pdf}}%
     \put(0.33523604,0.24999479){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\\\end{tabular}}}}%
-    \put(0.2179797,0.12587891){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\sqrt{x}$\end{tabular}}}}%
+    \put(0.33618854,0.09710096){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-\sqrt{x}$\end{tabular}}}}%
     \put(0.71238143,0.2550436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\\\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{area-between-curves-8.pdf}}%
   \end{picture}%
 \endgroup%
