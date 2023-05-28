@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{book}
 \input{../../templates/math-amble.tex}
 
 \title{\Huge{Mathe:}\\Analysis}
@@ -12,9 +12,6 @@
 
 \tableofcontents
 \clearpage
-
-% x und h methode{{{
-
 
 \section{``x-'' und ``h-'' Methode}
 \subsection{Unterricht}
@@ -58,9 +55,7 @@ $s'(t)=at \implies$ 3a und 6a\\
 \begin{equation*}
 v(t_0)=s'(t_0)=\lim_{t \to t_0}\frac{s(t)-s(t_0)}{t-t_0}.
 \end{equation*}
-% }}}
 
-% pascalsches Dreieck und binomischer lehrsaty{{{
 \clearpage
 \section{Pascalsches Dreieck und Binomischer Lehrsatz, 16.1.2023}
 \subsection{Unterricht}
@@ -72,7 +67,7 @@ Beispiel: $f(x)=x^4; x_0 =3$
 
 \begin{figure}[h]
 \centering
-\textbf{Pascalsches Dreieck:}\\
+\paragraph{Pascalsches Dreieck:}
 \begin{tabular}{>{$n=}l<{$\hspace{12pt}}*{13}{c}}
 0 &&&&&&&1&&&&&&\\
 1 &&&&&&1&&1&&&&&\\
@@ -98,9 +93,8 @@ Beispiel: $f(x)=x^4; x_0 =3$
 (x+y)^8 & = x^8 + 8x^7y + 28x^6y^2 + 56x^5y^3 + 70x^4y^4 + 56x^3y^5 + 28x^2y^6 + 8xy^7 + y^8.
 \end{align*}
 \clearpage
-% }}}
 
-% h methode{{{
+
 \section{``h-Methode''}
 \subsection{Unterricht}
 Bis jetzt nur ``h-Methode'' gemacht. Deswegen hier private Aufgaben, dass es nicht leer ist.
@@ -112,9 +106,9 @@ Bis jetzt nur ``h-Methode'' gemacht. Deswegen hier private Aufgaben, dass es nic
 \\a) Man kann hier zwar $\lim_{h \to 0^+ } $und $ \lim_{h \to 0^-}$, wo es von links -1 ergibt und rechts 1. Hier gibt es zwar links und rechts eine Tangente der Steigung, aber da die nicht gleich sind gibt es kein limit generell.
 \[ \text{Wenn} \lim_{h \to 0^+ } \ne \lim_{h \to 0^-} \implies \lim_{h \to 0} \textbf{D.N.E.}\]
 b) $x=3$
-% }}}
 
-% Arbeit verbesserung {{{
+
+
 \clearpage
 \section{Arbeit Verbesserung}
 \subsection*{Taschenrechnerfrei}
@@ -133,11 +127,8 @@ Ist wahr, da:
 Ist Wahr, da im Nenner immer in x mehr ist als im Zähler, dies verhindert das $y=1$ wird.
 
 \noindent\textbf{Aufgabe 3}
-%\begin{figure}[htpb]
-    %\centering
-    %\includegraphics[width=0.4\textwidth]{math-figures/ka-1-3a.png}
-    %\caption{Ungenau aber richtig}
-%\end{figure}
+
+
 \subsection*{Taschenrechner Teil}
 \textbf{Aufgabe 1.1}
 Hier stelle man sich den Plot $f(x)=(x-2)^3+1$ vor weil pgfplots keine lust hat.
@@ -158,9 +149,9 @@ A: Weiterer Extrempunkt für g ist (-2,-1) und für f ist es (-2,1).
 \noindent\textbf{Aufgabe 2.2}
 \[x(-x)=f(-x)\cdot (g(-x))^3=f(x)\cdot (-g(x))^3=-f(x)(g(x))^3=-h(x)\]
 $\implies$ h ist symmetrisch bzgl. des Koordinatenursprungs
-\clearpage% }}}
+\clearpage
 
-% h methode{{{
+
 \section{``h-Methode''}
 \subsection{Unterricht}
 \textbf{Buch Seite 72, Aufgabe 10}
@@ -172,9 +163,9 @@ Gegeben ist die Funktion $f$ mit $f(x)=2^x$. Zeigen Sie, dass für jede reelle Z
           &= \lim_{h \to 0}\frac{2^{x_0}\cdot (2^h-1)}{h} \\
           &= 2^{x_0}\cdot \lim_{h \to 0}\frac{2^h-1}{h}=f(x_0)\cdot \lim_{h \to 0}\frac{2^h-1}{h} \\
 \end{align*}
-% }}}
 
-% die Ableitungsfunktion{{{
+
+
 \section{Unterricht 06.02.2023}
 \subsection{Die Ableitungsfunktion}
 \textbf{Beispiel:}$f(x)=x^2$\\
@@ -247,28 +238,6 @@ f'(x_0) &= \lim_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0} \\
   \caption{Herleitung zur Kettenregel}
 \end{table}
 
-%\begin{figure}[htpb]
-  %\centering
-    %\includegraphics[width=.25\textwidth]{/math-figures/grafische-abl-1.jpeg}
-  %\caption{Grafisches Ableiten}
-  %\label{fig:graf-abl-1}
-%\end{figure}
-
-
-%\subsection{Hausaufgaben}
-%\begin{minipage}{\textwidth}
-  %\begin{center}
-    %\includegraphics[width=.4\textwidth]{/math-figures/grafische-abl-2.jpeg}
-    %\includegraphics[width=.4\textwidth]{/math-figures/grafische-abl-2-5.jpeg}
-  %\end{center} 
-%\end{minipage}
-
-%\begin{minipage}{\textwidth}
-  %\begin{center}
-    %\includegraphics[width=.4\textwidth]{/math-figures/grafische-abl3.jpeg}
-    %\includegraphics[width=.5\textwidth]{/math-figures/grafische-abl4.jpeg}
-  %\end{center} 
-%\end{minipage}
 
 Ausrichtung von oben links im Uhrzeigersinn: 1a, 1c, 2, 1b.
 Begründung aufgabe 2
@@ -276,9 +245,8 @@ $K_f\implies B$ weil bei $K_f$'s äußeren Steigungen sehr steil sind wie bei
 einer Parabel in $B$.\\
 $K_g\implies C$ weil es übereinstimmt.\\
 $K_h\implies A$ weil es übereinstimmt.\\
-% }}}
 
-% produktregel und aufgaben{{{
+
 \section{Produktregel, 10.02.2023}
 \begin{multicols}{2}
 \subsection{Unterricht}
@@ -297,7 +265,7 @@ $K_h\implies A$ weil es übereinstimmt.\\
   \frac{df}{dx}\left[f(x)\cdot g(x)\right] = f'(x)\cdot g(x)+f(x)\cdot g'(x)
 \end{equation}
 
-\paragraph{ein paar test aufgaben} % (fold)
+\paragraph{ein paar test aufgaben} 
 \label{par:ein paar test aufgaben}
 \begin{align*}
   \frac{d}{dx} (x^2 \cdot  x^3) &= \frac{d}{dx}\left[x^2\right]\cdot x^3+x^2\cdot \frac{d}{dx}\left[x^3\right]\\
@@ -322,7 +290,7 @@ $K_h\implies A$ weil es übereinstimmt.\\
 \frac{d}{dx} (x^2 \cdot  ln(x)) &=2x \cdot \ln(x) + x^2 \cdot \frac{1}{x}\\
 &=2x \ln(x) + x\\
 \end{align*}
-\paragraph{bisschen schwerere} % (fold)
+\paragraph{bisschen schwerere} 
 \label{par:bisschen schwerere}
 
 \begin{align*}
@@ -349,7 +317,7 @@ $K_h\implies A$ weil es übereinstimmt.\\
 \end{align*}
 \end{multicols}
 \begin{multicols}{2}[Schulbuch Aufgaben, Seite 79, Nr. 1-4]
-\paragraph{Aufgabe 1} % (fold)
+\paragraph{Aufgabe 1} 
 \label{par:Aufgabe 1}
 \begin{align*}
 \frac{d}{dx}\left[3x^2\right]&=6x\\
@@ -361,7 +329,7 @@ $K_h\implies A$ weil es übereinstimmt.\\
 \frac{d}{dx}\left[4\sqrt{x}\right]&=\frac{2}{\sqrt{x}}\\
 \end{align*}
 
-\paragraph{Aufgabe 2} % (fold)
+\paragraph{Aufgabe 2} 
 \label{par:Aufgabe 2}
 \begin{align*}
 \frac{d}{dx}\left[2x^3+5x^2\right]&=6x^2+10x\\
@@ -371,17 +339,17 @@ $K_h\implies A$ weil es übereinstimmt.\\
 \frac{d}{dx}\left[2x^3(x^2+x-1)\right]&=6x^2 \cdot 3x + (x^2+x-1) \cdot 2x^3\\
 \frac{d}{du}\left[u(u+3)^2\right]&=?\text{zu verkettet}?\\
 \end{align*}
-% paragraph paragraph name (end)
 
-\paragraph{Aufgabe 3 (f'(x)-f'''(x))} % (fold)
+
+\paragraph{Aufgabe 3 (f'(x)-f'''(x))} 
 \label{par:Aufgabe 3}
 \begin{align*}
 f(x)&=-\frac{3}{2}x^2+\frac{5}{4}x+2\\
 f'(x)&=-2x+...\\
 \end{align*}
-% paragraph paragraph name (end)
 
-\paragraph{Aufgabe 4} % (fold)
+
+\paragraph{Aufgabe 4} 
 \label{par:aufgabe-vier}
 \text{Steigung rausfinden an Punkt A(2|f(2))}\\
 \begin{align*}
@@ -440,120 +408,7 @@ q &= \frac{2b^3 - 9abc + 27a^2d}{27a^3} = \frac{2 \cdot 7^3 - 9 \cdot 1 \cdot 7 
 \beta &= \sqrt[3]{\frac{-q + \sqrt{q^2 + \frac{4p^3}{27}}}{2}}
 \end{align*}
 
-% Winterferien {{{
-\clearpage
-\section{Winterferien}
-\subsubsection{csc, sec and cot} % (fold)
-\label{ssub:csc-sec-and-cot}
-The cosecant, secant, and cotangent functions are defined as follows:
 
-$$\csc(\theta) = \frac{1}{\sin(\theta)}$$
-
-$$\sec(\theta) = \frac{1}{\cos(\theta)}$$
-
-$$\cot(\theta) = \frac{1}{\tan(\theta)} = \frac{\cos(\theta)}{\sin(\theta)}$$
-
-where $\theta$ is an angle measured in radians or degrees.
-
-The cosecant of an angle $\theta$ is defined as the reciprocal of the sine of
-$\theta$. That is, if $x$ is the length of the side opposite to $\theta$ and
-$h$ is the length of the hypotenuse of a right triangle that contains $\theta$,
-then:
-
-$$\csc(\theta) = \frac{h}{x}$$
-
-The secant of an angle $\theta$ is defined as the reciprocal of the cosine of
-$\theta$. That is, if $y$ is the length of the side adjacent to $\theta$ and
-$h$ is the length of the hypotenuse of a right triangle that contains $\theta$,
-then:
-
-$$\sec(\theta) = \frac{h}{y}$$
-
-The cotangent of an angle $\theta$ is defined as the reciprocal of the tangent
-of $\theta$. That is, if $x$ is the length of the side adjacent to $\theta$ and
-$y$ is the length of the side opposite to $\theta$, then:
-
-$$\cot(\theta) = \frac{x}{y}$$
-
-\paragraph{does this mean they are basically the same as} $\sin^{-1}$, $\cos^{-1}$ and $\tan^{-1}$\textbf{?}
-No, the cosecant, secant, and cotangent functions are not the same as the
-inverse trigonometric functions, which are commonly denoted as $\sin^{-1}$,
-$\cos^{-1}$, and $\tan^{-1}$.
-
-The inverse trigonometric functions are used to find the angle that produces a
-given ratio of sides in a right triangle. For example, if we know the length of
-two sides of a right triangle, we can use the inverse trigonometric functions
-to find the measure of the angle opposite to the known sides. The output of an
-inverse trigonometric function is an angle, whereas the output of the cosecant,
-secant, and cotangent functions is a ratio of sides.
-
-The inverse trigonometric functions are defined as follows:
-
-$$\sin^{-1}(x) = \theta \qquad \text{if} \qquad \sin(\theta) = x \qquad \text{and} \qquad -\frac{\pi}{2} \leq \theta \leq \frac{\pi}{2}$$
-
-$$\cos^{-1}(x) = \theta \qquad \text{if} \qquad \cos(\theta) = x \qquad \text{and} \qquad 0 \leq \theta \leq \pi$$
-
-$$\tan^{-1}(x) = \theta \qquad \text{if} \qquad \tan(\theta) = x \qquad \text{and} \qquad -\frac{\pi}{2} < \theta < \frac{\pi}{2}$$
-
-Note that the inverse trigonometric functions are also commonly denoted as
-$\arcsin$, $\arccos$, and $\arctan$.
-
-In summary, the cosecant, secant, and cotangent functions are reciprocals of
-the sine, cosine, and tangent functions, respectively, and are used to find the
-ratios of sides in a right triangle. The inverse trigonometric functions, on
-the other hand, are used to find the angles that produce a given ratio of sides
-in a right triangle.
-
-
-
-\paragraph{Ableitungen} % (fold)
-\label{par:Ableitungen}
-To take the derivatives of the cosecant, secant, and cotangent functions, we
-can use the quotient rule of differentiation along with the chain rule. Here
-are the formulas for finding the derivatives:
-
-$$\frac{d}{dx} \csc(x) = -\csc(x) \cot(x)$$
-
-$$\frac{d}{dx} \sec(x) = \sec(x) \tan(x)$$
-
-$$\frac{d}{dx} \cot(x) = -\csc^2(x)$$
-
-where $x$ is the independent variable (usually an angle) with respect to which
-we are differentiating.
-
-To derive these formulas, we start with the definitions of the cosecant,
-secant, and cotangent functions in terms of the sine, cosine, and tangent
-functions:
-
-$$\csc(x) = \frac{1}{\sin(x)}$$
-
-$$\sec(x) = \frac{1}{\cos(x)}$$
-
-$$\cot(x) = \frac{1}{\tan(x)} = \frac{\cos(x)}{\sin(x)}$$
-
-Then, we use the quotient rule of differentiation:
-
-$$\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$$
-
-where $f$ and $g$ are functions and $f'$ and $g'$ are their derivatives.
-
-Applying the quotient rule and simplifying, we get:
-
-$$\frac{d}{dx} \csc(x) = -\frac{\cos(x)}{\sin^2(x)} = -\csc(x) \cot(x)$$
-
-$$\frac{d}{dx} \sec(x) = \frac{\sin(x)}{\cos^2(x)} = \sec(x) \tan(x)$$
-
-$$\frac{d}{dx} \cot(x) = -\frac{\cos(x)}{\sin^2(x)} = -\csc^2(x)$$
-
-Therefore, the derivative of the cosecant function is equal to minus the
-cosecant function times the cotangent function, the derivative of the secant
-function is equal to the secant function times the tangent function, and the
-derivative of the cotangent function is equal to minus the cosecant squared
-function.
-
-$$\displaystyle\sum_{n}^{\infty}$$
-\[\displaystyle\int_{\pi}^{2\pi}\tan x\]
-% }}}
 
 \subsection{paar aufgben}
 \section{5a}
@@ -638,35 +493,6 @@ Der kritische Punkt $x=0$ ist ein lokales Minimum.
 
 
 \textbf{Plot:}
-
-%\begin{tikzpicture}
-%\begin{axis}[
-    %axis lines = center,
-    %xlabel=$x$,
-    %ylabel={$f(x)$},
-%]
-%\addplot [
-    %domain=-5:1,
-    %samples=100,
-    %color=blue,
-%]
-%{x^4*exp(x)};
-%\addlegendentry{$f(x)=x^4e^x$}
-%\addplot[
-    %mark=*,
-    %only marks,
-    %color=red,
-    %mark options={scale=1.5},
-    %nodes near coords,
-    %point meta=explicit symbolic,
-%]
-%coordinates {
-    %(-4,768*exp(-4))[lokales Maximum]
-    %(0,0)[lokales Minimum]
-%%};
-%\end{axis}
-%\end{tikzpicture}
-
 \vspace{40pt}
 
 \begin{figure}[htbp]
@@ -687,12 +513,8 @@ Der kritische Punkt $x=0$ ist ein lokales Minimum.
     samples=100
 ]
 \addplot[blue]{x^4*e^x};
-%\addplot[dashed] coordinates {(-4, 768) (0,0)};
-%\addplot[dashed] coordinates {(0,0) (0, -100)};
 \end{axis}
 \end{tikzpicture}
-clearpage wegen neuer stunde
-\clearpage
 
 \section{Mathe Unterricht, 10.03.2023}
 Heute machen wir in der einzelnen Stunde glaub nur eine Prüfungsaufgabe
@@ -728,70 +550,17 @@ Die Änderung gibt an, wie schnell sie die Funktionswerte von $x_1$ nach $x_2$
 \subsubsection{Änderungsrate, h-Methode}
 \[\lim_{x \to x_0}\frac{f(x)-f(x_0)}{x-x_0}\]
 
-%\begin{figure}[htpb]
-  %\begin{center}
-    %\includegraphics[width=0.15\textwidth]{math-figures/tangente.png}
-  %\end{center}
-  %\caption{Eine Tangente grafisch}
-%\end{figure}
 
 \clearpage
 
-%\begin{figure}[htpb]
-  %\begin{center}
-    %\includegraphics[width=0.65\textwidth]{math-figures/2-abls.png}
-  %\end{center}
-  %\caption{Zwei Funktionen und ihre ersten Ableitungen.}
-%\end{figure}
 
 Hier Sieht man die Funktionen $f(x)=\sin(x)$ und $g(x)=x^3$, sowie ihre
 Ableitungen $f'(x)=\cos(x)$ und $g(x)=x^2$.
 Die Ableitungsfunktionen zeigen je die steiung die die Tangente an der Stelle
 hätte, das ist bei dem $\sin$ -1 bis 1, und bei $x^3$ ist es $-\infty\text{ bis }\infty$.
 
-\subsubsection{Regeln:}
-\subsubsection{in general}
-\[\frac{d}{dx}[x^n] = nx^{n-1}\]
-
-\subsubsection{product rule}
-\[\frac{d}{dx}\left[f(x)*g(x)\right]=f'(x)*g(x)+f(x)*g'(x)\]
-
-\subsubsection{quotient rule}
-\[\frac{d}{dx} \left[\frac{f(x)}{g(x)}\right]=
-\frac{g(x)*f'(x)-f(x)*g'(x)}{[g(x)]^2}\]
-
-\subsubsection{trig derivatives to remember}
-\begin{align*}
-    \frac{d}{dx}[\sin x]&=\cos (x)\\
-    \frac{d}{dx}[\cos x]&=-\sin(x)\\
-    \frac{d}{dx}[\tan x]&=\sec^2 (x)\\
-    \frac{d}{dx}[\sec x]&=\sec(x)\tan(x)\\
-    \frac{d}{dx}[-\csc x]&=\csc(x)\cot(x)\\
-    \frac{d}{dx}[\cot x]&=\csc^2(x)\\
-\end{align*}
-
-\begin{align*}
-    \frac{d}{dx}\left[\sin^{-1}\right]&= \frac{1}{\sqrt{1-x^2}} \text{where} |x|<1\\
-    \frac{d}{dx}\left[\cos^{-1}\right]&= \frac{-1}{\sqrt{1-x^2}} \text{where} |x|<1 \\
-    \frac{d}{dx}\left[\tan^{-1}\right]&=\frac{1}{1+x^2}  \\
-    \frac{d}{dx}\left[\cot^{-1}\right]&= \frac{-1}{1+x^2} \\
-    \frac{d}{dx}\left[\sec^{-1}\right]&=\frac{1}{|x|\sqrt{x_2-1}} \text{where} |x|>1\\
-    \frac{d}{dx}\left[\csc^{-1}\right]&= \frac{-1}{|x|\sqrt{x^2-1}} \text{where} |x|>1 \\
-    \frac{d}{dx}\left[e^{ax}\right]&= ae^{ax} \\
-    \frac{d}{dx}\left[\ln(ax)\right]&= \frac{1}{x} \\
-    \frac{d}{dx}\left[\log_bx\right]&= \frac{1}{x \ln b} \\
-    \frac{d}{dx}\left[b^x\right]&= b^x \ln b \\
-    \frac{d}{dx}\left[\sin h\right]&= \cos h \\
-    \frac{d}{dx}\left[\cos h\right]&= \sin h \\
-    \frac{d}{dx}\left[\tan h\right]&= \sec h^2= \frac{1}{\cos h^{2}}
-\end{align*}
 
 \subsection{Vokabeln}
-%\begin{figure}[htpb]
-  %\begin{center}
-    %\includegraphics[width=0.75\textwidth]{math-figures/mon.png}
-  %\end{center}
-%\end{figure}
 
 f ist \textbf{monomon wachsend} für: [A,B]; [A,F]; [A,E]; [B,F]; [B,E]; [F, E].\\ 
 ...\textbf{streng monoton wachsend} für: [A,B]; [F,E].\\  
@@ -807,9 +576,8 @@ f ist \textbf{monomon wachsend} für: [A,B]; [A,F]; [A,E]; [B,F]; [B,E]; [F, E].
 
 \subsection{Wie man Extrema findet}
 \textbf{Einfach übernommen aus Calculus 1, 3.3 und 3.4}
-\section{Calculus 3.3, The First Derivative Test for Increasing and Decreasing} % (fold)
+\section{Calculus 3.3, The First Derivative Test for Increasing and Decreasing} 
 \begin{multicols}{2}
-\label{ssub:Calculus 3.3, The First Derivative Test for Increasing and Decreasing}
 
 \begin{tcolorbox}[colback=blue!10!white,colframe=blue!50!black,title=Recall:]
   \[f'(x)> \implies \text{Increasing}\]
@@ -823,9 +591,6 @@ f ist \textbf{monomon wachsend} für: [A,B]; [A,F]; [A,E]; [B,F]; [B,E]; [F, E].
     \subitem take $f'(x)$
   \item set it to =0 for critical numbers
   \item make the f'(x) table
-    %\begin{center}
-      %\input{math-figures/drawing.tex}
-    %\end{center}
   \item Find the sign of \textit{each interval}, by
     plugging into $f'(x)$ (this tells you
     increasing/decreasing)
@@ -841,9 +606,6 @@ f ist \textbf{monomon wachsend} für: [A,B]; [A,F]; [A,E]; [B,F]; [B,E]; [F, E].
   \implies x&=\pm 1
 \end{align*}
 
-%\begin{center}
-%\input{math-figures/table1.tex}
-%\end{center}
 
 From that we can see that there is a local maxima at $x=-1$ and a local minima at $x=1$.
 Then we can just insert that into the main function:
@@ -862,9 +624,8 @@ Then we can just insert that into the main function:
   \implies x-2=0 \implies x=2\\
   \implies \sqrt[3]{x}=0
 \end{align*}
-%\begin{center}
-  %\input{math-figures/table2.tex}
-%\end{center}
+
+
 \begin{align*}
   \text{max:} &=f(0)=0 \implies (0,0)\\
   \text{min:} &=f(2)=\approx 14,2866 \implies (2,14,2866)\\
@@ -882,9 +643,6 @@ Then we can just insert that into the main function:
   \end{align*}
 \end{tcolorbox}
 
-%\begin{center}
-%\input{math-figures/pip.tex}
-%\end{center}
 
 
 
@@ -910,9 +668,6 @@ f''(x)&=3x-6=0\\
 \implies x=1
 \end{align*}
  
-%\begin{center}
-%\input{math-figures/2nd.tex}
-%\end{center}
 
 
 \begin{tcolorbox}[colback=green!10!white,colframe=green!50!black,title=Solution]
@@ -939,11 +694,6 @@ $f$ ist streng monoton fallend fuer $[-1,2]$
 
 
 \section{Unterricht 17.03.2023, Krümmung}
-%\begin{multicols}{2}
-  %\center
-  %\input{math-figures/krüml.tex}
-  %\input{math-figures/krümr.tex}
-%\end{multicols}
 
 \begin{align*}
   f(t)&=(3t-6)^4+3t\\
@@ -1041,11 +791,6 @@ f''(x) < 0 \text{ für } 1& < x < 3, \text{ also konkav nach unten} \\
 
 \section{Unterricht, Sicherung einer Rennstrecke.}
 
-%\begin{figure}[htpb]
-  %\begin{center}
-    %\includegraphics[width=0.5\textwidth]{./math-figures/rennstrecke.png}
-  %\end{center}
-%\end{figure}
 
 Die in der Abbildung rot gezeichnete Ideallinie einer Rennstrecke wird durch
 die Funktion f mit 
@@ -1224,8 +969,12 @@ der ersten Ableitung von $h(x)$, wie gefordert.
 
 
 
-\begin{multicols}{2}
+
+
 \section{Integralrechnung, Rekonstruktion}
+
+\begin{multicols}{2}
+
 Die Gesamt\"anderung der gr\"ose kann man auis ihrem momnetaner \"Anderungsrate
 rekonstruieren -- man sagt auch integrieren (integrare $\rightarrow$ wiederherstellen) --, 
 indem man den orientierten Fl\"acheninhalt zwischen dem Graphen der momentanen \"Anderungsrate 
@@ -1254,10 +1003,7 @@ area under the curve is
 We can use this formula to calculate the approximation for any value of $n$.
 For example, let's calculate $A_5$:
 
-\[
-A_5 = \frac{4}{5}\left(f(-2) + f(-1.2) + f(-0.4) + f(0.4) + f(1.2)\right) \approx 8.64
-\]
-
+\[ A_5 = \frac{4}{5}\left(f(-2) + f(-1.2) + f(-0.4) + f(0.4) + f(1.2)\right) \approx 8.64 \]
 
 
 
@@ -1336,7 +1082,6 @@ A_5 = \frac{4}{5}\left(f(-2) + f(-1.2) + f(-0.4) + f(0.4) + f(1.2)\right) \appro
 
 Definierte Integrale: diese sind auf der x-Achse definiert, um ihre Fl\"ache zu finden
 \end{multicols}
-
 
 
 

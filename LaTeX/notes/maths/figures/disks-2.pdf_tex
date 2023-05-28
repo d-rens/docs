@@ -1,6 +1,6 @@
 %% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'def-int.pdf' (pdf, eps, ps)
+%% Accompanies image file 'disks-2.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,14 +53,10 @@
   \begin{picture}(1,0.5)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{def-int.pdf}}%
-    \put(0.50236203,0.45568333){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
-    \put(0.7414182,0.1290582){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.77404836,0.40104287){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f(x)=-x^2+4$\end{tabular}}}}%
-    \put(0.47804597,0.09538803){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$0$\end{tabular}}}}%
-    \put(0.68271065,0.09323235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$2$\end{tabular}}}}%
-    \put(0.2753753,0.0949496){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-2$\end{tabular}}}}%
-    \put(0.01957696,0.34450169){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\int^2_{-2} -x^2+4$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{def-int.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{disks-2.pdf}}%
+    \put(0.8488238,0.12557233){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$y$\end{tabular}}}}%
+    \put(0.44809036,0.04244334){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
+    \put(0.86798884,0.29664694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{disks-2.pdf}}%
   \end{picture}%
 \endgroup%
