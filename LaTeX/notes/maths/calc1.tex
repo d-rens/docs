@@ -3,20 +3,20 @@
 \input{../../templates/math-amble.tex}
 
 
-\title{some tests}
+\title{Last lectures of Calculus 1}
 \author{}
 \date{}
 
 \begin{document}
 
-\maketitle
+%\maketitle
 \tableofcontents
 
 %\paragraph{notice}
 %this is a test of my config with a calculus lecture, in which i try to use it
 %in realtime to test for speed, and missing features.
 
-\chapter{Calc 5.1 -- Area between two curves}
+\chapter{5.1 -- Area between two curves}
 
 
 \begin{figure}[ht]
@@ -233,12 +233,43 @@ Now we simplify the graph, to make it easier to understand.
      &=\frac{9}{2}\\
 \end{align*}
 
-\nt{am too tired, video stopped at 1:27:12, in the following it is also made in
-respect to y, now it was x, which you can see, at a headturn, 90 degrees to the
-right, consists of some less ints.}
+Now doing it with the other axis, in respect to 'y'.
 
+\begin{figure}[ht]
+    \centering
+    \incfig[0.5]{area-between-curves-10}
+    \caption{figures/area-between-curves-10}
+    \label{fig:area-between-curves-10}
+\end{figure}
 
+\[
+A= \int_{c}^{d} h(y)-g(y) \text{dy} 
+.\] 
 
+(If $h(y) \geq g(y)$ for [c,d].]
+
+Now doing it with the prior example:
+
+\begin{align*}
+    x=y^2 \quad & \quad y=x-2\\
+    y^2=& y+2\\
+    y^2-y-2 &= 0 \quad \to \quad y=2,-1 \\ 
+\end{align*}
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.5]{area-between-curves-11}
+    \caption{Area Between Curves 11}
+    \label{fig:area-between-curves-11}
+\end{figure}
+
+\begin{align*}
+    A &= \int_{-1}^{2} y+2-y^2 \ dy \\
+      &= \left[ \frac{y^2}{2}+2y = \frac{y^3}{3}\right]_{-1}^2\\
+      &= \frac{9}{2} \\
+\end{align*}
+
+\chapter{5.2 -- Volume of solids by disks and washers method}
 
 
 
