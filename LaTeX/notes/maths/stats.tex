@@ -114,9 +114,147 @@ $\to$ If you take a sample, it must be collected \textbf{randomly}.
   \label{tab:vocab-5}
 \end{table}
 
-\nt{pause at 1.5}
+
+\section{Design of Experiments/Observations}
+
+\subsection{Observation vs. Experiment}
+
+An \textbf{observation} measures specific traits, but noes \textbf{not} modify subjects.
+
+An \textbf{experiment} applies a treatment and then measuers the effect on the subjects.
 
 
+\subsection{Random}
+Each member of a population, has an equal chance of being selected in a sample.
+
+\subsubsection{Simple random sample}
+Each group of size 'n' has an equal chance of being selected.
+
+\subsection{Common techniques to get a sample}
+\begin{table}[htbp]
+    \centering
+    \caption{4 Common techniques to get a sample}
+    \begin{tabular}{>{\bfseries}l p{10cm}}
+        \toprule
+        Convenience sample & You use the results, which you easily get (not random) \\
+        \midrule
+        Systematic sampling & Put a population in some order and select every "$k^{th}$" member. \\
+        \midrule
+        Stratafied Sample & Breaking population into sub-groups based on some
+        characteristic, and then take a simple random sample out of each
+        sub-groups.\\
+        \midrule
+        Cluster sample & Divide population into "clusters" (regardless of
+        characteristic), randomly select a certain number of clusters, and then
+        collect data from the entire cluster.\\
+        \bottomrule
+    \end{tabular}
+    \label{tab:vocab-6}
+\end{table}
+
+
+\section{Frequency Distribution}
+A frequency distribution is a list of values with corresponding frequencies.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{>{\bfseries}l p{10cm}}
+        \toprule
+        Class width & Difference between two "lower class limits" \\
+        \midrule
+        Lower class limit & Smallest value belonging to a class \\
+        \midrule
+        Upper class limit & Highest value belonging to a class \\
+        \bottomrule
+    \end{tabular}
+    \caption{Frequency Distribution Terms}
+\end{table}
+
+\steps{
+    \item Determine number of classes: 8
+    \item class width: \[
+    \frac{\text{Max Value - Min value}}{\text{number of classes}} \leadsto \frac{44-18}{8} \leadsto \frac{26}{8} \leadsto 3.25 \] 
+    Round \textbf{up}. $\leadsto 4$
+    \item Start with the minimum value: 18
+    \item Creat classes with class width (4)
+    \item Find the class midpoint: \[
+            \frac{\text{upper class limit + lower class limit}}{2} \leadsto  .\] 
+    \item Class boundaries: used to seperate classes without gaps.
+}
+
+\begin{multicols}{2}
+    
+
+\textbf{class width:} 4
+
+\textbf{Lower class limit:} 18, 22, 26, $\ldots$ 46
+
+\textbf{upper class limit:} 21,25 $\ldots$ 49
+
+\textbf{class midpoint:}
+\[ \frac{\text{upper class limit + lower class limit}}{2}\] 
+$\leadsto 19.5, 23.5, 27.5, 31.5, 35.5, 39.5, 43.5, 47.5$
+
+class-width inbetween
+
+\textbf{class boundaries:}
+Used to seperate classes without gaps.
+17.5, 21.5, 25.5, 29.5, 33.5, 37.5, 41.5, 49.5
+
+\textbf{Relative frequency distribution:} Percentage \[\frac{\text{class } f.}{\sum f. (n)}\]
+
+\textbf{Cumulative Frequency Distribution}
+Adds sequential classes together.
+\end{multicols}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \toprule
+        Age & Freq. & Rel. Freq. & Cum. Freq.\\
+        \midrule
+        18-21 & 25 & 58.1\% & 25  \\
+        22-25 & 10 & 23.3\% & 35  \\
+        26-29 & 4  & 9.3\%  & 39  \\
+        30-33 & 2  & 4.7\%  & 41  \\
+        34-37 & 1  & 2.3\%  & 42  \\
+        38-41 & 0  & 0\%    & 42  \\
+        42-43 & 1  & 2.3\%  & 43  \\
+        46-49 & 0  & 0\%    & 43  \\
+        \midrule
+              & n=43 & 100\% \\
+              & $\sum f \uparrow $ \\
+              \bottomrule
+    \end{tabular}
+    \caption{Frequency Distribution}
+\end{table}
+
+
+
+\subsection{Touching Bar Chart}
+
+\begin{figure}[ht]
+    \centering
+    \incfig{stats-1}
+    \caption{figures/stats-1}
+    \label{fig:stats-1}
+\end{figure}
+
+A cumulative chart would look exactly the same, but instead of having
+boundaries numered it'd be in the middle of the bars with teh cumulative
+frequency from class 1-8. And also the y-axis would be the percentage.
+
+There is also a last one, where one takes the cumulative stuff, so that the graph colums are getting bigger and bigger...
+
+\textbf{Horizontal:} Class midpoints or boundaries.
+
+\textbf{Vertical:} Frequency.
+
+\nt{next lesson: 3.2}
+
+
+
+    
 
 
 
