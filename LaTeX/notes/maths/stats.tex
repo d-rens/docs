@@ -148,12 +148,12 @@ Each group of size 'n' has an equal chance of being selected.
         characteristic), randomly select a certain number of clusters, and then
         collect data from the entire cluster.\\
         \bottomrule
-    \end{tabular}
+   \end{tabular}
     \label{tab:vocab-6}
 \end{table}
 
 
-\section{Frequency Distribution}
+\chapter{Frequency Distribution}
 A frequency distribution is a list of values with corresponding frequencies.
 
 \begin{table}[htbp]
@@ -173,7 +173,8 @@ A frequency distribution is a list of values with corresponding frequencies.
 \steps{
     \item Determine number of classes: 8
     \item class width: \[
-    \frac{\text{Max Value - Min value}}{\text{number of classes}} \leadsto \frac{44-18}{8} \leadsto \frac{26}{8} \leadsto 3.25 \] 
+    \frac{\text{Max Value - Min value}}{\text{number of classes}} \leadsto
+\frac{44-18}{8} \leadsto \frac{26}{8} \leadsto 3.25 \] 
     Round \textbf{up}. $\leadsto 4$
     \item Start with the minimum value: 18
     \item Creat classes with class width (4)
@@ -231,7 +232,7 @@ Adds sequential classes together.
 
 
 
-\subsection{Touching Bar Chart}
+\section{Touching Bar Chart}
 
 \begin{figure}[ht]
     \centering
@@ -244,17 +245,176 @@ A cumulative chart would look exactly the same, but instead of having
 boundaries numered it'd be in the middle of the bars with teh cumulative
 frequency from class 1-8. And also the y-axis would be the percentage.
 
-There is also a last one, where one takes the cumulative stuff, so that the graph colums are getting bigger and bigger...
+There is also a last one, where one takes the cumulative stuff, so that the
+graph colums are getting bigger and bigger...
 
 \textbf{Horizontal:} Class midpoints or boundaries.
 
 \textbf{Vertical:} Frequency.
 
-\nt{next lesson: 3.2}
+
+
+\chapter{Describing Data}
+
+\section{5 Caracteristics}
+
+\begin{enumerate}
+    \item Center
+    \item Variation
+    \item Distribution
+    \item Outliers 
+    \item Changes over time.
+\end{enumerate}
+
+\paragraph{Center}  The "middle: of the data set. 3 ways: 
+\begin{enumerate}
+    \item \textbf{mean:} Arthimetric Average, add all the values and divide by
+        the numbers you added.
+
+        \begin{align*}
+            \text{Mean} &= \frac{\sum x}{\text{Number of values}} \\
+            \sum &= \text{sum} \\
+            x &= \text{data value} \\
+            n &= \text{number of items in a sample} \\
+            N &= \text{Number of items in a population} \\
+            \overline{x} &= \text{sample mean} \\
+            \mu &= \text{population mean} \\
+        \end{align*}
+
+        We can write the sameple mean then as: \[
+        \overline{x} = \frac{\sum x}{n} .\] 
+        And the population mean as \[
+        \mu = \frac{\sum x}{N} .\] 
+
+        \ex{ \textbf{Sample data:} 5.40, 1.10, 0.42, 0.73, 0.48, 1.10
+
+            $\overline{x}=\frac{\sum x}{n}$ is the formula we have to use, because it's a sample, then we get:
+        \[ \overline{x} = \frac{ 5.40+ 1.10+ 0.42+ 0.73+ 0.48+ 1.10 }{6} = \frac{9.23}{6} = 1.54 .\] }
+
+
+    \item \textbf{Median:} The middle value of the dataset.
+        \begin{itemize}
+            \item Must be in order.
+            \item Find middle value.
+                \begin{itemize}
+                    \item If odd number of values, the median is the middle number.
+                    \item If even number of values, the median is the \textbf{mean} of the two middle values.
+                \end{itemize}
+                \ex{8, 3, 5, 11, 13, 4, 6\\
+                    To find the median we first need to order em, so:\\
+                    3, 4, 5, 6, 8, 11, 13.\\
+                    We have seven values so we can just take the middle one which is 6.\\
+                    If we'd then add 412, so our numbers are:\\
+                    3, 4, 5, 6, 8, 11, 13, 412.\\
+                Then our median is: $M=\frac{6+8}{2}=7$\\ }
+                And it's obviously the same with decimals.
+        \end{itemize}
+        \tbox{
+        The Median is \textbf{not} affected by outliers, the mean is.}
+
+
+    \item \textbf{Mode:} The most commonly ocurring data value.
+        \ex{
+            \begin{enumerate}
+                \item 5.40, 1.10, 0.42, 0.73, 0.48, 1.10 \\
+                    Here the mode is 1.10 becuase it's ocuring most often.
+                \item 27, 27, 27, 55, 55, 55, 88, 88, 89 \\ 
+                    Modes: 27, 55
+                \item 1, 2, 4, 7, 9, 10, 12 \\
+                    Mode: $\emptyset$
+        \end{enumerate} }
+\end{enumerate}
+
+\tbox{ One rounds always to one more value than the beginning values, so one
+more decibel, and rounded is not before the most final step. }
 
 
 
+%clearpage to not mess the table and text for it up.
+\clearpage
+\section{Mean of a frequency distribution}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \toprule
+        Age & freq. & x (midpoint) & $freq. \cdot x$ \\
+        \midrule
+        21-30  & 28 & 25.5 & 714  \\
+        31-40  & 30 & 35.5 & 1065 \\
+        41-50  & 12 & 45.5 & 546  \\
+        51-60  &  2 & 55.5 & 111  \\
+        61-70  &  2 & 65.5 & 131  \\
+        71-80  &  2 & 75.5 & 151  \\
+        \midrule
+               & n=76 &    & $\sum f\cdot x = 2718$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Another age distribution}
+\end{table}
+
+So now we can get the sample mean: \[
+\overline{x}=\frac{\sum f\cdot x}{n} = \frac{2718}{76} = 35.76 .\] 
+
+
+And here another table, this time about a grade's distribution.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \toprule
+              & w & points & $x\cdot w$ \\
+        \midrule
+        Hw & 15\% & 70 & 10.5 \\
+        $T_1$ & 20\%    & 90 & 18.0 \\
+        $T_2$ & 20\%    & 68 & 13.6 \\
+        $T_3$ & 20\%    & 85 & 17.0 \\
+        $F$ & 25\%      & 95 & 23.75 \\
+        \midrule
+            &           &    & $\sum x\cdot w = 82.85 $ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Grade example}
+\end{table}
+\[ \overline{x} = \frac{\sum x\cdot w}{\sum \cdot w} \to \frac{82.85}{100} = .8285 \to 82.85\% \] 
+
+We can also do the same just half way in the class with the following table:
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        \toprule
+              & w & points & $x\cdot w$ \\
+        \midrule
+        Hw & 15\% & 70 & 10.5 \\
+        $T_1$ & 20\%    & 90 & 18.0 \\
+        $T_2$ & 20\%    & 68 & 13.6 \\
+        \midrule
+            & 55\%      &    & $\sum x\cdot w = 42.10 $ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Grade example}
+\end{table}
+\[ \overline{x} = \frac{\sum x\cdot w}{\sum \cdot w} \to \frac{42.10}{55} = .765 \to 76.50\% \] 
     
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.6]{stats-2}
+    \caption{figures/stats-2}
+    \label{fig:stats-2}
+\end{figure}
+
+\vspace{50pt}
+
+
+\section{Finding the standard Deviation}
+\nt{next lesson is 3.3}
+
+
+
+
+
 
 
 
