@@ -43,36 +43,46 @@
 \newcommand{\tbox}[2][0.8\linewidth]{
     \begin{center}
         \begin{tcolorbox}[colback=white, colframe=gray, width=#1]
-                #2
+            #2
         \end{tcolorbox}
-    \end{center}}
+\end{center}}
 
 \newcommand{\regel}[2][0.8\linewidth]{
     \begin{center}
         \begin{tcolorbox}[title=regel, colback=white, colframe=blue, width=#1]
-                #2
+            #2
         \end{tcolorbox}
-    \end{center}}
+\end{center}}
 
 \newcommand{\nt}[2][0.9\linewidth]{
     \begin{center}
         \begin{tcolorbox}[title=Notitz:, colback=white, colframe=gray, width=#1]
-                #2
+            #2
         \end{tcolorbox}
-    \end{center}}
+\end{center}}
 
 
 \newcommand{\ex}[2][\linewidth]{
     \begin{center}
-        \begin{tcolorbox}[title=Beispiel:, colback=white, colframe=brown, width=#1]
-                  #2
+        \begin{tcolorbox}[title=Example, colback=white, colframe=brown, width=#1]
+            #2
         \end{tcolorbox}
-    \end{center}}
+\end{center}}
 
 
 \newcommand{\q}[2][\linewidth]{
     \begin{center}
         \begin{tcolorbox}[title=Frage:, colback=white, colframe=purple, width=#1]
-                  #2
+            #2
         \end{tcolorbox}
-    \end{center}}
+\end{center}}
+
+\newcommand{\steps}[2][0.8\linewidth]{
+    \begin{center}
+        \begin{tcolorbox}[title=Steps:, colback=white, colframe=blue, width=#1]
+            \begin{enumerate}
+                #2
+            \end{enumerate}
+        \end{tcolorbox}
+\end{center}}
+
