@@ -753,6 +753,148 @@ So everything that is outside of those ``borders'' is mathematically considered 
 
 
 
+\chapter{Probability}
+
+\begin{itemize}
+    \item Low probability = Rare/Unusual occurances
+\end{itemize}
+
+\section{Vocabulary}
+\paragraph{Event:} A Collection of outcomes of a procedure.
+\paragraph{Simple Event:} A single outcome.
+\paragraph{Sample Space:} All simple events that can happen. (Every possible outcome)
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|c|p{4cm}}
+        \toprule
+        Procedure & Event & Sample space \\ 
+        \midrule
+        Flip coin 1 time & Head & \{Head Tail\} \\
+        \midrule
+        Flip coin 3 times & 1 Head, 2 Tails & 
+        \{ H-H-H, H-H-T, H-T-H, H-T-T, T-T-T, T-H-H, T-T-H T-H-T T-H-H\} \textit{Here the event is three times.} \\
+                          & 3 Heads & \textit{once there.}\\
+                          \bottomrule
+    \end{tabular}
+    \caption{ex 1}
+\end{table}
+
+
+\section{Probability}
+The likelyhood of an event occuring.
+
+Denoted $P$
+
+Event:  $A, B, C\ldots$
+
+$P(A)$= The Probability of event ``A'' happening.
+
+\subsection{3 types}
+
+\begin{enumerate}
+    \item \textbf{Observed probability:} Probability that  is estimated based on observations.
+        \[ P(A)=\frac{\text{Number of times ``A'' occured}}{\text{Number of times the procedure was repeated}} .\] 
+        (What did happen)
+
+    \item \textbf{Classical probability:} Probability based on the
+        \textbf{chance} of an event occuring. (Each event must have an equal chance of occuring)
+        \[ P(A)=\frac{\text{Number of ways ``A'' could occur}}{\text{Number of simple evens (outcomes)}} .\] 
+        (What should happen.)
+
+    \item \textbf{Subjective probability:} Educated guess. 
+
+\end{enumerate}
+
+\subsection{Examples}
+\ex{The probability of selecting a $\heartsuit$ from a standard deck of cards
+    \[ P(\heartsuit)=\frac{13}{52}= 0.25 \left( \text{classical} \leadsto \text{should happen} \right) \] }
+
+\ex{Flip coin 100 times. You get 64 Tails.
+\[P(T)=\frac{64}{100}=.64 \left( \text{Observed}\leadsto \text{did happen} \right)\]}
+
+\ex{Peyton completed 385 out of his first 525 passes.\\ 
+Find probability that Peyton will complete a pass.
+\[ P(\text{Completing a pass})= \frac{385}{525}\approx 0.729 \text{ or } 72.9\% .\]  This is observed. }
+
+\ex{ Random deck of cards, probability of selecting a two.
+    \[ P(2)=\frac{4}{52}=0.76 \to 7.6\% .\] 
+    This is classical. }
+
+\ex{
+\paragraph{poll} about some cloning:
+
+91 people ... cloning good \\
+901 people ... cloning bad \\
+20 people ... 
+
+find probability of randomly selecting a person on the street that says cloning
+is a good idea.\[
+p(good)= \frac{91}{91+901+20} = \frac{91}{1012} = 0.09 = 9\%
+.\] the probability to find a person that says cloning good it 9\%. }
+
+\ex{ find the probability that a bird will poop on your car today. \textbf{subjective} }
+
+\ex{
+    find probability that if a couple ha three kids, two will be boys.
+    (assuming equal chance of boy/girl)\\
+    procedure: having 3 children.\\
+    event: 2 boys, 1 girl.\\
+    (classical theory.) 
+
+    sample space: \{bbb, \textbf{bgg, bgb,} bgg, ggg, ggb, gbg, \textbf{gbb}\} 
+    \[ P(2B, 1G) = \frac{3}{8}= 37.5\% \] }
+
+\begin{itemize}
+    \item Probabilities are always between 0 and 1.
+        \begin{itemize}
+            \item $P=0 \to$ Impossible event.
+            \item $P=1 \to$ Certain event.
+        \end{itemize}
+    \item The more a procedure is repeated. The closer observed probability will get to classical prob.
+\end{itemize}
+
+\subsection{python example}
+You can nicely test it with the following python script.
+\begin{verbatim}
+import random
+
+def roll_dice():
+    return random.randint(1,6)
+
+def main():
+    n = int(input("How many times should the dice be rolled? "))
+    rolls = []
+    for i in range(n):
+        rolls.append(roll_dice())
+    for i in range(1,7):
+        print("The probability of the number", i, "is", rolls.count(i)/n)
+
+main()
+\end{verbatim}
+
+\subsection{Complementary Events}
+Events which are mutually exclusive (can't happen at the same time).
+
+\paragraph{Complement:} The complement of event ``A'' is denoted $\overline{A}$
+and is all the outcomes when event ``A'' does not occur.
+
+\ex{
+Event: Rolling a 5\\
+Complement: Not Rolling a 5 (1,2,3,4,6)
+\[ P(5)=\frac{1}{6} P(\overline{5})=\frac{5}{6}\quad P+\overline{P}=1 .\] 
+}
+The probability of an event plus the probability of the complement must equal 1.
+
+
+\section{4.3}
+\nt{Next lecture: 4.3, the addition rule for probability}
+
+
+
+
+
+
 
 
 
