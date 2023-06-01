@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="192mm"
+   height="69mm"
+   viewBox="0 0 192 69"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="stats-7.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       id="marker-arrow-1.0616"
+       orient="auto-start-reverse"
+       refY="0"
+       refX="0"
+       markerHeight="1.6900001"
+       markerWidth="0.91100001">
+      <g
+         transform="scale(1.3434313)"
+         id="g1114">
+        <path
+           d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+           style="fill:none;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0"
+           id="path1112" />
+      </g>
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="498.0625"
+     inkscape:cy="195.0625"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1902"
+     inkscape:window-height="1046"
+     inkscape:window-x="1931"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.243966;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none"
+       id="rect183"
+       width="74.281563"
+       height="38.66357"
+       x="5.1136203"
+       y="190.28253" />
+    <circle
+       style="fill:#000000;fill-opacity:0.12;stroke:#000000;stroke-width:0.140441;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none"
+       id="path465"
+       cx="27.867373"
+       cy="209.61432"
+       r="15.095378" />
+    <ellipse
+       style="fill:#000000;fill-opacity:0.12;stroke:#000000;stroke-width:0.140441;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none"
+       id="path467"
+       cx="51.423897"
+       cy="208.7657"
+       rx="15.819356"
+       ry="15.943989" />
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1025"
+       y="210.95181"
+       x="18.625486"><tspan
+         sodipodi:role="line"
+         id="tspan1023"
+         x="18.625486"
+         y="210.95181"
+         style="stroke-width:0.264583">$P(A)$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1037"
+       y="209.46684"
+       x="48.590187"><tspan
+         sodipodi:role="line"
+         id="tspan1035"
+         x="48.590187"
+         y="209.46684"
+         style="stroke-width:0.264583">$P(B)$</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.280882;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:url(#marker-arrow-1.0616);stop-color:#000000;stop-opacity:1"
+       d="m 48.536929,232.9695 c -2.826655,-9.00325 -7.008065,-12.9694 -9.612401,-21.69489"
+       id="path1110"
+       sodipodi:nodetypes="cc" />
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1145"
+       y="235.52261"
+       x="48.743584"><tspan
+         sodipodi:role="line"
+         id="tspan1143"
+         x="48.743584"
+         y="235.52261"
+         style="stroke-width:0.264583">$P(A\text{ and } B$</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.243966;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none"
+       id="rect1155"
+       width="74.281563"
+       height="38.66357"
+       x="102.56249"
+       y="190.28253" />
+    <circle
+       style="fill:#000000;fill-opacity:0.12;stroke:#000000;stroke-width:0.140441;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none"
+       id="circle1157"
+       cx="120.91868"
+       cy="209.61432"
+       r="15.095378" />
+    <ellipse
+       style="fill:#000000;fill-opacity:0.12;stroke:#000000;stroke-width:0.140441;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none"
+       id="ellipse1159"
+       cx="157.17934"
+       cy="209.40695"
+       rx="15.819356"
+       ry="15.943989" />
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1163"
+       y="210.31546"
+       x="115.324"><tspan
+         sodipodi:role="line"
+         id="tspan1161"
+         x="115.324"
+         y="210.31546"
+         style="stroke-width:0.264583">$P(A)$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1167"
+       y="210.10809"
+       x="152.03313"><tspan
+         sodipodi:role="line"
+         id="tspan1165"
+         x="152.03313"
+         y="210.10809"
+         style="stroke-width:0.264583">$P(B)$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1177"
+       y="187.13872"
+       x="5.1753573"><tspan
+         sodipodi:role="line"
+         id="tspan1175"
+         x="5.1753573"
+         y="187.13872"
+         style="stroke-width:0.264583">$\text{non-disjoint}$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1219"
+       y="187.13872"
+       x="102.44498"><tspan
+         sodipodi:role="line"
+         id="tspan1217"
+         x="102.44498"
+         y="187.13872"
+         style="stroke-width:0.264583">$\text{disjoint}$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1231"
+       y="236.48409"
+       x="100.25643"><tspan
+         sodipodi:role="line"
+         id="tspan1229"
+         x="100.25643"
+         y="236.48409"
+         style="stroke-width:0.264583">$\text{Rolling A or B}$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1279"
+       y="236.56375"
+       x="144.60495"><tspan
+         sodipodi:role="line"
+         id="tspan1277"
+         x="144.60495"
+         y="236.56375"
+         style="stroke-width:0.264583">$P(\text{A and B})=0$</tspan></text>
+    <path
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       d="m 141.68619,231.89417 c 0.2045,2.26662 0.046,5.51351 0,7.48168"
+       id="path2538" />
+  </g>
+</svg>

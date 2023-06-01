@@ -1,6 +1,8 @@
 \documentclass{book}
 
-\input{../../templates/math-amble.tex}
+\input{../../templates/math-amble.tex} 
+\font\domino=domino
+\def\die#1{{\domino#1}}
 
 
 \title{Statistics}
@@ -887,16 +889,99 @@ Complement: Not Rolling a 5 (1,2,3,4,6)
 The probability of an event plus the probability of the complement must equal 1.
 
 
-\section{4.3}
-\nt{Next lecture: 4.3, the addition rule for probability}
+\section{Addition Rule}
+
+\paragraph{Compound event:} An event which joins two more more simple events.
+
+\ex{ Probability of rolling a \die1 or a \die5
+
+``or'' $\to$ one or the other, or both.
+
+\die6 + \die1 $\to$ 7 \\
+\die6 + \die5 $\to$ 11 \\
+
+$P(A\ or\ B)$ = Prob. of ``A'' occuring or ``B'' occuring or both ``A'' and ``B'' occuring in a single trail.
+
+$P(\text{Blonde or Female})$  \\
+$\uparrow$ not mutually exclusive.
+}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|p{3cm}|p{3cm}}
+        \toprule
+                 & Didn't do it & Did it  \\
+        \midrule
+        Guilty   & 11, false positive & 72, true positive\\
+        \midrule
+        Not guilty& 85, true negative & 9, false negative \\
+        \bottomrule
+    \end{tabular}
+    \caption{Table for the following example.}
+\end{table}
+
+\ex{ How many people are ``guilty'' or ``did it''?
+
+    \textbf{Not} mutually exclusive.
+    \[11+72+9 = 92\] 
+    \[ P(\text{Guilty or did it}) = \frac{92}{177} = .520 = 52\% .\] }
+
+\subsection{Addition Rule}
+$P(\text{A or B})$ Requires elimination of any ``double count''.
+\[
+P(\text{A or B}) = P(A) + P(B) - P(``A" \text{ and } ``B") \quad (\text{\textit{in a single try.}})
+.\] 
+
+
+\subsubsection{Disjoint Events}
+Events which are \textbf{mutually exclusive}, means $\to$ can't happen at the sam time.
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.7]{stats-7}
+    \caption{figures/stats-7}
+    \label{fig:stats-7}
+\end{figure}
+
+
+\ex{ Probability of selecting a ``heart'' or a ``spade''.
+    \begin{align*}
+        P(\heartsuit \ or \ \spadesuit) &=  P(\heartsuit) + P(\spadesuit) - P(\heartsuit \ and \ \spadesuit) \\
+        &= \frac{13}{52}+\frac{13}{52}-0 \\
+        &= \frac{26}{52} \\
+        &= \frac{1}{2} = .50 \\
+    \end{align*} }
+
+\ex{ Probability of ``blond'' or female:\\
+    Blonde: .18 \\
+    Female: .60 \\
+    Blonde and Female: .12
+
+  \begin{align*}
+      P(\text{Blond or Female}): .12 &= .18+.66-.12 \\
+      &= 0.66 \\
+  \end{align*}}
+
+\ex{
+    \begin{align*}
+        P(\diamondsuit \ or \ K)&= P(\diamondsuit) + P(K) - P(\diamondsuit \text{ and } K)  \\
+        &= \frac{13}{52} + \frac{4}{52} - \frac{1}{52}\\
+        &= \frac{16}{52} \approx 0.310\\
+    \end{align*} }
+
+\subsection{Complementary Events}
+\[
+P(A \ or \ \overline{A}) = P(A) + P(\overline{A}) - P(A \ and \ \overline{A}) = 1
+.\] 
+
+\ex{ 
+    $P(Girls)=0.512$ , what's then the probability to have a boy? \\
+\[ P(Boy)=P(\overline{g})= 1-P(Girl) .\] }
 
 
 
-
-
-
-
-
+\section{Next Lecture}
+\nt{Next Lecture: 4.4 The multiplication rule for probabilities.}
 
 
 
