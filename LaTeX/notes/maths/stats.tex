@@ -543,7 +543,7 @@ you got to squre it so you get $49$.
     \item spread-out data will have a large standard deviation.
 \end{itemize}
 
-\section{empiric rules}
+\subsection{empiric rules}
 If a data set is normally distributed, we can use the \textbf{empirical rule}.
 \begin{itemize}
     \item 68\% of the data will fall within 1 standard deviation of the mean.
@@ -594,8 +594,178 @@ So in the top example that would be:
 \[\frac{3}{65}\cdot 100\% = 4.6\% \]
 \[\frac{4}{175}\cdot 100\% = 23\% .\] 
 
+\section{Measures of relative standing}
+(Comparing measures between or within data sets)
 
-\nt{next lecture is: 3.4}
+\paragraph{Z-Score} The number of standard deviations a data value ($x$) is away from the mean ($\overline{x}$)
+
+for sample: \[
+Z=\frac{x- \overline{x}}{s}
+.\] 
+
+for population: \[
+    Z=\frac{x-\mu}{\sigma}
+.\] 
+
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.6]{stats-4}
+    \caption{figures/stats-4}
+    \label{fig:stats-4}
+\end{figure}
+
+\tbox{Allows comparison of the variation in two different sample/population.}
+
+\ex{ Who is relatively taller? (use z-score for populations)
+\begin{enumerate}
+    \item LBJ's height $\to$ 76" \\
+        Mean for presidents  $\to$ 71.5" \\
+        Std. Dev. $\to$ 2.1" \\
+    \item Shaq's height  $\to$ 86" \\
+        Mean for Heat  $\to$ 80.0" \\
+        Std. Dev.  $\to$ 3.3"
+\end{enumerate}
+
+First the president: \[
+Z=\frac{x-\mu}{\sigma}=\frac{76-71.5}{2.1} = 2.14
+.\] 
+And the basketball players: \[
+Z=\frac{x-\mu}{\sigma}=\frac{86-80.0}{3.3} = 1.82
+.\] 
+
+The Z-Score shows how many standard deviations the individual is away from the
+mean, saying how ``rare'' it it. Given from the empiric principles we know 68\%
+will fall within 1, 95\% will fall within 2, and 99.7\% will fall within a
+Z-score of 3.
+
+That means a Z-score between -2 and 2 is considered ``usual''. If it isn't within, it's unusual.
+
+So we can compare if LBJ's height is rarer within presidents than shaq's within
+the Heats (team). So we can just read the Z-Score, LBJ is 2.14 away from the
+mean and Shaq ``just'' 1.82, so we can say shaq's height is less rare within
+his team than LBJ's within presidents. }
+
+The larger the Z-Score, in terms of absolute value, the rarer the data value.
+
+\subsection{Quartiles}
+
+\paragraph{1st quartile:} $Q_1$ $\to$ bottom 25\% of \textbf{sorted} data.
+\paragraph{2nd quartile:} $Q_2$ (Median M) $\to$ bottom 50\% of \textbf{sorted} data.
+\paragraph{3rd quartile:} $Q_3$  $\to $ bottom 75\% of \textbf{sorted} data.
+
+\ex{1, 3, 6, 10, 15, 21, 28, 36
+    \begin{enumerate}
+        \item first, find median ($Q_2)$.\\
+            We have eight values, so we have to find what's between value 4\&5 to find it.\\
+            Value four is 10, and five is 15, so we take what's in between (12.5).
+        \item next we find the other Quartiles, $Q_1$ is between 3\&6, so 4.5, to
+            find $Q_3$ we need to find the mid of 21\&28, which is 24.5.
+    \end{enumerate}
+    \vspace{10pt}
+    If we'd add a number, so 1, 3, 6, 10, 15, 21, 28, 36, 39:
+    \begin{enumerate}
+        \item median can be picked in the mid (15).
+        \item if we now get quartiles, we act like the median 15 isn't there, so
+            it's just there to split our data.
+
+            Further the quartiles are then $Q_1=4.5$ and $Q_2=32$.
+    \end{enumerate}
+}
+
+
+\subsection{Percentiles}
+
+\paragraph{Percentiles:} Seperates data into 100 parts. \\
+Therefore, there are 99-Percentiles.
+
+Percentile of x: \[
+\frac{\text{Number of values less than x}}{\text{total number of values}}\cdot 100 \] 
+
+\ex{You scored $\frac{87}{100}$ on a test, 39 people scored lower than you,
+    there are 54 People in the class. What percentile did you score in?
+
+    \[ \frac{39}{54}\cdot 100 = 72^{nd} \ \text{percentile} .\] 
+    normally written $P_{72}$
+
+    \vspace{10pt}
+    $P_{25} = Q_1$,
+    $P_{50} = M$,
+    $P_{75} = Q_3$,
+}
+
+\subsection{IQR}
+\paragraph{IQR:} Is $Q_3 -Q_1$, middlt 50\% of the data.
+
+\subsection{Box Plot}
+
+A boxplot is like a summary, it shows the following five:
+\begin{enumerate}
+    \item Minimum
+    \item $Q_1$
+    \item Median
+    \item $Q_3$
+    \item Maximum
+\end{enumerate}
+With the figure it should be obvious.
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.6]{stats-5}
+    \caption{figures/stats-5}
+    \label{fig:stats-5}
+\end{figure}
+
+\ex{1, 4, 5, 5, 7, 9, 12, 13, 13, 15, 21.
+
+    \begin{enumerate}
+        \item Minimum = 1
+        \item $Q_1$ = 5
+        \item Median = 9
+        \item $Q_3$ = 13
+        \item Maximum = 21
+    \end{enumerate}
+
+}
+\begin{figure}[ht]
+    \centering
+    \incfig[0.6]{stats-6}
+    \caption{figures/stats-6}
+    \label{fig:stats-6}
+\end{figure}
+
+\vspace{50pt}
+
+There are obviously ways to find an outlier:
+
+Find IQR $\to$ 13-5=8
+
+$IQR \cdot 1.5$ $\to $ $1.5\cdot 8=12$
+
+And lastly subtract it from $Q_1$ and add it to $Q_3$:
+
+$Q_1 - 1.5\cdot IQR = -7$
+
+$Q_3 + 1.5\cdot IQR = 34$
+
+So everything that is outside of those ``borders'' is mathematically considered an outlier.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
