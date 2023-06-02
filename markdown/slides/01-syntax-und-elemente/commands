@@ -1,5 +1,0 @@
-      markdown to html
-pandoc pres.md -t html5 -s -o pres.html
-      
-      markdown to beamer pdf
-pandoc pres.md -t beamer -V fontsize=9pt -o -pres.pdf
