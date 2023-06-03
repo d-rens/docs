@@ -1,0 +1,41 @@
+\lecture{3}{03-06-2023}{4.5}
+
+``At least one'' Means one or more.
+\begin{itemize}
+    \item the \textbf{complement} of ``at least one'' is none
+\end{itemize}
+$P(``at \ least \ one") = 1-P(``none")$
+
+\ex{
+    Flip coin 3 times. Prob of getting at least one head?
+    \[ P(at \ least \ one \ head) = \frac{7}{8}
+    .\] 
+    Sample space: \{HHH, HHT, HTH, HTT, TTT, TTH, THT, THH\}
+
+    \begin{align*}
+        P(at \ least \ one \ head) &= 1-P(no \ heads)\\
+    &=   1- P(T \ and \  T \ and \ T)= 1-\frac{1}{2}\cdot \frac{1}{2}\cdot \frac{1}{2}\\
+    &= 1-\frac{1}{8} = \frac{7}{8}\\
+    \end{align*}
+
+
+    Flip coin 20 times, prob of getting at least one head:
+    \[ P = 1- \frac{1}{2}^{20} = 1- \frac{1}{1,0485,276}= \frac{1,048,575}{1,048,576} = 0.999999046 .\] 
+}
+
+Less than $P=0.05$ means something is ``rare''.
+
+$P(B|A)=$ probability that B happens given that A already happened.
+$P(B \ and \ A)=$ probability that B and then A.
+
+\[ P(B|A)=\frac{P(A \ and \ B)}{P(A)} .\] 
+
+\[ P(A \ and \ B) = P(A) \cdot P(B|A) .\] 
+
+
+Again refering to guilty table 4.2.
+\[ P(Guilty|did\ it)= \frac{72}{81} .\] 
+\[ P(did\ it|guilty) = \frac{72}{83} .\] 
+
+
+

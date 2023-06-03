@@ -1,0 +1,118 @@
+\lecture{1}{03-06-2023}{4.4}
+
+\[ P(A \ or \ B) = P(A) + P(B) - P(A \ and \ B) \leftarrow( \text{Both at them same time)} .\] 
+
+\section{Multiplication rule}
+$P(A \ and \ B) =$ Probability of ``A'' occuring, \textbf{and then} ``B'' occuring in \textbf{successive trails}.
+
+\ex{ 
+    \paragraph{Two questions}
+    \begin{enumerate}
+        \item (T/F): Mr. Leonard drives an audi.
+        \item (Multiple choice): My favourite color is:
+            \begin{itemize}
+                \item red
+                \item blue
+                \item green
+                \item black
+                \item yellow
+            \end{itemize}
+    \end{enumerate}
+
+    If you guess randomly, what's the probability that you will get the right answer on both problems? }
+
+\begin{figure}[ht]
+    \centering
+    \incfig[0.4]{lec_02_1}
+    \label{fig:lec_02_1}
+\end{figure}
+
+So the probability is $\frac{1}{10}$ .
+
+
+\paragraph{Prob. of} selecting guily and then not guity as in an earlier table (4.2).
+(without replacment)
+
+\[ P(Guilty)=\frac{83}{177} \text{ and then } P(Not \ guilty)=\frac{94}{176} .\] 
+
+\subsection{Conditional probability}
+The probability of an event occurring given that some other event has already occured.
+
+\[ P(A|B) = \text{The probability of event ``B'' occurring \textbf{given that} ``A'' has already occurred} .\] 
+
+\subsubsection{Independent events} The occurrance of one event does
+\textbf{not} affect the occurrance of another event. (Non-independent events
+are Dependend)
+
+\tbox{If A\&B are independent, \[ P(B|A)=P(B) .\] }
+
+\ex{
+\begin{enumerate}
+    \item Roll a die: \textbf{Independent} 
+        \[ P(2|3)= P(2) = \frac{1}{6} .\] 
+
+    \item Drawing cards: 
+        \[\text{with replacment:}\quad  P(Q|9) \frac{4}{52} = \frac{1}{13} \approx 0.077 .\] 
+        \[\text{without replacment:}\quad  P(Q|9) = \frac{4}{51} \approx 0.078 .\] 
+
+    \item Another card one:
+        \[ \text{without replacment:} \quad P(Q|Q) = \frac{3}{51} \approx 0.059 .\] 
+        \[ \text{with replacment:} \quad P(Q|Q) \frac{4}{52} \approx 0.77.\] 
+
+    \item with replacment:
+        \[ P(\heartsuit|J\diamondsuit)=\frac{13}{52} .\] 
+
+    \item without
+        \[ P(\heartsuit|J\diamondsuit)=\frac{13}{51}.\] 
+\end{enumerate}
+}
+
+
+\subsection{Multiplication Rule}
+
+\[ P(A \ and \ B)= P(A)\cdot P(B|A) .\] 
+Recall: if independent $P(B|A)=P(B)$ so $P(A \ and \ B) = P(A)\cdot P(B)$.
+
+\ex{
+\textbf{Bag of marbles}
+
+in the bag are 9 marbles:
+\begin{itemize}
+    \item 3 red
+    \item 2 blue
+    \item 4 green
+\end{itemize}
+
+with replacement:
+\[
+P(G \ and \ B) = P(G)\cdot P(B|G) =  \frac{4}{9}\cdot \frac{2}{9}= \frac{8}{81}
+.\] 
+ 
+
+without replacement:
+\[
+P(G \ and \ B) =P(G)\cdot P(B|G) = \frac{4}{9} \cdot \frac{2}{8} = \frac{1}{9}
+.\] 
+
+
+without replacement: \[
+P(R \ and \ R)= \frac{3}{9}\cdot \frac{2}{8} = \frac{1}{12}
+.\] 
+
+
+without replacement: \[
+P(B \ and \ B \ and \ B)= \frac{4}{9}\cdot \frac{3}{8}\cdot \frac{2}{7}= \frac{1}{21}
+.\] 
+}
+
+\paragraph{Dice:}
+
+$P(1 \ and \ 2 \ and \ 3 \ and \ 4)$ = $\frac{1}{6}^4= \frac{1}{1296} = 0.00077$
+
+
+
+\paragraph{Cards:} without replacement
+
+$P(A \ and \ K \ and \ Q \ and \ J \ and \ 10)$ = $\frac{4}{52}\cdot \frac{4}{51}\cdot \frac{4}{50}\cdot \frac{4}{49}\cdot \frac{4}{48} $
+
+
