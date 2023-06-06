@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="142mm"
+   height="88mm"
+   viewBox="0 0 142 88"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="stats-8.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.99437388"
+     inkscape:cx="441.48384"
+     inkscape:cy="229.29001"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g140"
+     showgrid="false"
+     showborder="true"
+     width="200mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1902"
+     inkscape:window-height="1047"
+     inkscape:window-x="3843"
+     inkscape:window-y="1098"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       units="mm"
+       spacingx="10"
+       spacingy="10"
+       empspacing="4"
+       dotted="false"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-177)" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Chart-Layer: 1:05,2:15,3:35,4:30,5:10,6:5"
+     id="g140" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Chart-Layer: 1:05,2:15,3:35,4:30,5:10,6:5"
+     id="g218" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Chart-Layer: 1:05,2:15,3:35,4:30,5:10,6:5"
+     id="g612">
+    <rect
+       x="18.216942"
+       y="62"
+       width="18"
+       height="9"
+       style="fill:#222222;stroke-width:1.8"
+       id="rect588" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'JetBrains Mono';-inkscape-font-specification:'Bitstream Charter';text-align:end;text-anchor:end;fill:#000000;stroke-width:1.8"
+       transform="rotate(-90)"
+       x="-80"
+       y="30.216946"
+       id="text590">1</text>
+    <rect
+       x="36.216942"
+       y="44"
+       width="18"
+       height="27"
+       style="fill:#444444;stroke-width:1.8"
+       id="rect592" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'JetBrains Mono';-inkscape-font-specification:'Bitstream Charter';text-align:end;text-anchor:end;fill:#000000;stroke-width:1.8"
+       transform="rotate(-90)"
+       x="-80"
+       y="48.216942"
+       id="text594">2</text>
+    <rect
+       x="54.216942"
+       y="8"
+       width="18"
+       height="63"
+       style="fill:#666666;stroke-width:1.8"
+       id="rect596" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'JetBrains Mono';-inkscape-font-specification:'Bitstream Charter';text-align:end;text-anchor:end;fill:#000000;stroke-width:1.8"
+       transform="rotate(-90)"
+       x="-80"
+       y="66.216942"
+       id="text598">3</text>
+    <rect
+       x="72.216942"
+       y="17"
+       width="18"
+       height="54"
+       style="fill:#888888;stroke-width:1.8"
+       id="rect600" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'JetBrains Mono';-inkscape-font-specification:'Bitstream Charter';text-align:end;text-anchor:end;fill:#000000;stroke-width:1.8"
+       transform="rotate(-90)"
+       x="-80"
+       y="84.216934"
+       id="text602">4</text>
+    <rect
+       x="90.216942"
+       y="53"
+       width="18"
+       height="18"
+       style="fill:#aaaaaa;stroke-width:1.8"
+       id="rect604" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'JetBrains Mono';-inkscape-font-specification:'Bitstream Charter';text-align:end;text-anchor:end;fill:#000000;stroke-width:1.8"
+       transform="rotate(-90)"
+       x="-80"
+       y="102.21693"
+       id="text606">5</text>
+    <rect
+       x="108.21694"
+       y="62"
+       width="18"
+       height="9"
+       style="fill:#cccccc;stroke-width:1.8"
+       id="rect608" />
+    <text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:'JetBrains Mono';-inkscape-font-specification:'Bitstream Charter';text-align:end;text-anchor:end;fill:#000000;stroke-width:1.8"
+       transform="rotate(-90)"
+       x="-80"
+       y="120.21694"
+       id="text610">6</text>
+  </g>
+</svg>

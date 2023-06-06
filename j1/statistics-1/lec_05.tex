@@ -81,13 +81,68 @@ $\to$ Countable of finite.
 
 \nt{ \[ 0\leq P(x) \leq 1 .\] 
      \[ \sum P(x) = 1.\] 
-
 }
 
-\tbox{lec 5.2 paused at 25:45}
+\begin{figure}[ht]
+    \centering
+    \incfig[0.4]{stats-8}
+    \caption{Prob. distribution of the weighted die}
+    \label{fig:stats-8}
+\end{figure}
 
 
+\subsection{Mean, Variance, Standard Deviation}
+\paragraph{Mean:}
+\begin{align*}
+    \mu&=\frac{\sum (x \cdot f)}{N}\\
+\mu &= \sum \left[ \frac{x\cdot f}{N} \right] \\
+&=\sum \left[ x\cdot \frac{f}{n} \right] \\
+    \mu &= \sum \left[ x\cdot P(x) \right] \leftarrow \text{mean, expected value}\\
+\end{align*}
 
+\vspace{50pt}
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+        \toprule
+        $x$ & $P(x)$ & $x \cdot P(x)$ & $x^2$ & $x^2 \cdot  P(x)$\\
+        \midrule
+        1 & .05 & .05 & 1  & .05   \\
+        \midrule
+        2 & .15 & .30 & 4  & .60   \\
+        \midrule
+        3 & .35 & 1.05 & 9  & 3.15   \\
+        \midrule
+        4 & .30 & 1.20 & 16 & 4.8   \\
+        \midrule
+        5 & .10 & .50 & 25 & 2.5  \\
+        \midrule
+        6 & .05 & .30 & 36 & 1.8   \\
+        \midrule
+          & 1.00 & $\sum[x\cdot P(x)]=3.4$ & & $\sum [x^2 \cdot P(x)=12.9$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+So the mean is:
+$\mu = 3.4$
+
+\paragraph{Variance:}
+
+$\sigma^2= \sum \left[  x^2 \cdot P(x) \right] -\mu^2 $
+
+with a little solving of the table we then get:
+\begin{align*}
+\sigma^2 &= 12.9-(3.4)^2 \\
+&= 12.9-11.56 \\ 
+\sigma^2 = 1.34
+\sigma &=   \sqrt{1.34} \\
+\sigma &= 1.16 \\
+\end{align*}
+
+
+\nt{5.2 paused at 46.47}
 
 
 
