@@ -10,7 +10,7 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 %\usepackage{hyperref}
-\usepackage{babel}
+%\usepackage{babel}
 %\usepackage{titlesec}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -99,6 +99,15 @@
             #2
         \end{tcolorbox}
 \end{center}}
+
+
+\newcommand{\ff}[2][\linewidth]{
+    \begin{center}
+        \begin{tcolorbox}[title=Forschungsfrage:, colback=white, colframe=black, width=#1]
+            #2
+        \end{tcolorbox}
+\end{center}}
+
 
 \newcommand{\steps}[2][0.8\linewidth]{
     \begin{center}
