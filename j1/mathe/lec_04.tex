@@ -1,0 +1,41 @@
+\lecture{4}{27-06-2023}{Integralfunktionen}
+
+\ex{
+    Hier geht es glaube ich darum, dass man aufgeleitete Funktionen wieder
+    ableiten kann um die ``normale'' Funktion $f(x)$ zu bekommen.
+    \[ f(x)=2x-3 \] 
+    \begin{align*}
+        J_1(x)&=\int_{1}^{x} f(t)\ dt \\
+              &= \int_{1}^{x} (2t-3)\ dt   \\
+              &= [t^2=3t]_{1}^{x} = x^2=3\cdot x=(1^2-3\cdot 1) \\
+              &= x^2-3x+2 \\ 
+              &\\
+       J'_1(x)&= 2x-3 = f(x) \\
+    \end{align*}
+
+    $\implies J_1$ ist eine Stammfunktion von $f$.
+}
+
+\q{Ist die Stammfunktion $F$ mit \[
+F(x) = x^2-3x+3 \] 
+Integralfunktion von $f$? }
+
+W\"are $F$ Integralfunktion von $f$, so g\"abe es ein $a \in \R$ mit
+
+\begin{align*}
+       F(x)&=\int_{a}^{x} f(t)\ dt \\
+            &= x^2-3x-(a^2-3a) \\
+        -a^2+3a &= 3 \\
+        a^2-3a+3 &=0 \\
+        a_{1/2}&= \frac{3}{2}\pm \sqrt{(\frac{3}{2})^2-3}  \\
+        & \text{ NICHT m\"oglich zu rechnen}  \\
+\end{align*}
+
+\regel{Satz: Jede Integralfunktion $J_a$ von $f$ ist eine Stammfunktion von $f$.}
+Dir Umkehrung des Satzes gilt nicht, d.h. nicht jede Stammfunktion ist auch Integralfunktion.
+
+\nt{Hier noch die Abbildungen f\"ur die Integralfunktionen einf\"ugen.}
+
+
+
+
