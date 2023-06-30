@@ -1,56 +1,109 @@
-\lecture{3}{16-06-2023}{Untericht 13-Juni}
-\section{Gravitationsgesetz}
-\tbox{
-\[
-F_G=G\cdot \frac{M_1\cdot M_2}{r^2}
-.\] 
-$M_1 \ \& \ M_2$ sind die Massen der K\"orper, $G$ ist die Gravitationskonstante
-und $r^2$ als Abstand der Schwerpunkte.
+\lecture{4}{30-06-2023}{Stunde vor der Arbeit}
 
-\[
-G=6,674\cdot 10^{-11}m^3\cdot kg^{-1}\cdot 5^{-2}
-.\] 
+\regel{Konzepte:\\
+    \begin{enumerate}
+        \item \[ F_{Res}=m\cdot a .\] 
+        \item Energieerhaltungssatz erg\"anzt durch "Arbeit (\"Ubertragene Energie)"
+    \end{enumerate}
 }
 
-\begin{figure}[ht]
-    \centering
-    \incfig[0.6]{gravitationsgesetz}
-    \caption{Gravitationsgesetz}
-    \label{fig:gravitationsgesetz}
-\end{figure}
+\subsection{Tafelaufschrieb}
 
-\ex{\textbf{aufgabe 3c) 2.}
+\begin{multicols*}{2}[Im folgenden sind immer die Inhalte der einzelnen Tafeln in boxen.]
 
-Bestimmen Sie die Masse der Erde jeweils ausschlieslich mit den
-    folgenden Werten:
+    \tbox{
+        \[ F_{el}=q\cdot \frac{U}{d} .\] 
+        Hier ist $e=1,6\cdot 10^{-19}C$
 
-Abstand Erde - Mond $d=60\cdot R_{Erde}$ und Umlaufdauer des Mondes t=27,3d.
+        \[ F_G=m\cdot g .\] 
+        Hier ist $m=9,1\cdot 10^{-31}kg$ und $g=9,81 \frac{m}{s^2}$ 
 
-\vspace{10pt}
-\hrule
-\vspace{10pt}
+    \[ 10^{-15}=10^{-30}\cdot 10^x .\] }
 
-Ansatz: $F_Z = F_G$ (Zentripeltalkraft)
- \begin{align*}
-    m\cdot \frac{v^2}{d}&= G\cdot \frac{M\cdot m}{d^2} \\
-    m\cdot \frac{\left( \frac{2\pi\cdot d}{t} \right)^2}{d}&= G\cdot \frac{M\cdot m }{d^2} \quad \text{hier kann man masse vom mond (m) k\"urzen}\\
-    M&= \frac{\frac{4\pi^2}{t^2}\cdot d^2}{d\cdot G}= \frac{4\pi^2\cdot d^3}{G*t^2} \\
-    M&= \frac{4\cdot \pi^2\cdot 60\cdot (6,370\cdot 10^{6}m)^3}{6,674\cdot 10^{-11}m^3\cdot kg^{-1}s^{-2}\cdot (27,3\cdot 60\cdot 60\cdot 24s)^2} \\
-    M&= 6,068\cdot 10^{24}kg \quad \text{in echt ist es } 5,79\cdot 10^{24}kg \\
+
+    \tbox{
+        \begin{align*}
+            F_{res}&= m_e\cdot a \\
+            F_{el}&= m_e\cdot a \\
+            e\cdot \frac{U}{d}&= m_e\cdot a \\
+            a&= \frac{a}{m_e}\cdot \frac{U}{d} \\
+            a&= 3,6\cdot 10^{14}\cdot g \\
+        \end{align*}
+    Hier ist $\frac{e}{m_e}$ die spezifische ladung des elektrons }
+
+
+    \tbox{
+        \[ v(t)=a\cdot t .\] 
+        Bringt uns aber nicht vor, weil wir zeit wollen und geschwindigkeit nicht brauchen.
+
+        \[ s(t)=\frac{1}{2}a\cdot t^2 .\] 
+
+        \begin{align*}
+        \Leftrightarrow t&=\sqrt{\frac{2s}{a}}\\
+        v&=1,9\cdot 10^7 \frac{m}{s}\\
+        \frac{1}{2}mv^2&= F_{el}\cdot d \\
+        \frac{1}{2}m_e\cdot v^2&= e\cdot u \\
+        \end{align*}
+    }
+
+    \regel{
+        \begin{align*}
+            W&= e\cdot U \\
+            &= e\cdot 1000V \\
+            &= 1000 eV \\
+            a&= \frac{\Delta W}{q} \\
+        \end{align*}
+        Elektronenvolt }
+
+\end{multicols*}
+
+\subsection{Aufgabe elektrisches Feld}
+geg.: Abstand-P-Q=8cm, Spannung $U_2=1,2$kV\\
+ges.: Entefernung in der $P$ umkehrt.
+\begin{align*}
+    v&= \sqrt{v^2_0+2as}  \\
+    v^2&= v_0^2 + 2as \\
+    v^2-v_0^2&= 2as \\
+    s&= \frac{v^2-v_0^2}{2a} \\
+    s&= \frac{-v_0^2}{2a} \\
+    &= \frac{-(1,9\cdot 10^7)^2}{2\cdot 2,64\cdot 10^{15}} \\
+    s&= 6.84\ cm \\
 \end{align*}
-}
 
-\subsection{Aufaben}
-\paragraph{Aufgabe 1} Berechnen sie die Gravitationskraft zwischen:\\
+$v_0$ ist die initiale Kraft.
 
+\tbox{ Kreisbewegung, Gravitationsfeld, Teilchen im E-Feld}
+
+
+\subsection{Elektronenstrahlr\"ohre}
+Lernen, wie es funktioniert, was wo steht, und wie es funktionert.
+Mit Elektronen Kanone, Anode, Vertikal-/Horizontalablenktung...
+
+HIER EVTL NOCH BILD IMPORTIEREN.
+
+\subsubsection{Bahngleichung}
+
+Wir interpretieren die Bewegung der Elektronen als \"Uberlagerung zweier
+Teilbewegungen:
 \begin{enumerate}
-    \item Zwei Schiffen mit einer Masse von je 100 000 Tonnen, die sich mit dem Schwerpunktabstand r=200m begegnen.
-    Hier ist irgendeine rechnung dann $F_G=6,674\cdot
-    10^{-11}m^3kg^{-1}s^{-2}\cdot \frac{100 000 000 kg}{200m^2} = 1,6685\cdot 10$.
-
-    \item Ein Raumschiff umkreist die Erde in einer H\"ohe 2000km zur Erdoberfleche. Berechnen sie die dafuer erforderliche Geschwindigkeit.
-
-        Hier muss man dann den Radius der Erde + den Abstand nehmen f\"ur die Zentripetalkraft.
+    \item Bewegung mit konstanter Geschwindigkeit in x-richtung
+        \begin{align}
+            v(t)&=v_x =\quad  konstant \quad  \text{(denn $F_{res, x}$=0!)}\\
+            x(t)&=v_x\cdot t 
+        \end{align}
+    \item Bewegung mit konstanter Beschleunigung in y-Richtung
+        \begin{align}
+            v(t)&=a\cdot t  \\
+            y(t)&=\frac{1}{2}a\cdot t^2
+        \end{align}
 \end{enumerate}
+
+
+(1) in (3)
+\begin{align*}
+    y(t)&= \frac{1}{2}\cdot a\cdot \left( \frac{x(t)}{v_x}\right)  \\
+    \implies y &= \frac{a}{2\cdot v_x^2}\cdot x^2
+\end{align*}
+
 
 
