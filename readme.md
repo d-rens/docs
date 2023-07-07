@@ -4,6 +4,11 @@ This is my repositry for notes, 25% of it made in school, the other 75% is stuff
 
 It's mostly maths.
 
+## J1
+Here are my notes of the grade J1
+
+## J2
+Here are the J2 notes, also courses I have started in J1, but not finished then.
 
 
 ## system of the notes
